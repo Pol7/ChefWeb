@@ -1,0 +1,116 @@
+#header{
+	background-image: url(../images/imageTop.png);
+	width:68%;
+	height:300px;
+	margin:auto;
+	background-repeat: no-repeat;
+	margin-bottom:0.5%;
+}
+#sottoHeader{
+	background-color:red;
+	color:white;
+	height:25pt;
+	width:68%;
+	margin:auto;
+	margin-bottom:0.5%;
+}
+
+#maincol{
+	margin-top:0%;
+	border-style:double;
+	width:68%;
+	margin:auto;
+	box-shadow:0px 10px 20px 10px #d3d3d3;
+	background-color:#c8a2c8;
+}
+
+#register{
+	float:right;
+}
+
+#footer{
+clear:both;
+background-color:black;
+color:white;
+margin:auto;
+margin-top:0.5%;
+margin-left:16%;
+margin-right:16%;
+height:40px;
+}
+#footerImg1{
+float:left;
+margin-top:0.4%;
+margin-left:0.4%;
+
+}
+#footerText{
+	text-align:right;
+	float:left;
+	height:36px;
+	margin-top:0.8%;
+	width:45%;
+	}
+	
+#footerImg2{
+float:right;
+margin-top:0.4%;
+}
+
+#path{
+line-height: 22pt;
+display:inline;
+}
+#menu{
+
+margin:auto;
+width:60%;
+
+}
+.listMenu{
+float:left;
+width:6em;
+text-decoration:none;
+color:white;
+background-color:red;
+padding: 1em 1em;
+border:1px solid white;
+display:inline;
+
+}
+
+.listMenu:hover {
+background-color:#990000;
+}
+
+
+ul{
+padding:0px;
+}
+
+.search{
+    float:right;
+	margin-top:0.4em;
+	margin-right:0.3em;
+}  
+
+
+#registra{
+float:right;
+width:48%;
+margin-bottom:0.7%;
+}
+
+#login{
+float:right;
+width:25%;
+}
+
+#clearBoth { 
+clear:both;
+ }
+
+#ricetta{
+width:48%;
+}
+

@@ -1,0 +1,178 @@
+#header{
+	background-image: url(../images/home.jpg);
+	width:1300px;
+	height:300px;
+	margin:auto;
+	margin-bottom:0.5%;
+	background-repeat: no-repeat;
+}
+#sottoHeader{
+	background-color:#2b2b2b;
+	color:white;
+	height:25pt;
+	width:68%;
+	margin:auto;
+	margin-bottom:0.5%;
+}
+
+#maincol{
+	padding:0%;	
+	border-style:double;
+	width:68%;
+	margin:auto;
+	box-shadow:0px 10px 20px 10px #d3d3d3;
+	background-color:cccccc;
+}
+
+#register{
+	float:right;
+}
+
+#primi{	
+	display:inline-block;
+	width:20%;
+	height:270px;
+	background-image: url(../images/primi.jpg);
+	text-indent: -999em;
+	background-position: top;
+	background-repeat:no-repeat;
+}
+#primi:hover{
+	background-position: bottom;
+}	
+#primi:active{
+	background-position: center;
+}
+#secondi{
+	display:inline-block;
+	width:20%;
+	margin-left:5%;
+	height:270px;
+	background-image: url(../images/secondi2.jpg);
+	text-indent: -999em;
+	background-position: top;
+	background-repeat:no-repeat;
+}
+#secondi:hover{
+	background-position: bottom;
+}
+#secondi:active{
+	background-position: center;
+}
+#antipasti{
+	display:inline-block;
+	width:20%;
+	height:270px;
+	background-image: url(../images/antipasto.jpg);
+	text-indent: -999em;
+	background-position: top;
+	background-repeat:no-repeat;
+	margin-left:5%;
+}
+#antipasti:hover{
+	background-position: bottom;
+}
+#antipasti:active{
+	background-position: center;
+}
+#contorni{
+	display:inline-block;
+	width:20%;
+	height:270px;
+	background-image: url(../images/contorno2.png);
+	text-indent: -999em;
+	background-position: top;
+	background-repeat:no-repeat;
+}
+#contorni:hover{
+	background-position: bottom;
+}
+#contorni:active{
+	background-position: center;
+}
+#dessert{
+	display:inline-block;
+	width:20%;
+	height:270px;
+	background-image: url(../images/dessert2.jpg);
+	text-indent: -999em;
+	background-position: top;
+	background-repeat:no-repeat;
+
+}
+#dessert:hover{
+	background-position: bottom;
+}
+#dessert:active{
+	background-position: center;
+}
+#cocktail{
+	display:inline-block;
+	width:20%;
+	height:270px;
+	background-image: url(../images/cocktail.jpg);
+	text-indent: -999em;
+	background-position: top;
+	background-repeat:no-repeat;
+}
+#cocktail:hover{
+	background-position: bottom;
+}
+#cocktail:active{
+	background-position: center;
+}
+
+.home_element{
+	width:270px;
+	height:270px;
+	margin:5%;
+}
+
+#footer{
+clear:both;
+background-color:black;
+color:white;
+margin:auto;
+margin-top:0.5%;
+margin-left:16%;
+margin-right:16%;
+height:40px;
+}
+#footerImg1{
+float:left;
+margin-top:0.4%;
+margin-left:0.4%;
+
+}
+#footerText{
+	text-align:right;
+	float:left;
+	height:36px;
+	margin-top:0.8%;
+	width:45%;
+	}
+	
+#footerImg2{
+float:right;
+margin-top:0.4%;
+}
+
+#clearBoth {
+ clear:both; 
+ }
+
+.row{
+	margin-top:2%;
+	margin-bottom:2%;
+}
+
+#path{
+line-height: 22pt;
+display:inline;
+}
+
+.search{
+    float:right;
+	margin-top:0.4em;
+	margin-right:0.3em;
+}  
