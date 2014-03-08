@@ -8,6 +8,7 @@ print $pagina->header('text/html');
 print $pagina->start_html(
 				-title=>'Titolo Primi',
 				-style=>{'src'=>'../public_html/css/page_style.css'},
+				-lang=>'it',
 		);
 
 print '		<div id="header">
