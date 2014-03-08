@@ -23,7 +23,7 @@ print '		<div id="header">
 		</div>
 		<div id="menu">
 			<ul>
-				<li class="listMenu"><a class="listMenu2" href="index.html">Home</a></li>
+				<li class="listMenu"><a class="listMenu2" href="../public_html/index.html">Home</a></li>
 				<li class="listMenu">Primi</li>
 				<li class="listMenu"><a class="listMenu2" href="Secondi.html">Secondi</a></li>
 				<li class="listMenu"><a class="listMenu2" href="Contorni.html">Contorni</a></li>
