@@ -1,28 +1,31 @@
+body{
+background-color:#e8e7e3;
+}
 #header{
-	background-image: url(../images/imageTop.png);
-	width:68%;
+	background-image: url(../images/home.jpg);
+	width:1300px; 
 	height:300px;
 	margin:auto;
 	background-repeat: no-repeat;
-	margin-bottom:0.5%;
 }
 #sottoHeader{
-	background-color:red;
+	background-color:#5f3714;
 	color:white;
 	height:25pt;
-	width:68%;
+	width:1300px; 
 	margin:auto;
-	margin-bottom:0.5%;
+	margin-bottom:0px;
 }
 
 #maincol{
 	margin-top:0%;
 	border-style:double;
-	width:68%;
+	width:1300px; 
 	margin:auto;
 	box-shadow:0px 10px 20px 10px #d3d3d3;
-	background-color:#c8a2c8;
-}
+	background-color:#dad7d2;
+	min-height:500px;
+	}
 
 #register{
 	float:right;
@@ -30,12 +33,11 @@
 
 #footer{
 clear:both;
-background-color:black;
+background-color:#5f3714;
 color:white;
 margin:auto;
 margin-top:0.5%;
-margin-left:16%;
-margin-right:16%;
+width:1300px; 
 height:40px;
 }
 #footerImg1{
@@ -62,30 +64,39 @@ line-height: 22pt;
 display:inline;
 }
 #menu{
-
+background-color:#5f3714;
 margin:auto;
-width:60%;
-
+margin-top:-16px;
+width:1300px;
+/*background-image:url(../images/menu.png);*/
+}
+#currMenu:hover {
 }
 .listMenu{
-float:left;
-width:6em;
-text-decoration:none;
 color:white;
-background-color:red;
-padding: 1em 1em;
-border:1px solid white;
-display:inline;
+display:inline-block;
+margin-right:5.7%;
+text-transform:uppercase;
+font-weight:bold;
+
 
 }
+.listMenu2:link{
+color:white;
+text-decoration:none;
+}
+.listMenu2:visited {
+color:white;
+text-decoration:none;
+}
 
-.listMenu:hover {
+.listMenu2:hover {
 background-color:#990000;
 }
 
 
 ul{
-padding:0px;
+padding:0.9em;
 }
 
 .search{
@@ -111,6 +122,19 @@ clear:both;
  }
 
 #ricetta{
+float:left;
+width:48%;
+margin-left:0.7%;
+}
+
+#procedimento{
+float:left;
 width:48%;
 }
 
+.error {
+	color: red;
+}
+#linkPercorso{
+color:white;
+}
