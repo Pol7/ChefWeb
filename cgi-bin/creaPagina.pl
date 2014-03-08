@@ -16,6 +16,6 @@ print  '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.
 		<link href="./css/page_styleSmall.css" rel="stylesheet" type="text/css" media="handheld, screen and (max-width:690px), only screen and (max-device-width:690px)" />
 	</head>
 	<body>'
-print $pagina->h1("Questo &egrave; il mio titolo");
+#print $pagina->h1("Questo &egrave; il mio titolo");
 print '<p>kkk</p>';
 print $pagina->end_html;
