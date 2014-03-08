@@ -7,6 +7,6 @@ $pagina = new CGI;
 print $pagina->header('text/html');
 $value = $pagina->start_html;
 print $value;
-#print $pagina->h1("Questo &egrave; il mio titolo");
+print $pagina->h1("Questo &egrave; il mio titolo");
 print '<p>paragrafo</p>';
 print $pagina->end_html;
