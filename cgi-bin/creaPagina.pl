@@ -7,6 +7,7 @@ $pagina = new CGI;
 print $pagina->header('text/html');
 print $pagina->start_html(
 				-title=>'Titolo Primi',
+				-link=>'href="./css/page_style.css" rel="stylesheet" type="text/css" media="screen"',
 		);
 
 print '		<div id="header">
