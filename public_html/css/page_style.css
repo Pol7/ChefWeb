@@ -2,7 +2,7 @@ body{
 background-color:#e8e7e3;
 }
 #header{
-	background-image: url(../images/home.jpg);
+	background-image: url(../../images/home.jpg);
 	width:1300px; 
 	height:300px;
 	margin:auto;
