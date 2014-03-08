@@ -17,5 +17,5 @@ print  '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.
 	</head>
 	<body>'
 #print $pagina->h1("Questo &egrave; il mio titolo");
-print '<p>kkk</p>';
+print '<p>paragrafo</p>';
 print $pagina->end_html;
