@@ -5,8 +5,9 @@ use CGI::Carp qw(fatalsToBrowser);
 
 $pagina = new CGI; 
 print $pagina->header('text/html');
-print $pagina->start_html;
-
+print $pagina->start_html(
+				-title=>'Titolo Primi',
+		);
 
 print '		<div id="header">
 			<div id="register">
