@@ -2,7 +2,7 @@ body{
 background-color:#e8e7e3;
 }
 #header{
-	background-image: url(../../images/home.jpg);
+	background-image: url(../images/home.jpg);
 	width:1300px; 
 	height:300px;
 	margin:auto;
@@ -68,7 +68,6 @@ background-color:#5f3714;
 margin:auto;
 margin-top:-16px;
 width:1300px;
-/*background-image:url(../images/menu.png);*/
 }
 #currMenu:hover {
 }
