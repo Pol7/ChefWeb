@@ -2,6 +2,13 @@
 # Script che crea un form HTML
 use CGI;
 use CGI::Carp qw(fatalsToBrowser);
+use XML::LibXML;
+
+my $file = '../database/ricette.xml';
+#creazione oggetto parser
+my $parser = XML::LibXML->new();
+#apertura file e lettura input
+my $doc = $parser->parse_file($file);
 
 $pagina = new CGI; 
 print $pagina->header('text/html');
@@ -36,9 +43,9 @@ print '		<div id="header">
 			<div id="clearBoth"></div>
 		</div>
 		
-		<div id="maincol">
+		<div id="maincol">';
 			
-		</div>
+print	'</div>
 		
 		<div id="footer">
 			<div id="footerImg1">
