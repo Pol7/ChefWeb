@@ -1,8 +1,12 @@
 <ricette>
 	<ricetta>
 		<nome>ric1</nome>
+		<autore>autore1</autore>
+		<img>indirizzo1</img>
 	</ricetta>
 	<ricetta>
 		<nome>ric2</nome>
+		<autore>autore2</autore>
+		<img>indirizzo2</img>
 	</ricetta>
 </ricette>
