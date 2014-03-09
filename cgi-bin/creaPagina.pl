@@ -17,7 +17,9 @@ print $pagina->start_html(
 				-style=>{'src'=>'../css/page_style.css',
 						'media'=>'screen'},
 				-lang=>'it',
-		);
+				-style=>{'src'=>'../css/page_styleMedium.css',
+						'media'=>'handheld, screen and (max-width:1320px), only screen and (max-device-width:1320px)'},
+				);
 
 print '		<div id="header">
 			<div id="register">
