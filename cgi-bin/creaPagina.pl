@@ -4,7 +4,7 @@ use CGI;
 use CGI::Carp qw(fatalsToBrowser);
 use XML::LibXML;
 
-my $file = '../database/ricette.xml';
+my $file = '../public_html/database/ricette.xml';
 #creazione oggetto parser
 my $parser = XML::LibXML->new();
 #apertura file e lettura input
