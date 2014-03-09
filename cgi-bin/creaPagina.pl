@@ -48,7 +48,7 @@ print '		<div id="header">
 		<div id="maincol">';
 		#estrazione elemento radice
 		my $radice= $doc->getDocumentElement || die("recupero radice fallita");
-		my @ricette = $radice->getElementsByTagName('ricetta');
+		my @ricett = $radice->getElementsByTagName('ricetta');
 		print '<p>'.child::ricetta.'</p>';
 		
 print	'</div>
