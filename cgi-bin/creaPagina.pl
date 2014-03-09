@@ -14,7 +14,7 @@ $pagina = new CGI;
 print $pagina->header('text/html');
 print $pagina->start_html(
 				-title=>'Titolo Primi',
-				-style=>{'src'=>'../public_html/css/page_style.css'},
+				-style=>{'src'=>'../css/page_style.css'},
 				-lang=>'it',
 		);
 
@@ -46,7 +46,6 @@ print '		<div id="header">
 		<div id="maincol">';
 			
 print	'</div>
-		
 		<div id="footer">
 			<div id="footerImg1">
 				<a href="http://validator.w3.org/">
