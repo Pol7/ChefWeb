@@ -8,7 +8,7 @@ my $file = '../public_html/database/ricette.xml';
 #creazione oggetto parser
 my $parser = XML::LibXML->new();
 #apertura file e lettura input
-my $doc = $parser->parse_file($file);
+my $doc = $parser->parse_file($file) || die("Operazioni di parsing fallita");
 
 $pagina = new CGI; 
 print $pagina->header('text/html');
@@ -17,9 +17,8 @@ print $pagina->start_html(
 				-style=>{'src'=>'../css/page_style.css',
 						'media'=>'screen'},
 				-lang=>'it',
-				-style=>{'src'=>'../css/page_styleMedium.css',
-						'media'=>'handheld, screen and (max-width:1320px), only screen and (max-device-width:1320px)'},
-				);
+				
+		);
 
 print '		<div id="header">
 			<div id="register">
@@ -47,7 +46,9 @@ print '		<div id="header">
 		</div>
 		
 		<div id="maincol">';
-			
+		#estrazione elemento radice
+		my $radice= $doc->getDocumentElement || die("recupero radice fallita");
+		my @elementi = $radice->getElementsByTagName('ricetta');
 print	'</div>
 		<div id="footer">
 			<div id="footerImg1">
