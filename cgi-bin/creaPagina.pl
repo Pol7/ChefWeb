@@ -49,7 +49,7 @@ print '		<div id="header">
 		#estrazione elemento radice
 		my $radice= $doc->getDocumentElement || die("recupero radice fallita");
 		my @ricette = $radice->getElementsByTagName('ricetta');
-		foreach $ricetta.nome (@ricette){
+		foreach child::*  (@ricette){
 			print '<a href="ricetta.pl">'.$ricetta.'</a>';
 		}
 print	'</div>
