@@ -2,11 +2,13 @@
 	<ricetta>
 		<nome>ric1</nome>
 		<autore>autore1</autore>
+		<tipo>Primi</tipo>
 		<img>indirizzo1</img>
 	</ricetta>
 	<ricetta>
 		<nome>ric2</nome>
 		<autore>autore2</autore>
+		<tipo>Secondi</tipo>
 		<img>indirizzo2</img>
 	</ricetta>
 </ricette>
