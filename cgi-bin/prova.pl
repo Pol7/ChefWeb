@@ -11,7 +11,8 @@ print $pagina->start_html(
 				-lang=>'it',
 		);
 print '<form action="elabora.cgi" method="get">
-		Tecnologie Web - 31
-		Tecnologie Web - 32
+		Nome: <input type="text” name="Nome"> 
+		Cognome: <input type="text" name="Cognome"> 
+		<input type="submit" name="Invio" value="Invia">
 	   </form>';
 print $pagina->end_html;
