@@ -14,11 +14,12 @@ $pagina = new CGI;
 print $pagina->header('text/html');
 print $pagina->start_html(
 				-title=>'Titolo Primi',
-				-style=>{'src'=>'../css/page_style.css',	'media'=>'screen'},
-				-style=>{'src'=>'../css/page_styleMedium.css'
-							'media'=>'handheld, screen and (max-width:1320px), only screen and (max-device-width:1320px)'},
-				-style=>{'src'=>'../css/page_styleSmall.css'
-							'media'=>'handheld, screen and (max-width:690px), only screen and (max-device-width:690px)'},
+				-style=>{'src'=>'../css/page_style.css',
+						'media'=>'screen'},
+				-style=>{'src'=>'../css/page_styleMedium.css',
+						'media'=>'handheld, screen and (max-width:1320px), only screen and (max-device-width:1320px)'},
+				-style=>{'src'=>'../css/page_styleSmall.css',
+						'media'=>'handheld, screen and (max-width:690px), only screen and (max-device-width:690px)'},
 				-lang=>'it',
 		);
 
