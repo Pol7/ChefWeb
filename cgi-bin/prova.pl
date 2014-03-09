@@ -10,7 +10,8 @@ print $pagina->start_html(
 				-style=>{'src'=>'../public_html/css/page_style.css'},
 				-lang=>'it',
 		);
-print '<form action="elabora.cgi" method="get">
+print '<a id="antipasti" href="cgi-bin/elabora.pl" method="get">Antipasti</a>
+<form action="elabora.pl" method="get">
 		Nome: <input type="text” name="Nome"> 
 		Cognome: <input type="text" name="Cognome"> 
 		<input type="submit" name="Invio" value="Invia">
