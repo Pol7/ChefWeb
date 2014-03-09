@@ -14,4 +14,4 @@ print '<form action="elabora.cgi" method="get">
 		Tecnologie Web - 31
 		Tecnologie Web - 32
 	   </form>';
-print $pagine->end_html;
+print $pagina->end_html;
