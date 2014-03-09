@@ -50,7 +50,7 @@ print '		<div id="header">
 		my $radice= $doc->getDocumentElement || die("recupero radice fallita");
 		my @ricette = $radice->getElementsByTagName('ricetta');
 		foreach $ricetta (@ricette){
-			print '<a href="ricetta.pl">'.$ricetta.'</a>';
+			print '<a href="ricetta.pl">'.$ricetta.'     </a>';
 		}
 print	'</div>
 		<div id="footer">
