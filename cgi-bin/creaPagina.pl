@@ -2,7 +2,6 @@
 # Script che crea un form HTML
 use CGI;
 use CGI::Carp qw(fatalsToBrowser);
-use strict;
 
 $pagina = new CGI; 
 print $pagina->header('text/html');
