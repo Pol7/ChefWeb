@@ -10,9 +10,8 @@ print $pagina->start_html(
 				-style=>{'src'=>'../public_html/css/page_style.css'},
 				-lang=>'it',
 		);
-print '
-		<FORM ACTION="/cgi-bin/cerca.pl" METHOD=GET>
-         Nome: <INPUT NAME=nome>
-         <INPUT TYPE=SUBMIT> <INPUT TYPE=RESET>
-      </FORM>';
+print '<form action="/cgi-bin/cerca.pl" method=get>
+         Nome: <input name=nome>
+         <input type=submit>
+      </form>';
 print $pagina->end_html;
