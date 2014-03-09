@@ -11,10 +11,5 @@ print $pagina->start_html(
 				-lang=>'it',
 		);
 print '
-<form action="elabora.pl" method="get">
-		<a id="antipasti" href="elabora.pl">Antipasti</a>
-		Nome: <input type="text” name="Nome"> 
-		Cognome: <input type="text" name="Cognome"> 
-		<input type="submit" name="Invio" value="Invia">
-	   </form>';
+		<a id="antipasti" href="elabora.pl" method="get">Antipasti</a>';
 print $pagina->end_html;
