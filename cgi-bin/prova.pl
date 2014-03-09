@@ -11,5 +11,8 @@ print $pagina->start_html(
 				-lang=>'it',
 		);
 print '
-		<a id="antipasti" href="elabora.pl" method="get">Antipasti</a>';
+		<FORM ACTION="/cgi-bin/cerca.pl" METHOD=GET>
+         Nome: <INPUT NAME=nome>
+         <INPUT TYPE=SUBMIT> <INPUT TYPE=RESET>
+      </FORM>';
 print $pagina->end_html;
