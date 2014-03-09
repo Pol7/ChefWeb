@@ -10,7 +10,7 @@ print $pagina->start_html(
 				-style=>{'src'=>'../public_html/css/page_style.css'},
 				-lang=>'it',
 		);
-print '<form action=“elabora.cgi” method=“get”>
+print '<form action="elabora.cgi" method="get">
 		Tecnologie Web - 31
 		Tecnologie Web - 32
 	   </form>';
