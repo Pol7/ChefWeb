@@ -12,7 +12,7 @@ print $pagina->start_html(
 		);
 print '
 <form action="elabora.pl" method="get">
-		<a id="antipasti" href="cgi-bin/elabora.pl">Antipasti</a>
+		<a id="antipasti" href="elabora.pl">Antipasti</a>
 		Nome: <input type="text” name="Nome"> 
 		Cognome: <input type="text" name="Cognome"> 
 		<input type="submit" name="Invio" value="Invia">
