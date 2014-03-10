@@ -139,6 +139,6 @@ color:white;
 }
 .lista{
 margin-left:3%;
-border-top-width: 1px;
-border-top-style: solid;
+border-bottom-width: 1px;
+border-bottom-style: solid;
 }
