@@ -44,7 +44,7 @@ print ' <div id="header">
           <div id="clearBoth"></div>
         </div>
         <div id="maincol">;
-        	#$node ($doc->findnodes('ricetta/nome eq "ric1")){
+        	#$node ($doc->findnodes('#//ricetta/nome eq "ric1")){
                   print "ciao"
         
 print ' </div>
