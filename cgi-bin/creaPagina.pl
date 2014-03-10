@@ -3,6 +3,8 @@
 use CGI;
 use CGI::Carp qw(fatalsToBrowser);
 use XML::LibXML;
+use strict;
+use warnings;
 
 my $file = '../public_html/database/ricette.xml';
 #creazione oggetto parser
@@ -51,7 +53,7 @@ print '		<div id="header">
 		<div id="maincol">';
 		print "<p> $tipo </p>";
 				
-		for my $node ($doc->findnodes('//ricetta[@tipo="'.$tipo.'"]')){
+		for my $node ($doc->findnodes("//ricetta[@tipo=".$tipo)){
 				print '<div class="lista">
 						<p class="nomeRicetta">'.$node->find('./nome').'</p>
 						<p class="autore">'.$node->find('./autore').'</p>
