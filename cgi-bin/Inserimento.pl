@@ -28,7 +28,7 @@ print $nome;
 
 
 #creo una stringa con un nuovo elemento
-$nuovo_el = "\n<ricetta> $input{'contenuto'}</ricetta>\n";
+#$nuovo_el = "\n<ricetta> $input{'contenuto'}</ricetta>\n";
 
 
 
