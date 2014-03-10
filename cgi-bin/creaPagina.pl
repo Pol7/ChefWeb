@@ -19,6 +19,7 @@ print $pagina->start_html(
 				-lang=>'it',
 				
 		);
+		asd
 
 print '		<div id="header">
 			<div id="register">
