@@ -18,8 +18,21 @@
 		<img>indirizzo2</img>
 		<ingrediente>i2</ingrediente>
 		<ingrediente>i2</ingrediente>
-		<ingrediente>i2</ingrediente>
-		<ingrediente>i2</ingrediente>
-		<ingrediente>i2</ingrediente>
+	</ricetta>
+	<ricetta tipo="Primi">
+		<nome>primo</nome>
+		<autore>pol</autore>
+		<procedimento>vai in bagno e lavati i denti</procedimento>
+		<img>indirizzoprimo</img>
+		<ingrediente>i3</ingrediente>
+		<ingrediente>i3</ingrediente>
+		<ingrediente>i3</ingrediente>
+		<ingrediente>i3</ingrediente>
+		<ingrediente>i3</ingrediente>
+		<ingrediente>i3</ingrediente>
+		<ingrediente>i3</ingrediente>
+		<ingrediente>i3</ingrediente>
+		<ingrediente>i3</ingrediente>
+		<ingrediente>i3</ingrediente>
 	</ricetta>
 </ricette>

@@ -139,6 +139,7 @@ color:white;
 }
 .lista{
 margin-left:3%;
+list-style-type:none;
 border-bottom-width: 1px;
 border-bottom-style: solid;
 }
