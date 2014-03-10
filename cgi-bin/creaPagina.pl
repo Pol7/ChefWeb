@@ -47,11 +47,9 @@ print '		<div id="header">
 		<div id="maincol">';
 		#estrazione elemento radice
 		my $radice= $doc->getDocumentElement || die("recupero radice fallita");
-		for my $node ($doc->findnodes('//ricetta')){
-			if($node->find('@tipo'eq 'Primi')){
+		for my $node ($doc->findnodes('//ricetta[@tipo='Primi']')){
 				print '<h1>'.$node->find('./nome').'</h1>';
 				print '<p>'.$node->find('./autore').'</p>';
-			}
 		}
 print	'</div>
 		<div id="footer">
