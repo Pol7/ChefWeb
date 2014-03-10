@@ -1,0 +1,104 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="it" lang="it">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Ricette</title>
+		<link href="./css/page_style.css" rel="stylesheet" type="text/css" media="screen"/>
+		<link href="./css/page_styleMedium.css" rel="stylesheet" type="text/css" media="handheld, screen and (max-width:1320px), only screen and (max-device-width:1320px)" />
+		<link href="./css/page_styleSmall.css" rel="stylesheet" type="text/css" media="handheld, screen and (max-width:690px), only screen and (max-device-width:690px)" />
+		<script type="text/javascript" src="./public_html/javascript/formR.js"></script>
+	</head>
+
+	<body>
+		<div id="header">
+			<div id="register">
+			<a href="Registrazione.html">Accedi!</a>
+			</div>
+		</div>
+		<div id="sottoHeader">
+			<div id="path"> Ti trovi in: <span xml:lang="eng"> Home</span> : Inserisci Ricetta</div>
+			<input class="search" type="submit" value="Cerca!">
+			<input class="search" type="text" name="Cerca:" value="" placeholder="Ricerca">
+		</div>
+		<div id="menu">
+			<ul>
+				<li class="listMenu"><a class="listMenu2" href="index.html">Home</a></li>
+				<li class="listMenu"><a class="listMenu2" href="Primi.html">Primi</a></li>
+				<li class="listMenu"><a class="listMenu2" href="Secondi.html">Secondi</a></li>
+				<li class="listMenu"><a class="listMenu2" href="Contorni.html">Contorni</a></li>
+				<li class="listMenu"><a class="listMenu2" href="Antipasti.html">Antipasti</a></li>
+				<li class="listMenu"><a class="listMenu2" href="Cocktail.html">Cocktail</a></li>
+				<li class="listMenu"><a class="listMenu2" href="Dessert.html">Dessert</a></li>
+				<li class="listMenu"><a class="listMenu2">Inserisci Ricetta</a></li>
+			</ul>
+			<div id="clearBoth"></div>
+		</div>
+		
+		<div id="maincol">
+			<form name="ricetta" action="/cgi-bin/Inserimento.pl" method="post" enctype="multipart/form-data">
+			<div id="ricetta">
+				<h1>Inserisci Ricetta</h1>
+				<p>Nome Ricetta :<input name="nomeRicetta" id="nomeRicetta" value=""  placeholder="Nome Ricetta"/><span id="nomeRicettaErr" class="error"></span></p>
+				<p>Nome Autore :<input name="nomeAutore" id="nomeAutore" value=""  placeholder="Nome Autore"/><span id="nomeAutoreErr" class="error"></span></p>
+				<p>Tipologia Ricetta :</p>
+				<input type="radio" name="tipologia" value="antipasto"/>Antipasto
+				<input type="radio" name="tipologia" value="primo"/>Primo
+				<input type="radio" name="tipologia" value="secondo"/>Secondo
+				<input type="radio" name="tipologia" value="contorno"/>Contorno
+				<input type="radio" name="tipologia" value="dessert"/>Dessert
+				<input type="radio" name="tipologia" value="cocktail"/>Cocktail
+				<fieldset>
+					<legend>Inserisci Immagine:</legend>
+					<input type="file" name="immagine" />
+				</fieldset>
+				<h3>Ingredienti</h3>
+				<div id="insIng0">
+					<label for="ingrediente0" >Ingrediente 1:</label>
+					<input type="text" name="ingrediente0" id="ingrediente0" class="ingrediente" size="20" tabindex="19"/>
+					<label for="quantita_0">Quantità:</label>
+					<input type="text" name="quantita0" id="quantita0" size="5" tabindex="20"/>
+					<label for="unita0">Unità di misura:</label>
+					<select name="unita0" id="unita0" tabindex="21">
+						<option value="Non specificata">Non specificata</option>
+						<option value="g">g</option>
+						<option value="hg">hg</option>
+						<option value="kg">kg</option>
+						<option value="ml">ml</option>
+						<option value="dl">dl</option>
+						<option value="l">l</option>
+						<option value="Cucchiaio">Cucchiaio</option>
+						<option value="Cucchiaino">Cucchiaino</option>
+						<option value="Tazzina">Tazzina</option>                            
+					</select>
+					<span id="ingrediente0Err" class="error"></span>
+				</div>
+                        <div id="insIng1"></div>
+                        <input type="submit" class="bottone" value="Aggiungi" name="action"  id="aggiungi" onclick="return aggiungiIng();" tabindex="100"/>
+				<input type="reset" value="Azzera">
+                <input type="submit" class="bottone" value="Invia" name="action"  id="invia" onclick="return controllaDati();" tabindex="100"/>
+				
+			</div>
+			<div id="procedimento">
+				<h3>Inserisci procedimento: </h3>
+				<textarea id="areaProcedimento" rows="20" cols="40" name="message"   placeholder="Scrivi qui il procedimento"></textarea>		
+				<span id="areaProcedimentoErr" class="error"></span>
+			</div>
+			<div id="clearBoth"></div>
+			</form>
+		</div>
+
+		<div id="footer">
+			<div id="footerImg1">
+				<a href="http://validator.w3.org/">
+					<img src="images/valid-xhtml10.png" alt="CSS Valid!"/></a>
+			</div>
+			<div id="footerText">
+			Gruppo beo
+			</div>
+			<div id="footerImg2">
+				<a href="http://jigsaw.w3.org/css-validator/">
+				<img src="images/vcss-blue.gif" alt="XHTML 1.0 Valid!"/></a>
+			</div>
+		</div>
+	</body>
+</html>
