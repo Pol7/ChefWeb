@@ -15,9 +15,10 @@ my $parser = XML::LibXML->new();
 my $doc = $parser->parse_file($file) || die("Operazioni di parsing fallita");
 #recupero l'elemento radice
 my $root = $doc->getDocumentElement || die("Non accedo alla radice");
+my @utenti = $root->getElementsByTagName("utenti");
 
 #recupero input della form
-my $in = $ENV{'QUERY_STRING'};
+my $in = $ENV{'CONTENT_LENGTH'};
 
 my $username = $pagina->param('username');
 my $password = $pagina->param('password');
