@@ -52,12 +52,8 @@ print '		<div id="header">
 		
 		<div id="maincol">';
 		print "<p> $tipo </p>";
-<<<<<<< HEAD
 		for my $node ($doc->findnodes("//ricetta[\@tipo=\"$tipo\"]")){
-=======
-				
 		for my $node ($doc->findnodes("//ricetta[my @tipo=".$tipo)){
->>>>>>> FETCH_HEAD
 				print '<div class="lista">
 						<p class="nomeRicetta">'.$node->find('./nome').'</p>
 						<p class="autore">'.$node->find('./autore').'</p>
