@@ -47,7 +47,7 @@ print '		<div id="header">
 		</div>
 		
 		<div id="maincol">';
-			for my $node ($doc->findnodes('//ricetta[@tipo="'.$tipo.'"]')){
+			for my $node ($doc->findnodes('//ricetta')){
 				print '<div class="lista">
 					<p class="nomeRicetta">'.$node->find('./nome').'</p>
 					<p class="autore">'.$node->find('./autore').'</p>
