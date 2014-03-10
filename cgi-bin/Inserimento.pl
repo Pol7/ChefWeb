@@ -26,7 +26,7 @@ my $img = $pagina->param('immagine');
 my $proc = $pagina->param('message');
 my $nome = $pagina->param('nomeRicetta');
 
-my $new_nodo_string = "<ricetta tipo='$tipo'>\n<nome>$nome</nome>\n<autore>$autore</autore>\n<img></img>\n";
+my $new_nodo_string = "<ricetta tipo='$tipo'>\n<nome>$nome</nome>\n<autore>$autore</autore>\n<img></img>\n</ricetta>";
 my $new_nodo = $parser->parse_balanced_chunk($new_nodo_string);
 my $season_to_process->appendChild($new_nodo);
 
