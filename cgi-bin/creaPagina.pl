@@ -49,8 +49,9 @@ print '		<div id="header">
 		</div>
 		
 		<div id="maincol">';
+		print "<p> $tipo </p>";
+				
 		for my $node ($doc->findnodes('//ricetta[@tipo="'.$tipo.'"]')){
-				print "<p> $tipo </p>";
 				print '<div class="lista">
 						<p class="nomeRicetta">'.$node->find('./nome').'</p>
 						<p class="autore">'.$node->find('./autore').'</p>
