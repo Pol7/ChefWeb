@@ -1,35 +1,38 @@
 #!/usr/bin/perl
+# Script che inserisce i dati nell'XML
 use CGI;
-use DBI;
+use CGI::Carp qw(fatalsToBrowser);
+use XML::LibXML;
 use strict;
 use warnings;
-use XML::Writer;
-use XML::LibXML;
-use IO::File;
+
+my $pagina = new CGI;
 
 my $file = '../public_html/database/utenti.xml';
 #creazione oggetto parser
 my $parser = XML::LibXML->new();
+#apertura file e lettura input
+my $doc = $parser->parse_file($file) || die("Operazioni di parsing fallita");
+#recupero l'elemento radice
+my $root = $doc->getDocumentElement || die("Non accedo alla radice");
 
-# read the CGI params
-#my $cgi = CGI->new;
-#my $username = $cgi->param("username");
-#my $password = $cgi->param("password");
-#my $nome = $cgi->param("nome");
-#my $cognome = $cgi->param("cognome");
-#my $sesso = $cgi->param("sesso");
-#my $giorno = $cgi->param("giorno");
-#my $mese = $cgi->param("Mese");
-#my $anno = $cgi->param("anno");
+#recupero input della form
+my $in = $ENV{'QUERY_STRING'};
 
- 
+my $username = $pagina->param('username');
+my $password = $pagina->param('password');
+my $nome = $pagina->param('nome');
+my $cognome = $pagina->param('cognome');
+my $sesso = $pagina->param('sesso');
+my $giorno = $pagina->param('giorno');
+my $mese = $pagina->param('mese');
+my $anno = $pagina->param('anno');
 
-open (WDATA, ">../public_html/database/utenti.xml") or
-&error("Errore: non riesco a scrivere il file.");
-print WDATA “hello \n";
 
-close(WDATA);
-
+my $new_nodo_string = "<utente>\n  <username>$username</username>\n<password>$password</password>\n<nome>$nome</nome>\n<cognome>$cognome</cognome>\n<sesso>$sesso</sesso>\n<giorno>$giorno</giorno>\n<mese>$mese</mese>\n<anno>$anno</anno>\n</utente>";
+my $new_nodo = $parser->parse_balanced_chunk($new_nodo_string);
+my $root->appendChild($new_nodo);
+print OUT $doc->toString;
 
 
 
