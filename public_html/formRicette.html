@@ -35,7 +35,7 @@
 		</div>
 		
 		<div id="maincol">
-			<form name="ricetta" action="/cgi-bin/Inserimento.pl" method="post" enctype="multipart/form-data">
+			
 			<div id="ricetta">
 				<h1>Inserisci Ricetta</h1>
 				<p>Nome Ricetta :<input name="nomeRicetta" id="nomeRicetta" value=""  placeholder="Nome Ricetta"/><span id="nomeRicettaErr" class="error"></span></p>
@@ -75,8 +75,9 @@
                         <div id="insIng1"></div>
                         <input type="submit" class="bottone" value="Aggiungi" name="action"  id="aggiungi" onclick="return aggiungiIng();" tabindex="100"/>
 				<input type="reset" value="Azzera">
+				<form name="ricetta" action="/cgi-bin/Inserimento.pl" method="post" enctype="multipart/form-data">
                 <input type="submit" class="bottone" value="Invia" name="action"  id="invia" onclick="return controllaDati();" tabindex="100"/>
-				
+			</form>	
 			</div>
 			<div id="procedimento">
 				<h3>Inserisci procedimento: </h3>
@@ -84,7 +85,7 @@
 				<span id="areaProcedimentoErr" class="error"></span>
 			</div>
 			<div id="clearBoth"></div>
-			</form>
+			
 		</div>
 
 		<div id="footer">
