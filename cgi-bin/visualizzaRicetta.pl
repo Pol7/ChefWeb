@@ -48,7 +48,8 @@ print ' <div id="header">
           <div id="clearBoth"></div>
         </div>
         <div id="maincol">';
-        for my $node ($doc->findnodes("//ricetta/nome/text()" eq "$nome")){
+        #//divisione[manager/text()= “Den Raphaely”] //dipendente
+        for my $node ($doc->findnodes("//ricetta[nome/text()="$nome"]")){
 				print '<div class="lista">
 						<p>'.$node->find('./nome').'</p>
 						<p class="autore">'.$node->find('./autore').'</p>
