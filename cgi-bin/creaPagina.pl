@@ -44,12 +44,15 @@ print '		<div id="header">
 			<div id="clearBoth"></div>
 		</div>
 		
-		<div id="maincol">';
+		<div id="maincol">
+		<ul>';
 		for my $node ($doc->findnodes('//ricetta')){
-				print '<h1>'.$node->find('./nome').'</h1>';
-				print '<p>'.$node->find('./autore').'</p>';
+				print '<li class="lista">
+						<p class="nomeRicetta">'.$node->find('./nome').'</p>
+						<p class="autore">'.$node->find('./autore').'</p>
+						</li>';
 		}
-print	'</div>
+print	'</ul></div>
 		<div id="footer">
 			<div id="footerImg1">
 				<a href="http://validator.w3.org/">
