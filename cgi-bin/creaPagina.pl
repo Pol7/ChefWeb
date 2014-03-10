@@ -57,7 +57,7 @@ print '		<div id="header">
 				print '<div class="lista">
 						<p class="nomeRicetta">'.$node->find('./nome').'</p>
 						<p class="autore">'.$node->find('./autore').'</p>
-						</div>';
+					</div>';
 		}
 print	'</div>
 		<div id="footer">
