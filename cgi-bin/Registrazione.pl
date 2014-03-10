@@ -35,5 +35,5 @@ close(WDATA);
 flock WDATA, LOCK_UN
 }
 
-
+elabora();
  
