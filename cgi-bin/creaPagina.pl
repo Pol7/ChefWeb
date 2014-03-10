@@ -10,6 +10,8 @@ my $parser = XML::LibXML->new();
 #apertura file e lettura input
 my $doc = $parser->parse_file($file) || die("Operazioni di parsing fallita");
 
+my $tipo = param('tipo') || undef;
+
 $pagina = new CGI; 
 print $pagina->header('text/html');
 print $pagina->start_html(
@@ -44,15 +46,14 @@ print '		<div id="header">
 			<div id="clearBoth"></div>
 		</div>
 		
-		<div id="maincol">
-		<ul>';
-		for my $node ($doc->findnodes('//ricetta[@tipo')){
+		<div id="maincol">';
+		for my $node ($doc->findnodes('//ricetta[@tipo="'.$tipo.'"]')){
 				print '<li class="lista">
 						<p class="nomeRicetta">'.$node->find('./nome').'</p>
 						<p class="autore">'.$node->find('./autore').'</p>
 						</li>';
 		}
-print	'</ul></div>
+print	'</div>
 		<div id="footer">
 			<div id="footerImg1">
 				<a href="http://validator.w3.org/">
