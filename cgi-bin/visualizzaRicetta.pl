@@ -14,7 +14,7 @@ my $doc = $parser->parse_file($file) || die("Operazioni di parsing fallita");
 my $pagina = new CGI;
 
 #per prendere parametri
-my $tipo = $pagina->param('nome') || undef;
+my $nome = $pagina->param('nome') || undef;
 
 print $pagina->header('text/html');
 print $pagina->start_html(
@@ -48,7 +48,7 @@ print ' <div id="header">
           <div id="clearBoth"></div>
         </div>
         <div id="maincol">';
-        for my $node ($doc->findnodes("//ricetta[\@nome=\"$nome\"]")){
+        for my $node ($doc->findnodes("//ricetta/nome" eq "$nome")){
 				print '<div class="lista">
 						<p>'.$node->find('./nome').'</p>
 						<p class="autore">'.$node->find('./autore').'</p>
