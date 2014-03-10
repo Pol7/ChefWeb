@@ -19,7 +19,7 @@ my $tipo = $pagina->param('tipo') || undef;
 
 print $pagina->header('text/html');
 print $pagina->start_html(
-				-title=>'Titolo Primi',
+				-title=>"$tipo",
 				-style=>{'src'=>'../css/page_style.css',
 						'media'=>'screen'},
 				-lang=>'it',
@@ -51,10 +51,9 @@ print '		<div id="header">
 		</div>
 		
 		<div id="maincol">';
-		print "<p> $tipo </p>";
 		for my $node ($doc->findnodes("//ricetta[\@tipo=\"$tipo\"]")){
 				print '<div class="lista">
-						<p class="nomeRicetta">'.$node->find('./nome').'</p>
+						<a href="cgi-bin/visualizzaRicetta.pl?nome=\"$node->find('./nome')\"" class="nomeRicetta">'.$node->find('./nome').'</a>
 						<p class="autore">'.$node->find('./autore').'</p>
 					</div>';
 		}

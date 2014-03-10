@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <ricette>
-	<ricetta tipo="primi">
+	<ricetta tipo="Antipasti">
 		<nome>ric1</nome>
 		<autore>autore1</autore>
 		<img src="56346" alt="Immagine descrittiva della ricetta"/>
