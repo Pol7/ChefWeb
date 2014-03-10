@@ -48,13 +48,12 @@ print '		<div id="header">
 		
 		<div id="maincol">';
 		for my $node ($doc->findnodes('//ricetta[@tipo="'.$tipo.'"]')){
-				print '<li class="lista">
+				print '<div class="lista">
 						<p class="nomeRicetta">'.$node->find('./nome').'</p>
 						<p class="autore">'.$node->find('./autore').'</p>
-						</li>';
+					</div>';
 		}
-print	'</div>
-		<div id="footer">
+print	'	<div id="footer">
 			<div id="footerImg1">
 				<a href="http://validator.w3.org/">
 					<img src="../images/valid-xhtml10.png" alt="CSS Valid!"/></a>
