@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns=""
+    targetNamespace=""
+    elementFormDefault="qualified">
+    
+    <xs:element name="utenti" type="Tutenti">
+    </xs:element>
+
+   <xs:complexType name="Tutenti">
+     <xs:sequence>
+     <xs:element name="utente" minOccurs="0" maxOccurs="unbounded" type="Tutente" />
+     </xs:sequence>
+      </xs:complexType>
+
+    <xs:complexType name="Tutente">
+     <xs:sequence>
+     <xs:element name="Username" type="xs:string" use="required"/>
+     <xs:element name="Password" type="xs:string" use="required"/>
+     <xs:element name="Nome" type="xs:string" use="required"/>
+     <xs:element name="Cognome" type="xs:string" use="required"/>
+     <xs:element name="Sesso" type="Tsesso" use="required"/>
+     <xs:element name="DataNascita" type="Tdata" />
+     </xs:sequence>
+  <xs:attribute name="tipo" type="xs:string" use="required" />
+    </xs:complexType>
+   
+     
+
+     <xs:simpleType name="Tsesso">
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="Maschio" />
+        <xs:enumeration value="Femmina" />
+      </xs:restriction>
+     </xs:simpleType>
+     
+     <xs:complexType name="Tdata">
+      <xs:sequence>
+        <xs:element name="Giorno" type="Tgiorno" use="required"/>
+        <xs:element name="Mese" type="Tmese" use="required"/>
+        <xs:element name="Anno" type="Tanno" use="required"/>
+      </xs:sequence>
+     </xs:simpleType>
+
+    
+      <xs:simpleType name="Tgiorno">
+        <xs:restriction base="xs:integer">
+          <xs:minInclusive value="1"/>
+          <xs:maxInclusive value="31"/>
+        </xs:restriction>
+      </xs:simpleType>
+    
+     
+    <xs:simpleType name="Tmese">
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="Gennaio" />
+        <xs:enumeration value="Febbraio" />
+        <xs:enumeration value="Marzo" />
+        <xs:enumeration value="Aprile" />
+        <xs:enumeration value="Maggio" />
+        <xs:enumeration value="Giugno" />
+        <xs:enumeration value="Luglio" />
+        <xs:enumeration value="Agosto" />
+        <xs:enumeration value="Settembre" />
+        <xs:enumeration value="Ottobre" />
+        <xs:enumeration value="Novembre" />
+        <xs:enumeration value="Dicembre" />
+      </xs:restriction>
+    </xs:simpleType>
+      
+      <xs:simpleType name="Tanno">
+        <xs:restriction base="xs:integer">
+          <xs:minInclusive value="1900"/>
+          <xs:maxInclusive value="2005"/>
+        </xs:restriction>
+      </xs:simpleType>
+     
+     
+     
+     
+</xs:schema>
