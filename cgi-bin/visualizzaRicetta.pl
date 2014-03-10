@@ -25,9 +25,9 @@ print ' <div id="header">
         </div>
         </div>
         <div id="sottoHeader">
-        <input class="search" type="submit" value="Cerca!"/>
-        <input class="search" type="text" name="Cerca:" value="" placeholder="Ricerca"/>
-        <div id="path"> Ti trovi in: <a id="linkPercorso" href="index.html" xml:lang="en">Home</a> > Primi</div>
+          <input class="search" type="submit" value="Cerca!"/>
+          <input class="search" type="text" name="Cerca:" value="" placeholder="Ricerca"/>
+          <div id="path"> Ti trovi in: <a id="linkPercorso" href="index.html" xml:lang="en">Home</a> > Primi</div>
         </div>
         <div id="menu">
           <ul>
@@ -40,27 +40,28 @@ print ' <div id="header">
             <li class="listMenu"><a class="listMenu2" href="Dessert.html">Dessert</a></li>
             <li class="listMenu"><a class="listMenu2" href="formRicette.html">Inserisci Ricetta</a></li>
           </ul>
-        <div id="clearBoth"></div>
+          <div id="clearBoth"></div>
         </div>
         <div id="maincol">
         <ul>';
           for my $node ($doc->findnodes('//ricetta')){
 
           }
- print	'</ul></div>
-          <div id="footer">
-          <div id="footerImg1">
-          <a href="http://validator.w3.org/">
-          <img src="../images/valid-xhtml10.png" alt="CSS Valid!"/></a>
-          </div>
-          <div id="footerText">
-          Gruppo beo
-          </div>
-          <div id="footerImg2">
-          <a href="http://jigsaw.w3.org/css-validator/">
-          <img src="../images/vcss-blue.gif" alt="XHTML 1.0 Valid!"/></a>
-          </div>
-          </div>
+   print	' </ul>
+            </div>
+            <div id="footer">
+              <div id="footerImg1">
+                <a href="http://validator.w3.org/">
+                <img src="../images/valid-xhtml10.png" alt="CSS Valid!"/></a>
+              </div>
+              <div id="footerText">
+                Gruppo beo
+              </div>
+               <div id="footerImg2">
+                  <a href="http://jigsaw.w3.org/css-validator/">
+                   <img src="../images/vcss-blue.gif" alt="XHTML 1.0 Valid!"/></a>
+               </div>
+            </div>
           ';
 
 print $pagina->end_html;
