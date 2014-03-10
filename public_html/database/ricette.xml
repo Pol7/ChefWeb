@@ -1,38 +1,22 @@
-<?xml version="1.1" encoding="UTF-8" ?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <ricette>
-	<ricetta tipo="Primi">
+	<ricetta>
 		<nome>ric1</nome>
 		<autore>autore1</autore>
-		<procedimento>fare la cacca</procedimento>
-		<img>indirizzo1</img>
-		<ingrediente>i1</ingrediente>
-		<ingrediente>i1</ingrediente>
-		<ingrediente>i1</ingrediente>
-		<ingrediente>i1</ingrediente>
-		<ingrediente>i1</ingrediente>								
+		<ingrediente><nome>i1</nome><quantita>1</quantita><unitadimisura>g</unitadimisura></ingrediente>
+		<ingrediente><nome>i2</nome><quantita>2</quantita><unitadimisura>g</unitadimisura></ingrediente>
+		<ingrediente><nome>i3</nome><quantita>3</quantita><unitadimisura>g</unitadimisura></ingrediente>
+		<ingrediente><nome>i4</nome><quantita>4</quantita><unitadimisura>g</unitadimisura></ingrediente>
+		<procedimento>fare la cacca</procedimento>	
 	</ricetta>
-	<ricetta tipo="Secondi">
-		<nome>ric2</nome>
-		<autore>autore2</autore>
-		<procedimento>fare la cacca</procedimento>
-		<img>indirizzo2</img>
-		<ingrediente>i2</ingrediente>
-		<ingrediente>i2</ingrediente>
-	</ricetta>
-	<ricetta tipo="Primi">
+
+	<ricetta>
 		<nome>primo</nome>
 		<autore>pol</autore>
+		<ingrediente><nome>i1</nome><quantita>1</quantita><unitadimisura>g</unitadimisura></ingrediente>
+		<ingrediente><nome>i2</nome><quantita>2</quantita><unitadimisura>g</unitadimisura></ingrediente>
+		<ingrediente><nome>i3</nome><quantita>3</quantita><unitadimisura>g</unitadimisura></ingrediente>
+		<ingrediente><nome>i4</nome><quantita>4</quantita><unitadimisura>g</unitadimisura></ingrediente>
 		<procedimento>vai in bagno e lavati i denti</procedimento>
-		<img>indirizzoprimo</img>
-		<ingrediente>i3</ingrediente>
-		<ingrediente>i3</ingrediente>
-		<ingrediente>i3</ingrediente>
-		<ingrediente>i3</ingrediente>
-		<ingrediente>i3</ingrediente>
-		<ingrediente>i3</ingrediente>
-		<ingrediente>i3</ingrediente>
-		<ingrediente>i3</ingrediente>
-		<ingrediente>i3</ingrediente>
-		<ingrediente>i3</ingrediente>
 	</ricetta>
 </ricette>
