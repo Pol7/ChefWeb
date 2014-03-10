@@ -78,4 +78,31 @@
 		</ingrediente>
 		<procedimento>proceprocedprocedi</procedimento>
 	</ricetta>
+	
+	<ricetta tipo="Primi">
+		<nome>pasta</nome>
+		<autore>pol</autore>
+		<img src="56347" alt="Immagine descrittiva della ricetta"/>
+		<ingrediente>
+			<nome>i1</nome>
+			<quantita>1</quantita>
+			<unitadimisura>g</unitadimisura>
+		</ingrediente>
+		<ingrediente>
+			<nome>i2</nome>
+			<quantita>2</quantita>
+			<unitadimisura>g</unitadimisura>
+		</ingrediente>
+		<ingrediente>	
+			<nome>i3</nome>
+			<quantita>3</quantita>
+			<unitadimisura>g</unitadimisura>
+		</ingrediente>
+		<ingrediente>	
+			<nome>i4</nome>
+			<quantita>4</quantita>
+			<unitadimisura>g</unitadimisura> 
+		</ingrediente>
+		<procedimento>cuoci tutto</procedimento>
+	</ricetta>
 </ricette>
