@@ -3,20 +3,53 @@
 	<ricetta>
 		<nome>ric1</nome>
 		<autore>autore1</autore>
-		<ingrediente><nome>i1</nome><quantita>1</quantita><unitadimisura>g</unitadimisura></ingrediente>
-		<ingrediente><nome>i2</nome><quantita>2</quantita><unitadimisura>g</unitadimisura></ingrediente>
-		<ingrediente><nome>i3</nome><quantita>3</quantita><unitadimisura>g</unitadimisura></ingrediente>
-		<ingrediente><nome>i4</nome><quantita>4</quantita><unitadimisura>g</unitadimisura></ingrediente>
+		<img src="56346" alt="Immagine descrittiva della ricetta"/>
+		<ingrediente>	
+			<nome>i1</nome>
+			<quantita>1</quantita>
+			<unitadimisura>g</unitadimisura>
+		</ingrediente>
+		<ingrediente>	
+			<nome>i2</nome>
+			<quantita>2</quantita>
+			<unitadimisura>g</unitadimisura>
+		</ingrediente>
+		<ingrediente>
+			<nome>i3</nome>
+			<quantita>3</quantita>
+			<unitadimisura>g</unitadimisura>
+		</ingrediente>
+		<ingrediente>
+			<nome>i4</nome>
+			<quantita>4</quantita>
+			<unitadimisura>g</unitadimisura>	
+		</ingrediente>
 		<procedimento>fare la cacca</procedimento>	
 	</ricetta>
-
 	<ricetta>
 		<nome>primo</nome>
 		<autore>pol</autore>
-		<ingrediente><nome>i1</nome><quantita>1</quantita><unitadimisura>g</unitadimisura></ingrediente>
-		<ingrediente><nome>i2</nome><quantita>2</quantita><unitadimisura>g</unitadimisura></ingrediente>
-		<ingrediente><nome>i3</nome><quantita>3</quantita><unitadimisura>g</unitadimisura></ingrediente>
-		<ingrediente><nome>i4</nome><quantita>4</quantita><unitadimisura>g</unitadimisura></ingrediente>
+		<img src="56347" alt="Immagine descrittiva della ricetta"/>
+		<ingrediente>
+			<nome>i1</nome>
+			<quantita>1</quantita>
+			<unitadimisura>g</unitadimisura>
+		</ingrediente>
+		<ingrediente>
+			<nome>i2</nome>
+			<quantita>2</quantita>
+			<unitadimisura>g</unitadimisura>
+		</ingrediente>
+		<ingrediente>	
+			<nome>i3</nome>
+			<quantita>3</quantita>
+			<unitadimisura>g</unitadimisura>
+		</ingrediente>
+		<ingrediente>	
+			<nome>i4</nome>
+			<quantita>4</quantita>
+			<unitadimisura>g</unitadimisura> 
+		</ingrediente>
 		<procedimento>vai in bagno e lavati i denti</procedimento>
 	</ricetta>
 </ricette>
