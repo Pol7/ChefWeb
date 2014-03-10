@@ -48,8 +48,10 @@ print '		<div id="header">
 		#estrazione elemento radice
 		my $radice= $doc->getDocumentElement || die("recupero radice fallita");
 		for my $node ($doc->findnodes('//ricetta')){
-			print '<h1>'.$node->find('./nome').'</h1>';
-			print '<p>'.$node->find('./autore').'</p>';
+			if($node->find('@tipo'eq'Primi')){
+				print '<h1>'.$node->find('./nome').'</h1>';
+				print '<p>'.$node->find('./autore').'</p>';
+			}
 		}
 print	'</div>
 		<div id="footer">

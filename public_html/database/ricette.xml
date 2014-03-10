@@ -1,15 +1,13 @@
 <?xml version="1.1" encoding="UTF-8" ?>
 <ricette>
-	<ricetta>
+	<ricetta tipo="Primi">
 		<nome>ric1</nome>
 		<autore>autore1</autore>
-		<tipo>Primi</tipo>
 		<img>indirizzo1</img>
 	</ricetta>
-	<ricetta>
+	<ricetta tipo="Secondi">
 		<nome>ric2</nome>
 		<autore>autore2</autore>
-		<tipo>Secondi</tipo>
 		<img>indirizzo2</img>
 	</ricetta>
 </ricette>
