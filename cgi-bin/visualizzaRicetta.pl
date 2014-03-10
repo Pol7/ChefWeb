@@ -45,7 +45,7 @@ print ' <div id="header">
         </div>
         <div id="maincol">;
         	$node ($doc->findnodes('//ricetta/nome eq "ric1")){
-                  print ciao
+                  print "ciao"
         
 print ' </div>
         <div id="footer">
