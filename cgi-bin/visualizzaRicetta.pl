@@ -10,7 +10,6 @@ my $parser = XML::LibXML->new();
 #apertura file e lettura input
 my $doc = $parser->parse_file($file) || die("Operazioni di parsing fallita");
 
-#my $tipo = param('tipo') || undef;
 
 $pagina = new CGI;
   print $pagina->header('text/html');
@@ -44,8 +43,11 @@ print ' <div id="header">
           </ul>
           <div id="clearBoth"></div>
         </div>
-        <div id="maincol">
-        </div>
+        <div id="maincol">;
+        	$node ($doc->findnodes('//ricetta/nome eq "ric1")){
+                  print ciao
+        
+print ' </div>
         <div id="footer">
           <div id="footerImg1">
             <a href="http://validator.w3.org/">
