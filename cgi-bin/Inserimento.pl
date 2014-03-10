@@ -3,6 +3,9 @@
 use CGI;
 use CGI::Carp qw(fatalsToBrowser);
 use XML::LibXML;
+use strict;
+use warnings;
+
 $pagina = new CGI;
 
 my $file = '../public_html/database/ricette.xml';
