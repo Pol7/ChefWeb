@@ -22,7 +22,6 @@
      <xs:element name="Sesso" type="Tsesso" use="required"/>
      <xs:element name="DataNascita" type="Tdata" />
      </xs:sequence>
-  <xs:attribute name="tipo" type="xs:string" use="required" />
     </xs:complexType>
    
      
