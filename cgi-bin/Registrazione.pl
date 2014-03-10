@@ -22,6 +22,15 @@ my $giorno = $cgi->param("giorno");
 my $mese = $cgi->param("Mese");
 my $anno = $cgi->param("anno");
 
-print $file -> 'ciao' ;
+ 
+open (WDATA, ">>$file") or
+&error("Errore: non riesco a scrivere il file.");
+if ($flock eq "y") {
+flock WDATA, LOCK_EX;
+}
+print WDATA “Questi sono i miei dati: $dato\n";
+print WDATA "<tag> $dato</tag>\n";
+close(WDATA);
+flock WDATA, LOCK_UN;
 
  
