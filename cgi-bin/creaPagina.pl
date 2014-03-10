@@ -23,11 +23,11 @@ print $pagina->start_html(
 		);
 print '		<div id="header">
 			<div id="register">
-			<a href="Registrazione.html">Accedi!</a>
+				<a href="Registrazione.html">Accedi!</a>
 			</div>
 		</div>
 				
-			<div id="sottoHeader">
+		<div id="sottoHeader">
 			<input class="search" type="submit" value="Cerca!"/>
 			<input class="search" type="text" name="Cerca:" value="" placeholder="Ricerca"/>
 			<div id="path"> Ti trovi in: <a id="linkPercorso" href="index.html" xml:lang="en">Home</a> > Primi</div>
