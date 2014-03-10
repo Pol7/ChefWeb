@@ -19,8 +19,6 @@ print $pagina->start_html(
 				-lang=>'it',
 				
 		);
-		asd
-
 print '		<div id="header">
 			<div id="register">
 			<a href="Registrazione.html">Accedi!</a>
@@ -49,9 +47,9 @@ print '		<div id="header">
 		<div id="maincol">';
 		#estrazione elemento radice
 		my $radice= $doc->getDocumentElement || die("recupero radice fallita");
-		my @ricett = $radice->getElementsByTagName('ricetta');
-		print '<p>'/ricette/ricetta->getNode().'</p>';
-		
+		for my $node ($doc->findnodes('//ricetta')){
+			print '<p>'.$node->find('./nome').'</p>';
+		}
 print	'</div>
 		<div id="footer">
 			<div id="footerImg1">
