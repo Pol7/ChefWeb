@@ -55,7 +55,7 @@ print '		<div id="header">
 				my $nome=$node->find('./nome');
 				print "<p>$nome</p>";
 				print '<div class="lista">
-						<a href="cgi-bin/visualizzaRicetta.pl?nome=culo" class="nomeRicetta">'.$node->find('./nome').'</a>
+						<a href="cgi-bin/visualizzaRicetta.pl?nome=\"$nome\" class="nomeRicetta">'.$nome.'</a>
 						<p class="autore">'.$node->find('./autore').'</p>
 					</div>';
 		}
