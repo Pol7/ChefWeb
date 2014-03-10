@@ -31,6 +31,9 @@
       <xs:restriction base="xs:string">
         <xs:enumeration value="Maschio" />
         <xs:enumeration value="Femmina" />
+        <xs:enumeration value="Asessuato" />
+        <xs:enumeration value="Trans" />
+        <xs:enumeration value="Calù" />
       </xs:restriction>
      </xs:simpleType>
      
