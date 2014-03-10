@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
-    xmlns="http://www.ricette.com"
-    targetNamespace="http://www.ricette.com"
+    xmlns=""
+    targetNamespace=""
     elementFormDefault="qualified">
     
     <xs:element name="ricette" type="Tricette">
@@ -11,16 +11,17 @@
      <xs:sequence>
      <xs:element name="ricetta" minOccurs="0" maxOccurs="unbounded" type="Tricetta" />
      </xs:sequence>
-     </xs:complexType>
+      </xs:complexType>
 
     <xs:complexType name="Tricetta">
      <xs:sequence>
-     <xs:element name="nomeRicetta" type="xs:string" />
-     <xs:element name="nomeAutore" type="xs:string" />
+     <xs:element name="nome" type="xs:string" />
+     <xs:element name="autore" type="xs:string" />
      <xs:element name="img" type="Timmagine" />
      <xs:element name="ingrediente" type="Tingrediente" minOccurs="1" maxOccurs="unbounded"/>
      <xs:element name="procedimento" type="xs:string" />
      </xs:sequence>
+  <xs:attribute name="tipo"  type="xs:string" use="required" />
     </xs:complexType>
    
      

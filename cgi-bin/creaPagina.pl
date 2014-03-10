@@ -10,9 +10,8 @@ my $parser = XML::LibXML->new();
 #apertura file e lettura input
 my $doc = $parser->parse_file($file) || die("Operazioni di parsing fallita");
 
-my $tipo = param('tipo') || undef;
-
 $pagina = new CGI; 
+my $pagina = param('tipo') || undef;
 print $pagina->header('text/html');
 print $pagina->start_html(
 				-title=>'Titolo Primi',
@@ -23,11 +22,11 @@ print $pagina->start_html(
 		);
 print '		<div id="header">
 			<div id="register">
-			<a href="Registrazione.html">Accedi!</a>
+				<a href="Registrazione.html">Accedi!</a>
 			</div>
 		</div>
 				
-			<div id="sottoHeader">
+		<div id="sottoHeader">
 			<input class="search" type="submit" value="Cerca!"/>
 			<input class="search" type="text" name="Cerca:" value="" placeholder="Ricerca"/>
 			<div id="path"> Ti trovi in: <a id="linkPercorso" href="index.html" xml:lang="en">Home</a> > Primi</div>
@@ -47,12 +46,12 @@ print '		<div id="header">
 		</div>
 		
 		<div id="maincol">';
-		for my $node ($doc->findnodes('//ricetta[@tipo="'.$tipo.'"]')){
-				print '<div class="lista">
-						<p class="nomeRicetta">'.$node->find('./nome').'</p>
-						<p class="autore">'.$node->find('./autore').'</p>
-						</div>';
-		}
+		#for my $node ($doc->findnodes('//ricetta[@tipo="'.$tipo.'"]')){
+		#		print '<div class="lista">
+		#				<p class="nomeRicetta">'.$node->find('./nome').'</p>
+		#				<p class="autore">'.$node->find('./autore').'</p>
+		#				</div>';
+		#}
 print	'</div>
 		<div id="footer">
 			<div id="footerImg1">
