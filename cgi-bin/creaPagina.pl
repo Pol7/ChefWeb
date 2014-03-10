@@ -19,10 +19,6 @@ print $pagina->start_html(
 				-lang=>'it',
 				
 		);
-<<<<<<< HEAD
-=======
-
->>>>>>> FETCH_HEAD
 print '		<div id="header">
 			<div id="register">
 			<a href="Registrazione.html">Accedi!</a>
