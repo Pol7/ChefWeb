@@ -6,7 +6,7 @@ use XML::LibXML;
 use strict;
 use warnings;
 
-$pagina = new CGI;
+my $pagina = new CGI;
 
 my $file = '../public_html/database/ricette.xml';
 #creazione oggetto parser
@@ -17,9 +17,9 @@ my $doc = $parser->parse_file($file) || die("Operazioni di parsing fallita");
 my $root = $doc->getDocumentElement || die("Non accedo alla radice");
 
 #recupero input della form
-$in = $ENV{'QUERY_STRING'};
+my $in = $ENV{'QUERY_STRING'};
 
-$nome= $pagina->param('nomeRicetta');
+my $nome= $pagina->param('nomeRicetta');
 print $nome;
 
 
@@ -28,7 +28,7 @@ print $nome;
 
 
 #creo una stringa con un nuovo elemento
-$nuovo_el = "\n<ricetta> $input{'contenuto'}</ricetta>\n";
+#$nuovo_el = "\n<ricetta> $input{'contenuto'}</ricetta>\n";
 
 
 
