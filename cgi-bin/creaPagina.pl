@@ -10,7 +10,7 @@ my $parser = XML::LibXML->new();
 #apertura file e lettura input
 my $doc = $parser->parse_file($file) || die("Operazioni di parsing fallita");
 
-#my $tipo = param('tipo') || undef;
+my $tipo = param('tipo') || undef;
 
 $pagina = new CGI; 
 print $pagina->header('text/html');
