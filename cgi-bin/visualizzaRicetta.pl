@@ -43,25 +43,21 @@ print ' <div id="header">
           <div id="clearBoth"></div>
         </div>
         <div id="maincol">
-        <ul>';
-          for my $node ($doc->findnodes('//ricetta')){
-
-          }
-   print	' </ul>
-            </div>
-            <div id="footer">
-              <div id="footerImg1">
+        </div>
+        <div id="footer">
+            <div id="footerImg1">
                 <a href="http://validator.w3.org/">
                 <img src="../images/valid-xhtml10.png" alt="CSS Valid!"/></a>
-              </div>
-              <div id="footerText">
-                Gruppo beo
-              </div>
-               <div id="footerImg2">
-                  <a href="http://jigsaw.w3.org/css-validator/">
-                   <img src="../images/vcss-blue.gif" alt="XHTML 1.0 Valid!"/></a>
-               </div>
             </div>
-          ';
+            <div id="footerText">
+                Gruppo beo
+            </div>
+            <div id="footerImg2">
+                <a href="http://jigsaw.w3.org/css-validator/">
+                  <img src="../images/vcss-blue.gif" alt="XHTML 1.0 Valid!"/>
+                </a>
+            </div>
+        </div>
+        ';
 
 print $pagina->end_html;
