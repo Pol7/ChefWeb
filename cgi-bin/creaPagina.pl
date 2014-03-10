@@ -13,7 +13,7 @@ my $doc = $parser->parse_file($file) || die("Operazioni di parsing fallita");
 $pagina = new CGI;
 
 #per prendere parametri 
-#my $tipo = $pagine->param('tipo') || undef;
+my $tipo = $paginas->param('tipo') || undef;
 
 print $pagina->header('text/html');
 print $pagina->start_html(
