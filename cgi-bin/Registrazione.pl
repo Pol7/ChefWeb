@@ -23,14 +23,17 @@ my $mese = $cgi->param("Mese");
 my $anno = $cgi->param("anno");
 
  
-open (WDATA,$file) or
+sub elabora{
+open (WDATA, ">>$file") or
 &error("Errore: non riesco a scrivere il file.");
 if ($flock eq "y") {
 flock WDATA, LOCK_EX;
 }
-print WDATA “Questi sono i miei dati: \$username \n";
-print WDATA "<tag> $username </tag>\n";
-close(WDATA); 
-flock WDATA, LOCK_UN;
+print WDATA “Questi sono i miei dati: $username\n";
+print WDATA "<tag> $username</tag>\n";
+close(WDATA);
+flock WDATA, LOCK_UN
+}
+
 
  
