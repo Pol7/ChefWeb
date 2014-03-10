@@ -11,15 +11,19 @@ my $parser = XML::LibXML->new();
 my $doc = $parser->parse_file($file) || die("Operazioni di parsing fallita");
 
 
-$pagina = new CGI;
-  print $pagina->header('text/html');
-  print $pagina->start_html(
-    -title=>'Titolo Primi',
-    -style=>{'src'=>'../css/page_style.css',
-    'media'=>'screen'},
-    -lang=>'it',
-  
-  );
+my $pagina = new CGI;
+
+#per prendere parametri
+my $tipo = $pagina->param('nome') || undef;
+
+print $pagina->header('text/html');
+print $pagina->start_html(
+-title=>"$tipo",
+-style=>{'src'=>'../css/page_style.css',
+'media'=>'screen'},
+-lang=>'it',
+
+);
 print ' <div id="header">
           <div id="register">
             <a href="Registrazione.html">Accedi!</a>
@@ -45,7 +49,8 @@ print ' <div id="header">
         </div>
         <div id="maincol">;
 
-                  print "ciao"
+
+
         
 print ' </div>
         <div id="footer">
