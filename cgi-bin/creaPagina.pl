@@ -88,8 +88,10 @@ for my $node ($doc->findnodes("//ricetta[\@tipo=\"$tipo\"]")){
 						<div>
 							<a href="visualizzaRicetta.pl?nome='.$node->find('./nome').'"><img src="../images/ricette/pasta.jpg" class="immagineRicetta"  alt="immagine rappresentativa della ricetta"/>
 						</div>
-						<a class="titolo" href="visualizzaRicetta.pl?nome='.$node->find('./nome').'" class="nomeRicetta">'.$node->find('./nome').'</a>
-						<p class="autore">'.$node->find('./autore').'</p>
+						<div>
+							<a class="titolo" href="visualizzaRicetta.pl?nome='.$node->find('./nome').'" class="nomeRicetta">'.$node->find('./nome').'</a>
+							<p class="autore">'.$node->find('./autore').'</p>
+						</div>
 					</div>';
 		}
 }
