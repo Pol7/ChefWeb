@@ -53,7 +53,7 @@ print ' <div id="header">
         for my $node ($doc->findnodes("//ricetta[nome=\"$nome\"]/text()")){
 				print '
 					<p>'.$node->find('./autore').'</p>
-					;
+					';
 		}
 
 
