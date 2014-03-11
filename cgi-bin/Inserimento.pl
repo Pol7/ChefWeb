@@ -17,7 +17,7 @@ my $proc = $pagina->param('message');
 my $session=undef;
 unless ($nome)
 {
-$session->param('nomeRicetta_error',"Nome Obbligatorio");
+$session->param("nomeRicetta_error","Nome Obbligatorio");
 }
 
 my $file = '../public_html/database/ricette.xml';
