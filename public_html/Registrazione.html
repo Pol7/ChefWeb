@@ -6,6 +6,7 @@
 		<link href="./css/page_style.css" rel="stylesheet" type="text/css" media="screen"/>
 		<link href="./css/page_styleMedium.css" rel="stylesheet" type="text/css" media="handheld, screen and (max-width:1320px), only screen and (max-device-width:1320px)" />
 		<link href="./css/page_styleSmall.css" rel="stylesheet" type="text/css" media="handheld, screen and (max-width:690px), only screen and (max-device-width:690px)" />
+		<script type="text/javascript" src="./javascript/formR.js"></script>
 	</head>
 	<body>
 		<div id="header">
@@ -35,8 +36,10 @@
       			<div id="login">
       				<form name="login" action="/cgi-bin/Login.pl" method="post" enctype="multipart/form-data">
   				<h1>Login</h1>
-  				<p class="prova">Username: <input name="username" id="username" value=""  placeholder="Username"/></p>
-  				<p class="prova">Password:   <input type="password" name="password" id="password" value="" placeholder="Password"/> </p>
+  				<p class="prova">Username: <input name="usernameL" id="username" value=""  placeholder="Username"/></p>
+  				<span id="UsernameErrLogin" class="error"></span>
+  				<p class="prova">Password:   <input type="passwordL" name="password" id="password" value="" placeholder="Password"/> </p>
+  				<span id="PasswordErrLogin" class="error"></span>
   				<button id="prova">Accedi</button>
   				</form>
   			</div>
@@ -45,9 +48,13 @@
   				<form name="registra" action="/cgi-bin/Registrazione.pl" method="get" enctype="multipart/form-data">
   				<h1>Registrazione</h1>
   				<p>Username :<input name="username" id="username" value=""  placeholder="Username"/></p>
+  				<span id="UsernameErr" class="error"></span>
   				<p>Password :<input type="password" name="password" id="password" value="" placeholder="Password"/> </p>
+  				<span id="PasswordErr" class="error"></span>
   				<p>Nome     : <input type="text" name="nome" value="" placeholder="Nome"/></p>
+  				<span id="NomeErr" class="error"></span>
   				<p>Cognome  : <input type="text" name="cognome" value="" placeholder="Cognome"/></p>
+  				<span id="CognomeErr" class="error"></span>
   				<p>Sesso    : 
   					<select name="sesso">
   						<option value="maschio"/>Maschio
@@ -106,6 +113,7 @@
   					</select>
   				 Anno: <input type="text" id="anno" name="anno" value="" placeholder="Anno"/>
   				</p>
+  				<span id="AnnoErr" class="error"></span>
   				<button>Invia</button>
   				</form>
   			</div>
