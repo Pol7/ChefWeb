@@ -40,7 +40,7 @@ print '		<div id="header">
 			<ul>
 				<li class="listMenu"><a class="listMenu2" href="../index.html">Home</a></li>
 				<li class="listMenu">Primi</li>
-				<li class="listMenu"><a class="listMenu2" href="visualizzaRicetta.pl?tipo=Secondi'">Secondi</a></li>
+				<li class="listMenu"><a class="listMenu2" href="visualizzaRicetta.pl?tipo=Secondi">Secondi</a></li>
 				<li class="listMenu"><a class="listMenu2" href="visualizzaRicetta.pl?tipo=Contorni">Contorni</a></li>
 				<li class="listMenu"><a class="listMenu2" href="visualizzaRicetta.pl?tipo=Antipasti">Antipasti</a></li>
 				<li class="listMenu"><a class="listMenu2" href="visualizzaRicetta.pl?tipo=Cocktail">Cocktail</a></li>
