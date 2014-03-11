@@ -18,11 +18,7 @@ my $pagina = new CGI;
 my $tipo = $pagina->param('tipo') || undef;
 my $cerca = $pagina->param('cerca') || undef;
 my $titolo='culo';
-if($tipo=undef){
-	my $titolo=$cerca;
-}else{
-	my $titolo=$tipo;
-}
+
 
 print $pagina->header('text/html');
 print $pagina->start_html(
