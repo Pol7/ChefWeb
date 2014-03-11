@@ -16,6 +16,7 @@ my $pagina = new CGI;
 
 #per prendere parametri 
 my $tipo = $pagina->param('tipo') || undef;
+my $cerca = $pagina->param('cerca') || undef;
 
 #<link href="./css/home_style.css" rel="stylesheet" type="text/css" media="screen"/>
 #	<link href="./css/home_styleMedium.css" rel="stylesheet" type="text/css" media="handheld, screen and (max-width:1320px), only screen and (max-device-width:1320px)" />
@@ -39,7 +40,7 @@ print '		<div id="header">
 		<div id="sottoHeader">
 			<form action="creaPagina.pl?" method="get" >
 				<input class="search" type="submit" value="Cerca!"/>
-				<input class="search" type="text" name="tipo" value="" placeholder="Ricerca"/>
+				<input class="search" type="text" name="cerca" value="" placeholder="Ricerca"/>
 			<div id="path"> Ti trovi in: <a id="linkPercorso" href="../index.html" xml:lang="en">Home</a> >'.$tipo.' </div>
 		</div>
 		<div id="menu">
@@ -57,7 +58,7 @@ print '		<div id="header">
 		</div>
 		
 		<div id="maincol">';
-		if($tipo eq "cerca"){
+		if($cerca){
 			print 'CERCATO';
 		}
 		else{
