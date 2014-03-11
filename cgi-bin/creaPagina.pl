@@ -85,8 +85,8 @@ print $pagina->end_html;
 sub pasti(){
 for my $node ($doc->findnodes("//ricetta[\@tipo=\"$tipo\"]")){
 				print '<div class="lista">
-						<div class="immagineRicetta">
-							<a href="visualizzaRicetta.pl?nome='.$node->find('./nome').'"><img src="../images/ricette/pasta.jpg" alt="immagine rappresentativa della ricetta"/>
+						<div>
+							<a href="visualizzaRicetta.pl?nome='.$node->find('./nome').'">< img class="immagineRicetta" src="../images/ricette/pasta.jpg" alt="immagine rappresentativa della ricetta"/>
 						</div>
 						<a class="titolo" href="visualizzaRicetta.pl?nome='.$node->find('./nome').'" class="nomeRicetta">'.$node->find('./nome').'</a>
 						<p class="autore">'.$node->find('./autore').'</p>
