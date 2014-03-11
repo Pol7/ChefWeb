@@ -60,18 +60,6 @@ print ' <div id="header">
 
         
 print ' </div>
-        <div id="footer">
-          <div id="footerImg1">
-            <a href="http://validator.w3.org/">
-            
-          </div>
-          <div id="footerText">
-            Gruppo beo
-          </div>
-          <div id="footerImg2">
-            <a href="http://jigsaw.w3.org/css-validator/">
-          
-          </div>
-        </div>';
+ ';
 
 print $pagina->end_html;
