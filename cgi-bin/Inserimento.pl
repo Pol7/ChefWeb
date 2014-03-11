@@ -3,8 +3,8 @@
 use CGI;
 use CGI::Carp qw(fatalsToBrowser);
 use XML::LibXML;
-#use strict;
-#use warnings;
+use strict;
+use warnings;
 
 my $pagina = new CGI;
 
@@ -45,7 +45,7 @@ my $pagina = new CGI;
 #print "Request method: <b>$metodo</b><br>";
 #print "</body></html>";
 
-print '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">/n<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="it" lang="it"><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Ricette</title><link href="./css/page_style.css" rel="stylesheet" type="text/css" media="screen"/><link href="./css/page_styleMedium.css" rel="stylesheet" type="text/css" media="handheld, screen and (max-width:1320px), only screen and (max-device-width:1320px)" /><link href="./css/page_styleSmall.css" rel="stylesheet" type="text/css" media="handheld, screen and (max-width:690px), only screen and (max-device-width:690px)" /><script type="text/javascript" src="./javascript/formR.js"></script></head>'
+print '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">/n<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="it" lang="it"><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Ricette</title><link href="./css/page_style.css" rel="stylesheet" type="text/css" media="screen"/><link href="./css/page_styleMedium.css" rel="stylesheet" type="text/css" media="handheld, screen and (max-width:1320px), only screen and (max-device-width:1320px)" /><link href="./css/page_styleSmall.css" rel="stylesheet" type="text/css" media="handheld, screen and (max-width:690px), only screen and (max-device-width:690px)" /><script type="text/javascript" src="./javascript/formR.js"></script></head>';
 print '	<body>
 <div id="header">
 <div id="register">
@@ -71,10 +71,10 @@ print '	<body>
 <div id="clearBoth"></div>
 </div>
 
-<div id="maincol">'
+<div id="maincol">';
 my $nome = $pagina->param('nomeRicetta');
-print "$nome"
-print '</div>	</body></html>'
+print "$nome";
+print '</div>	</body></html>';
 
 
 
