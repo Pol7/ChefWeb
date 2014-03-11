@@ -14,11 +14,11 @@ my $autore = $pagina->param('nomeAutore');
 my $img = $pagina->param('immagine');
 my $proc = $pagina->param('message');
 
-my $session=undef;
-unless ($nome)
-{
-$session->param("nomeRicetta_error","Nome Obbligatorio");
-}
+#my $session=undef;
+#unless ($nome)
+#{
+#$session->param("nomeRicetta_error","Nome Obbligatorio");
+#}
 
 my $file = '../public_html/database/ricette.xml';
 #creazione oggetto parser
