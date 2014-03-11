@@ -94,7 +94,7 @@ sub cerca(){
 				if($node eq ' '){
 					print '<p>VUOTO</p>';
 				}
-				print '|'.elencoRicette($node).|.;
+				print '|'.elencoRicette($node).'|';
 		}
 }
 sub elencoRicette(){
