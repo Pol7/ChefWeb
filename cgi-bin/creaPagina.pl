@@ -59,7 +59,7 @@ print '		<div id="header">
 		
 		<div id="maincol">';
 		if($cerca){
-			print 'CERCATO';
+			print $cerca;
 		}
 		else{
 			&pasti();
