@@ -156,3 +156,6 @@ font-weight: bold;
 .immagineRicetta{
 	width:150px;
 }
+.immagine-descr{
+display:inline-block;
+}
