@@ -34,7 +34,7 @@ print $pagina->start_html(
 						  { -media => 'handheld, screen and (max-width:1320px), only screen and (max-device-width:1320px)',
 							-src => '../css/home_styleMedium.css'},
 						  { -media => 'handheld, screen and (max-width:690px), only screen and (max-device-width:690px)',
-							-src => '../css/home_styleSmall.css'},
+							-src => '../css/home_styleSmall.css'}],
 							
 				-lang=>'it'				
 		);
