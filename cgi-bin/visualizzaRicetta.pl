@@ -48,16 +48,15 @@ print ' <div id="header">
           <div id="clearBoth"></div>
         </div>
         <div id="maincol">';
-        #"//book[isbn = ‘12345']/pages/text()";
-        #my $node = $xmlEvents->findnodes("/ns:events/ns:event[\@id=\"$id\"]")->get_node(0);
-
+        
+        for my $node ($doc->findnodes("//ricetta[nome=\"$nome\"]")) {
         print   ' <div id="ingredienti">
-        		<p>'.$doc->findnodes("//ricetta[nome=\"$nome\"]/autore")->get_node(0).'</p>
-        	  	<p>'.$doc->findnodes("//ricetta[nome=\"$nome\"]/nome")->get_node(0).'</p>
-        	  	<p>'.$doc->findnodes("//ricetta[nome=\"$nome\"]/procedimento")->get_node(0).'</p>
+        		<p>'.node->find(/nome")->get_node(0).'</p>
+        	  #	<p>'.$doc->findnodes("//ricetta[nome=\"$nome\"]/autore")->get_node(0).'</p>
+        	  #	<p>'.$doc->findnodes("//ricetta[nome=\"$nome\"]/procedimento")->get_node(0).'</p>
         	 </div>
         	 '; 
-        	
+	}
 		
 
 
