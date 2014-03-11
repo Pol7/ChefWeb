@@ -34,17 +34,17 @@ print '		<div id="header">
 		<div id="sottoHeader">
 			<input class="search" type="submit" value="Cerca!"/>
 			<input class="search" type="text" name="Cerca:" value="" placeholder="Ricerca"/>
-			<div id="path"> Ti trovi in: <a id="linkPercorso" href="index.html" xml:lang="en">Home</a> >'.$tipo.' </div>
+			<div id="path"> Ti trovi in: <a id="linkPercorso" href="../index.html" xml:lang="en">Home</a> >'.$tipo.' </div>
 		</div>
 		<div id="menu">
 			<ul>
 				<li class="listMenu"><a class="listMenu2" href="../index.html">Home</a></li>
 				<li class="listMenu">Primi</li>
-				<li class="listMenu"><a class="listMenu2" href="Secondi.html">Secondi</a></li>
-				<li class="listMenu"><a class="listMenu2" href="Contorni.html">Contorni</a></li>
-				<li class="listMenu"><a class="listMenu2" href="Antipasti.html">Antipasti</a></li>
-				<li class="listMenu"><a class="listMenu2" href="Cocktail.html">Cocktail</a></li>
-				<li class="listMenu"><a class="listMenu2" href="Dessert.html">Dessert</a></li>
+				<li class="listMenu"><a class="listMenu2" href="visualizzaRicetta.pl?tipo=Secondi'">Secondi</a></li>
+				<li class="listMenu"><a class="listMenu2" href="visualizzaRicetta.pl?tipo=Contorni">Contorni</a></li>
+				<li class="listMenu"><a class="listMenu2" href="visualizzaRicetta.pl?tipo=Antipasti">Antipasti</a></li>
+				<li class="listMenu"><a class="listMenu2" href="visualizzaRicetta.pl?tipo=Cocktail">Cocktail</a></li>
+				<li class="listMenu"><a class="listMenu2" href="visualizzaRicetta.pl?tipo=Dessert">Dessert</a></li>
 				<li class="listMenu"><a class="listMenu2" href="formRicette.html">Inserisci Ricetta</a></li>
 			</ul>
 			<div id="clearBoth"></div>
