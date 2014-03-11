@@ -161,16 +161,14 @@ font-weight: bold;
 }
 
 .immagine{
-width:150px;
-display:inline-block;
-}
-
-.descr{
-display:inline-block;
+	width:150px;
 }
 
 .immagineRicetta{
 	width:150px;
+}
+
+.descr{
 }
 
 #testo{
