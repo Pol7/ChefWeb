@@ -185,6 +185,7 @@ border-bottom-style: solid;
 
 .immagine{
 	width:150px;
+	display:inline;
 }
 
 .immagineRicetta{
@@ -192,4 +193,5 @@ border-bottom-style: solid;
 }
 
 .descr{
+display:inline;
 }
