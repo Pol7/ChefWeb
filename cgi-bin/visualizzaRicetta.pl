@@ -50,9 +50,9 @@ print ' <div id="header">
         <div id="maincol">';
         #"//book[isbn = ‘12345']/pages/text()";
         #"./ns:title[\@lang=\"$lang\"]/text()"
-        for my $node ($doc->findnodes("//ricetta[nome=\"$nome\"]/text()")){
-				print '
-					<p>'.$node->find('./autore').'</p>
+        for my $node ($doc->findnodes("//ricetta[nome=\"$nome\"]/text()"))->get_node(0){
+				print "$node"
+				
 					';
 		}
 
