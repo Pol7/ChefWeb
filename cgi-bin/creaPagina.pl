@@ -34,7 +34,7 @@ print '		<div id="header">
 		<div id="sottoHeader">
 			<input class="search" type="submit" value="Cerca!"/>
 			<input class="search" type="text" name="Cerca:" value="" placeholder="Ricerca"/>
-			<div id="path"> Ti trovi in: <a id="linkPercorso" href="index.html" xml:lang="en">Home</a> >"$tipo" </div>
+			<div id="path"> Ti trovi in: <a id="linkPercorso" href="index.html" xml:lang="en">Home</a> >$tipo </div>
 		</div>
 		<div id="menu">
 			<ul>
