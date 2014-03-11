@@ -37,7 +37,7 @@ print '		<div id="header">
 		</div>
 				
 		<div id="sottoHeader">
-			<form action="cgi-bin/creaPagina?tipo=Cerca.pl" method="get" >
+			<form action="creaPagina?tipo=Cerca.pl" method="get" >
 				<input class="search" type="submit" value="Cerca!"/>
 				<input class="search" type="text" name="Cerca:" value="" placeholder="Ricerca"/>
 			<div id="path"> Ti trovi in: <a id="linkPercorso" href="../index.html" xml:lang="en">Home</a> >'.$tipo.' </div>
