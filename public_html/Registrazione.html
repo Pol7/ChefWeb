@@ -32,7 +32,17 @@
 		</div>
 		</br>
 		<div id="maincol">
-    <form name="registra" action="/cgi-bin/Registrazione.pl" method="get" enctype="multipart/form-data">
+      		<form name="login" action="/cgi-bin/Login.pl" method="post" enctype="multipart/form-data">
+  			<div id="login">
+  				<h1>Login</h1>
+  				<p class="prova">Username: <input name="username" id="username" value=""  placeholder="Username"/></p>
+  				<p class="prova">Password:   <input type="password" name="password" id="password" value="" placeholder="Password"/> </p>
+  				<button id="prova">Accedi</button>
+  			</div>
+  			<div id="clearBoth"></div>
+		</form>
+      
+      		<form name="registra" action="/cgi-bin/Registrazione.pl" method="get" enctype="multipart/form-data">
   			<div id="registra">
   				<h1>Registrazione</h1>
   				<p>Username :<input name="username" id="username" value=""  placeholder="Username"/></p>
@@ -99,16 +109,8 @@
   				</p>
   				<button>Invia</button>
   			</div>
-      </form>
-      <form name="login" action="/cgi-bin/Login.pl" method="post" enctype="multipart/form-data">
-  			<div id="login">
-  				<h1>Login</h1>
-  				<p class="prova">Username: <input name="username" id="username" value=""  placeholder="Username"/></p>
-  				<p class="prova">Password:   <input type="password" name="password" id="password" value="" placeholder="Password"/> </p>
-  				<button id="prova">Accedi</button>
-  			</div>
-  			<div id="clearBoth"></div>
-      </form>
+		 </form>
+      		
 		</div>
 		
 		<div id="footer">
