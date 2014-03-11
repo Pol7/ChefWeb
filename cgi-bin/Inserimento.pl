@@ -77,7 +77,7 @@ my $nome = $pagina->param('nomeRicetta');
 print '     <div id="testo"> 
             <h1>Ricetta inserita correttamente<h1>
             <p> Torna alla <a href="../index.html" xml:lang="en"> Home</a></p>
-            <p> Inserisci una <a href="../formRicetta.html">nuova ricetta</a></p> 
+            <p> Inserisci una <a href="../formRicette.html">Nuova Ricetta</a></p> 
             </div>
             </div>
             <div id="footer">
