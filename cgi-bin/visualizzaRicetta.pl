@@ -49,7 +49,7 @@ print ' <div id="header">
         </div>
         <div id="maincol">';
         #"//book[isbn = ‘12345']/pages/text()";
-        for my $node ($doc->findnodes("//ricetta[nome")){
+        for my $node ($doc->findnodes("//ricetta[nome]")){
 				print '<div class="lista">
 						<p>'.$node->find('./nome').'</p>
 						<p class="autore">'.$node->find('./autore').'</p>
