@@ -91,10 +91,10 @@ sub pasti(){
 
 sub cerca(){
 		for my $node ($doc->findnodes("//ricetta[nome=\"$cerca\"]")){
-				if($node eq ''){
+				if($node eq ' '){
 					print '<p>VUOTO</p>';
 				}
-				elencoRicette($node);
+				print '|'.elencoRicette($node).|.;
 		}
 }
 sub elencoRicette(){
