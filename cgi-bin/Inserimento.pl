@@ -1,10 +1,10 @@
 #!/usr/bin/perl
 # Script che inserisce i dati nell'XML
-#use CGI;
-#use CGI::Carp qw(fatalsToBrowser);
-#use XML::LibXML;
-#use strict;
-#use warnings;
+use CGI;
+use CGI::Carp qw(fatalsToBrowser);
+use XML::LibXML;
+use strict;
+use warnings;
 
 #my $pagina = new CGI;
 
@@ -35,7 +35,6 @@
 #creo una stringa con un nuovo elemento
 #$nuovo_el = "\n<ricetta> $input{'contenuto'}</ricetta>\n";
 
-#!/usr/bin/perl
 #codice per visualizzare alcuni
 print "Content-type: text/html\n\n";
 print "<html> <head><title> Pagina riassuntiva</title></head>";
@@ -46,7 +45,8 @@ print "Query string : <b>$in</b><br>";
 print "Request method: <b>$metodo</b><br>";
 print "</body></html>";
 
-
+my $nome = $pagina->param('nomeRicetta');
+print "$nome"
 
 
 
