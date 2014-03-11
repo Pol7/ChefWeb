@@ -20,11 +20,13 @@ my $cerca = $pagina->param('cerca') || undef;
 
 if($tipo=undef){
 	my $titolo=$cerca;
+}else{
+	my $titolo=$tipo;
 }
 
 print $pagina->header('text/html');
 print $pagina->start_html(
-				-title=>"$tipo",				
+				-title=>"$titolo",				
 				-style=>[{ -media => 'screen',
 							-src => '../css/page_style.css'},
 						  { -media => 'handheld, screen and (max-width:1320px), only screen and (max-device-width:1320px)',
