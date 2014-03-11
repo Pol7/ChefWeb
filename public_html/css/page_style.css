@@ -162,12 +162,11 @@ font-weight: bold;
 
 .immagine{
 width:150px;
-display:block;
+display:inline-block;
 }
 
 .descr{
-display:block;
-margin-bottom:13%;
+display:inline-block;
 }
 
 .immagineRicetta{
