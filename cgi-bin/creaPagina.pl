@@ -18,24 +18,15 @@ my $pagina = new CGI;
 my $tipo = $pagina->param('tipo') || undef;
 my $cerca = $pagina->param('cerca') || undef;
 
-#<link href="./css/home_style.css" rel="stylesheet" type="text/css" media="screen"/>
-#	<link href="./css/home_styleMedium.css" rel="stylesheet" type="text/css" media="handheld, screen and (max-width:1320px), only screen and (max-device-width:1320px)" />
-#	<link href="./css/home_styleSmall.css" rel="stylesheet" type="text/css" media="handheld, screen and (max-width:690px), only screen and (max-device-width:690px)" />
-	
-
 print $pagina->header('text/html');
 print $pagina->start_html(
-				-title=>"$tipo",
-				#-style=>{'src'=>['../css/page_style.css','../css/page_styleMedium.css','../css/page_styleSmall.css'],
-				#		'media'=>'screen'},
-				
+				-title=>"$tipo",				
 				-style=>[{ -media => 'screen',
 							-src => '../css/page_style.css'},
 						  { -media => 'handheld, screen and (max-width:1320px), only screen and (max-device-width:1320px)',
 							-src => '../css/home_styleMedium.css'},
 						  { -media => 'handheld, screen and (max-width:690px), only screen and (max-device-width:690px)',
-							-src => '../css/home_styleSmall.css'}],
-							
+							-src => '../css/home_styleSmall.css'}],	
 				-lang=>'it'				
 		);
 print '		<div id="header">
@@ -97,6 +88,7 @@ sub pasti(){
 }
 
 sub cerca(){
+		$pagina->start_html(-title=>"$cerca");
 		for my $node ($doc->findnodes("//ricetta[nome=\"$cerca\"]")){
 				elencoRicette($node);
 		}
