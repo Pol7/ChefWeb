@@ -26,8 +26,16 @@ my $cerca = $pagina->param('cerca') || undef;
 print $pagina->header('text/html');
 print $pagina->start_html(
 				-title=>"$tipo",
-				-style=>{'src'=>['../css/page_style.css','../css/page_styleMedium.css','../css/page_styleSmall.css'],
-						'media'=>'screen'},
+				#-style=>{'src'=>['../css/page_style.css','../css/page_styleMedium.css','../css/page_styleSmall.css'],
+				#		'media'=>'screen'},
+				
+				-style=>[{ -media => 'screen',
+							-src => '../css/page_style.css'},
+						  { -media => 'handheld, screen and (max-width:1320px), only screen and (max-device-width:1320px)',
+							-src => '../css/home_styleMedium.css'},
+						  { -media => 'handheld, screen and (max-width:690px), only screen and (max-device-width:690px)',
+							-src => '../css/home_styleSmall.css'},
+							
 				-lang=>'it'				
 		);
 print '		<div id="header">
