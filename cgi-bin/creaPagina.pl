@@ -98,8 +98,8 @@ sub pasti(){
 }
 
 sub cerca(){
-		for my $node $doc->findnodes("//ricetta[nome=\"$cerca\"]"){
-				print 'Nome ricetta: '.$node->find('./nome');
-				print 'Nome autore: '.$node->find('./autore');
+		for my $node ($doc->findnodes("//ricetta[nome=\"$cerca\"]")){
+				print '<p>Nome ricetta: '.$node->find('./nome').'</p>';
+				print '<p>Nome autore: '.$node->find('./autore').'</p>';
 		}
 }
