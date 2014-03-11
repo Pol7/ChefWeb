@@ -31,9 +31,9 @@ print $pagina->start_html(
 				-style=>[{ -media => 'screen',
 							-src => '../css/page_style.css'},
 						  { -media => 'handheld, screen and (max-width:1320px), only screen and (max-device-width:1320px)',
-							-src => '../css/home_styleMedium.css'},
+							-src => '../css/page_styleMedium.css'},
 						  { -media => 'handheld, screen and (max-width:690px), only screen and (max-device-width:690px)',
-							-src => '../css/home_styleSmall.css'}],	
+							-src => '../css/page_styleSmall.css'}],	
 				-lang=>'it'				
 		);
 print '		<div id="header">
