@@ -51,10 +51,11 @@ print ' <div id="header">
         #"//book[isbn = ‘12345']/pages/text()";
         #my $node = $xmlEvents->findnodes("/ns:events/ns:event[\@id=\"$id\"]")->get_node(0);
 
-        print   ' <p>'.$doc->findnodes("//ricetta[nome=\"$nome\"]/autore")->get_node(0).'</p>
-        	  <p>'.$doc->findnodes("//ricetta[nome=\"$nome\"]/nome")->get_node(0).'</p>
-        	  <p>'.$doc->findnodes("//ricetta[nome=\"$nome\"]/procedimento")->get_node(0).'</p>
-        	 
+        print   ' <div id="ingredienti">
+        		<p>'.$doc->findnodes("//ricetta[nome=\"$nome\"]/autore")->get_node(0).'</p>
+        	  	<p>'.$doc->findnodes("//ricetta[nome=\"$nome\"]/nome")->get_node(0).'</p>
+        	  	<p>'.$doc->findnodes("//ricetta[nome=\"$nome\"]/procedimento")->get_node(0).'</p>
+        	 </div>
         	 '; 
         	
 		
@@ -63,6 +64,19 @@ print ' <div id="header">
 
         
 print ' </div>
- ';
+		<div id="footer">
+			<div id="footerImg1">
+				<a href="http://validator.w3.org/">
+				<img src="../images/valid-xhtml10.png" alt="CSS Valid!"/></a>
+			</div>
+			<div id="footerText">
+				Gruppo beo
+			</div>
+			<div id="footerImg2">
+				<a href="http://jigsaw.w3.org/css-validator/">
+				<img src="../images/vcss-blue.gif" alt="XHTML 1.0 Valid!"/></a>
+			</div>
+		</div> 
+	';
 
 print $pagina->end_html;
