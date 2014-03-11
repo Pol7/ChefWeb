@@ -15,12 +15,12 @@
 
     <xs:complexType name="Tutente">
      <xs:sequence>
-     <xs:element name="Username" type="xs:string" use="required"/>
-     <xs:element name="Password" type="xs:string" use="required"/>
-     <xs:element name="Nome" type="xs:string" use="required"/>
-     <xs:element name="Cognome" type="xs:string" use="required"/>
-     <xs:element name="Sesso" type="Tsesso" use="required"/>
-     <xs:element name="DataNascita" type="Tdata" />
+     <xs:element name="Username" type="xs:string" minOccurs="1" maxOccurs="1"/>
+     <xs:element name="Password" type="xs:string" minOccurs="1" maxOccurs="1"/>
+     <xs:element name="Nome" type="xs:string" minOccurs="1" maxOccurs="1"/>
+     <xs:element name="Cognome" type="xs:string" minOccurs="1" maxOccurs="1"/>
+     <xs:element name="Sesso" type="Tsesso" minOccurs="1" maxOccurs="1"/>
+     <xs:element name="DataNascita" type="Tdata" minOccurs="1" maxOccurs="1"/>
      </xs:sequence>
     </xs:complexType>
    
@@ -30,19 +30,16 @@
       <xs:restriction base="xs:string">
         <xs:enumeration value="Maschio" />
         <xs:enumeration value="Femmina" />
-        <xs:enumeration value="Asessuato" />
-        <xs:enumeration value="Trans" />
-        <xs:enumeration value="Calù" />
       </xs:restriction>
      </xs:simpleType>
      
      <xs:complexType name="Tdata">
       <xs:sequence>
-        <xs:element name="Giorno" type="Tgiorno" use="required"/>
-        <xs:element name="Mese" type="Tmese" use="required"/>
-        <xs:element name="Anno" type="Tanno" use="required"/>
+        <xs:element name="Giorno" type="Tgiorno" />
+        <xs:element name="Mese" type="Tmese" />
+        <xs:element name="Anno" type="Tanno" />
       </xs:sequence>
-     </xs:simpleType>
+     </xs:complexType>
 
     
       <xs:simpleType name="Tgiorno">
@@ -73,11 +70,7 @@
       <xs:simpleType name="Tanno">
         <xs:restriction base="xs:integer">
           <xs:minInclusive value="1900"/>
-          <xs:maxInclusive value="2005"/>
+          <xs:maxInclusive value="2100"/>
         </xs:restriction>
       </xs:simpleType>
-     
-     
-     
-     
 </xs:schema>
