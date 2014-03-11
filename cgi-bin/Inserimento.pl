@@ -8,26 +8,33 @@ use warnings;
 
 my $pagina = new CGI;
 
-my $file = '../public_html/database/ricette.xml';
-#creazione oggetto parser
-my $parser = XML::LibXML->new();
-#apertura file e lettura input
-my $doc = $parser->parse_file($file) || die("Operazioni di parsing fallita");
-#recupero l'elemento radice
-my $root = $doc->getDocumentElement || die("Non accedo alla radice");
-
-#recupero input della form
-my $in = $ENV{'QUERY_STRING'};
-
 my $nome = $pagina->param('nomeRicetta');
 my $tipo = $pagina->param('tipologia');
 my $autore = $pagina->param('nomeAutore');
 my $img = $pagina->param('immagine');
 my $proc = $pagina->param('message');
 
+unless ($nome)
+{
+$session->param("season_error","Nome Obbligatorio");
+}
+
+my $file = '../public_html/database/ricette.xml';
+#creazione oggetto parser
+my $parser = XML::LibXML->new();
+#apertura file e lettura input
+my $doc = $parser->parse_file($file) || die("Operazioni di parsing fallita");
+#recupero l'elemento radice
+my $radice = $doc->getDocumentElement || die("Non accedo alla radice");
+
+#recupero input della form
+my $in = $ENV{'QUERY_STRING'};
+
+
+
 my $new_nodo_string = "<ricetta tipo='$tipo'>\n<nome>$nome</nome>\n<autore>$autore</autore>\n<img></img>\n<procedimento>$proc</procedimento>\n</ricetta>";
 my $new_nodo = $parser->parse_balanced_chunk($new_nodo_string);
-#my $ricetta_to_insert->appendChild($new_nodo);
+my $ricetta_to_insert->appendChild($new_nodo);
 
 
 
@@ -53,7 +60,7 @@ print '	<body>
 </div>
 </div>
 <div id="sottoHeader">
-<div id="path"> Ti trovi in: <a id="linkPercorso" href="../index.html" xml:lang="en">Home</a> > Inserisci Ricetta</div>
+<div id="path"> Ti trovi in: <a id="linkPercorso" href="../index.html" xml:lang="en">Home</a> > Ricetta Inserita</div>
 <input class="search" type="submit" value="Cerca!">
 <input class="search" type="text" name="Cerca:" value="" placeholder="Ricerca">
 </div>
