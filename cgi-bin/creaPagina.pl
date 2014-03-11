@@ -41,6 +41,7 @@ print '		<div id="header">
 			<form action="creaPagina.pl?" method="get" >
 				<input class="search" type="submit" value="Cerca!"/>
 				<input class="search" type="text" name="cerca" value="" placeholder="Ricerca"/>
+			</form>
 			<div id="path"> Ti trovi in: <a id="linkPercorso" href="../index.html" xml:lang="en">Home</a> >'.$tipo.' </div>
 		</div>
 		<div id="menu">
@@ -83,7 +84,7 @@ print	'</div>
 print $pagina->end_html;
 
 sub pasti(){
-for my $node ($doc->findnodes("//ricetta[\@tipo=\"$tipo\"]")){
+		for my $node ($doc->findnodes("//ricetta[\@tipo=\"$tipo\"]")){
 				print '<div class="lista">
 							<div class="immagine">
 								<a href="visualizzaRicetta.pl?nome='.$node->find('./nome').'"><img src="../images/ricette/pasta.jpg" class="immagineRicetta"  alt="immagine rappresentativa della ricetta"/></a>
@@ -97,5 +98,7 @@ for my $node ($doc->findnodes("//ricetta[\@tipo=\"$tipo\"]")){
 }
 
 sub cerca(){
-				print 'Autore: '.$doc->findnodes("//ricetta[nome=\"$cerca\"]/autore")->get_node(0);
+		for my $node $doc->findnodes("//ricetta[nome=\"$cerca\"]/autore")->get_node(0){
+				print 'Nome ricetta: '.$node->find('./nome');
+		}
 }
