@@ -85,19 +85,19 @@ print $pagina->end_html;
 
 sub pasti(){
 		for my $node ($doc->findnodes("//ricetta[\@tipo=\"$tipo\"]")){
-				elencoRicette();
+				elencoRicette($node);
 		}
 }
 
 sub cerca(){
 		for my $node ($doc->findnodes("//ricetta[nome=\"$cerca\"]")){
-				elencoRicette();
+				elencoRicette($node);
 		}
 }
-sub elencoRicette{
+sub elencoRicette(){
 	print '<div class="lista">
 				<div class="immagine">
-					<a href="visualizzaRicetta.pl?nome='.$node->find('./nome').'"><img src="../images/ricette/pasta.jpg" class="immagineRicetta"  alt="immagine rappresentativa della ricetta"/></a>
+					<a href="visualizzaRicetta.pl?nome='.$_[0]->find('./nome').'"><img src="../images/ricette/pasta.jpg" class="immagineRicetta"  alt="immagine rappresentativa della ricetta"/></a>
 				</div>
 				<div class="descr">
 					<p>Nome: <a class="titolo" href="visualizzaRicetta.pl?nome='.$node->find('./nome').'" class="nomeRicetta">'.$node->find('./nome').'</a></p>
