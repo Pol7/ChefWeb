@@ -191,6 +191,7 @@ margin-bottom:13%;
 }
 
 #ingredienti{
- text-align:center;
- margin-top:10%;
+	text-align:center;
+	vertical-align:text-top;
+	margin-top:10%;
 }

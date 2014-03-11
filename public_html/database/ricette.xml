@@ -55,7 +55,7 @@
 	<ricetta tipo="Primi">
 		<nome>capra</nome>
 		<autore>pol</autore>
-		<img src="capra.jpeg" alt="Immagine descrittiva della ricetta"/>
+		<img src="capra.jpg" alt="Immagine descrittiva della ricetta"/>
 		<ingrediente>
 			<nome>i1</nome>
 			<quantita>1</quantita>
