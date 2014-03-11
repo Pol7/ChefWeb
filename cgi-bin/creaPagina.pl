@@ -26,7 +26,7 @@ print $pagina->header('text/html');
 print $pagina->start_html(
 				-title=>"$tipo",
 				-style=>{'src'=>['../css/page_style.css','../css/page_styleMedium.css','../css/page_styleSmall.css'],
-						'media'=>['screen','handheld screen and (max-width:1320px) only screen and (max-device-width:1320px)','handheld screen and (max-width:690px) only screen and (max-device-width:690px)']},
+						'media'=>["screen","handheld, screen and (max-width:1320px), only screen and (max-device-width:1320px)","handheld, screen and (max-width:690px), only screen and (max-device-width:690px)"]},
 				-lang=>'it',
 				
 		);
