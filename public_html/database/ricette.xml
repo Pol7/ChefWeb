@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <ricette>
 	<ricetta tipo="Antipasti">
-		<nome>antipatoMerdas</nome>
+		<nome>Antipasto</nome>
 		<autore>autore1</autore>
 		<img src="56346" alt="Immagine descrittiva della ricetta"/>
 		<ingrediente>	
@@ -27,7 +27,7 @@
 		<procedimento>fare la cacca</procedimento>	
 	</ricetta>
 	<ricetta tipo="Secondi">
-		<nome>primo</nome>
+		<nome>Secondo</nome>
 		<autore>pol</autore>
 		<img src="56347" alt="Immagine descrittiva della ricetta"/>
 		<ingrediente>
@@ -53,7 +53,7 @@
 		<procedimento>vai in bagno e lavati i denti</procedimento>
 	</ricetta>
 	<ricetta tipo="Primi">
-		<nome>primo</nome>
+		<nome>Primo</nome>
 		<autore>pol</autore>
 		<img src="56347" alt="Immagine descrittiva della ricetta"/>
 		<ingrediente>
@@ -80,7 +80,7 @@
 	</ricetta>
 	
 	<ricetta tipo="Primi">
-		<nome>pasta</nome>
+		<nome>Pasta</nome>
 		<autore>pol</autore>
 		<img src="56347" alt="Immagine descrittiva della ricetta"/>
 		<ingrediente>
