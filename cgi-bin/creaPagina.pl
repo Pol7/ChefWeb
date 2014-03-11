@@ -39,12 +39,12 @@ print '		<div id="header">
 		<div id="menu">
 			<ul>
 				<li class="listMenu"><a class="listMenu2" href="../index.html">Home</a></li>
-				<li class="listMenu">Primi</li>
-				<li class="listMenu"><a class="listMenu2" href="visualizzaRicetta.pl?tipo=Secondi">Secondi</a></li>
-				<li class="listMenu"><a class="listMenu2" href="visualizzaRicetta.pl?tipo=Contorni">Contorni</a></li>
-				<li class="listMenu"><a class="listMenu2" href="visualizzaRicetta.pl?tipo=Antipasti">Antipasti</a></li>
-				<li class="listMenu"><a class="listMenu2" href="visualizzaRicetta.pl?tipo=Cocktail">Cocktail</a></li>
-				<li class="listMenu"><a class="listMenu2" href="visualizzaRicetta.pl?tipo=Dessert">Dessert</a></li>
+				<li class="listMenu"><a class="listMenu2" href="creaPagine.pl?tipo=Primi">Primi</a></li>
+				<li class="listMenu"><a class="listMenu2" href="creaPagine.pl?tipo=Secondi">Secondi</a></li>
+				<li class="listMenu"><a class="listMenu2" href="creaPagine.pl?tipo=Contorni">Contorni</a></li>
+				<li class="listMenu"><a class="listMenu2" href="creaPagine.pl?tipo=Antipasti">Antipasti</a></li>
+				<li class="listMenu"><a class="listMenu2" href="creaPagine.pl?tipo=Cocktail">Cocktail</a></li>
+				<li class="listMenu"><a class="listMenu2" href="creaPagine.pl?tipo=Dessert">Dessert</a></li>
 				<li class="listMenu"><a class="listMenu2" href="formRicette.html">Inserisci Ricetta</a></li>
 			</ul>
 			<div id="clearBoth"></div>
