@@ -51,11 +51,9 @@ print ' <div id="header">
         #"//book[isbn = ‘12345']/pages/text()";
         #"./ns:title[\@lang=\"$lang\"]/text()"
         for my $node ($doc->findnodes("//ricetta[nome=\"$nome\"]/text()")){
-				print '<div class="lista">
-						<p>'.$node->find('./nome').'</p>
-						<p class="autore">'.$node->find('./autore').'</p>
-						<p class="autore">'.$node->find('./descrizione').'</p>
-					</div>';
+				print '
+					<p>'.$node->find('./autore').'</p>
+					;
 		}
 
 
