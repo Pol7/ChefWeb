@@ -91,16 +91,13 @@ sub pasti(){
 
 sub cerca(){
 		for my $node ($doc->findnodes("//ricetta[nome=\"$cerca\"]")){
-				if($node eq ' '){
-					print '<p>VUOTO</p>';
-				}
-				print '|'.elencoRicette($node).'|';
+				elencoRicette($node);
 		}
 }
 sub elencoRicette(){
 	print '<div class="lista">
 				<div class="immagine">
-					<a href="visualizzaRicetta.pl?nome='.$_[0]->find('./nome').'"><img src="../images/ricette/pasta.jpg" class="immagineRicetta"  alt="immagine rappresentativa della ricetta"/></a>
+					<a href="visualizzaRicetta.pl?nome='.$_[0]->find('./nome').'"><img src="..images/ricette/'.$_[0]->find('./img[@src]').'" class="immagineRicetta"  alt="immagine rappresentativa della ricetta"/></a>
 				</div>
 				<div class="descr">
 					<p>Nome: <a class="titolo" href="visualizzaRicetta.pl?nome='.$_[0]->find('./nome').'" class="nomeRicetta">'.$_[0]->find('./nome').'</a></p>
