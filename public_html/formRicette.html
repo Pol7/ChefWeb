@@ -35,15 +35,12 @@
 		</div>
 		
 		<div id="maincol">
-			
+			<form name="ricetta" action="cgi-bin/Inserimento.pl" method="GET" enctype="multipart/form-data">
 			<div id="ricetta">
 				<h1>Inserisci Ricetta</h1>
-				<form name="ricetta" action="cgi-bin/Inserimento.pl" method="GET" enctype="multipart/form-data">
 				<p>Nome Ricetta :<input name="nomeRicetta" id="nomeRicetta" value=""  placeholder="Nome Ricetta"/><span id="nomeRicettaErr" class="error"></span></p>
 				<p>Nome Autore :<input name="nomeAutore" id="nomeAutore" value=""  placeholder="Nome Autore"/><span id="nomeAutoreErr" class="error"></span></p>
 				 <input type="submit" class="bottone" value="Invia" name="action"  id="invia" onclick="return controllaDati();" tabindex="100"/>
-					
-				</form>	
 				<p>Tipologia Ricetta :</p>
 				<input type="radio" name="tipologia" value="antipasto" checked/>Antipasto
 				<input type="radio" name="tipologia" value="primo"/>Primo
@@ -88,6 +85,7 @@
 				<textarea id="areaProcedimento" rows="20" cols="40" name="message"   placeholder="Scrivi qui il procedimento"></textarea>		
 				<span id="areaProcedimentoErr" class="error"></span>
 			</div>
+			</form>	
 			<div id="clearBoth"></div>
 			
 		</div>
