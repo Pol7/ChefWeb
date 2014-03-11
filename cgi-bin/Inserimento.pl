@@ -24,11 +24,10 @@ my $tipo = $pagina->param('tipologia');
 my $autore = $pagina->param('nomeAutore');
 my $img = $pagina->param('immagine');
 my $proc = $pagina->param('message');
-my $nome = $pagina->param('nomeRicetta');
 
-my $new_nodo_string = "<ricetta tipo='$tipo'>\n<nome>$nome</nome>\n<autore>$autore</autore>\n<img></img>\n</ricetta>";
+my $new_nodo_string = "<ricetta tipo='$tipo'>\n<nome>$nome</nome>\n<autore>$autore</autore>\n<img></img>\n<procedimento>$proc</procedimento>\n</ricetta>";
 my $new_nodo = $parser->parse_balanced_chunk($new_nodo_string);
-my $season_to_process->appendChild($new_nodo);
+my $ricetta_to_insert->appendChild($new_nodo);
 
 
 
