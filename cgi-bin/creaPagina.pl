@@ -100,8 +100,8 @@ sub elencoRicette(){
 					<a href="visualizzaRicetta.pl?nome='.$_[0]->find('./nome').'"><img src="../images/ricette/pasta.jpg" class="immagineRicetta"  alt="immagine rappresentativa della ricetta"/></a>
 				</div>
 				<div class="descr">
-					<p>Nome: <a class="titolo" href="visualizzaRicetta.pl?nome='.$node->find('./nome').'" class="nomeRicetta">'.$node->find('./nome').'</a></p>
-					<p class="autore">Autore: '.$node->find('./autore').'</p>
+					<p>Nome: <a class="titolo" href="visualizzaRicetta.pl?nome='.$_[0]->find('./nome').'" class="nomeRicetta">'.$_[0]->find('./nome').'</a></p>
+					<p class="autore">Autore: '.$_[0]->find('./autore').'</p>
 				</div>
 			 </div>';
 }
