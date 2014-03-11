@@ -58,7 +58,7 @@ print '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.o
 print '	<body>
 <div id="header">
 <div id="register">
-<a href="Registrazione.html">Accedi!</a>
+<a href="../Registrazione.html">Accedi!</a>
 </div>
 </div>
 <div id="sottoHeader">
@@ -69,12 +69,12 @@ print '	<body>
 <div id="menu">
 <ul>
 <li class="listMenu"><a class="listMenu2" href="../index.html" xml:lang="en">Home</a></li>
-<li class="listMenu"><a class="listMenu2" href="/creaPagina.pl?tipo=Primi">Primi</a></li>
-<li class="listMenu"><a class="listMenu2" href="/creaPagina.pl?tipo=Secondi">Secondi</a></li>
-<li class="listMenu"><a class="listMenu2" href="/creaPagina.pl?tipo=Contorni">Contorni</a></li>
-<li class="listMenu"><a class="listMenu2" href="/creaPagina.pl?tipo=Antipasti">Antipasti</a></li>
-<li class="listMenu"><a class="listMenu2" href="/creaPagina.pl?tipo=Cocktail">Cocktail</a></li>
-<li class="listMenu"><a class="listMenu2" href="/creaPagina.pl?tipo=Dessert">Dessert</a></li>
+<li class="listMenu"><a class="listMenu2" href="creaPagina.pl?tipo=Primi">Primi</a></li>
+<li class="listMenu"><a class="listMenu2" href="creaPagina.pl?tipo=Secondi">Secondi</a></li>
+<li class="listMenu"><a class="listMenu2" href="creaPagina.pl?tipo=Contorni">Contorni</a></li>
+<li class="listMenu"><a class="listMenu2" href="creaPagina.pl?tipo=Antipasti">Antipasti</a></li>
+<li class="listMenu"><a class="listMenu2" href="creaPagina.pl?tipo=Cocktail">Cocktail</a></li>
+<li class="listMenu"><a class="listMenu2" href="creaPagina.pl?tipo=Dessert">Dessert</a></li>
 <li class="listMenu"><a class="listMenu2" >Inserisci Ricetta</a></li>
 </ul>
 <div id="clearBoth"></div>
