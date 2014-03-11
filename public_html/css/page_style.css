@@ -143,14 +143,7 @@ margin-left: 1%;
 #linkPercorso{
 color:white;
 }
-.lista{
-margin-left:8%;
-margin-right:8%;
-margin-top:3%;
-list-style-type:none;
-border-bottom-width: 1px;
-border-bottom-style: solid;
-}
+
 .titolo{
 text-decoration:none;
 font-weight: bold;
@@ -160,16 +153,6 @@ font-weight: bold;
 	width:40px;
 }
 
-.immagine{
-	width:150px;
-}
-
-.immagineRicetta{
-	width:150px;
-}
-
-.descr{
-}
 
 #testo{
  text-align:center;
