@@ -20,9 +20,9 @@ my $cerca = $pagina->param('cerca') || undef;
 my $titolo='culo';
 
 if($tipo=undef){
-	$titolo=$cerca;
+	$titolo="$cerca";
 }else{
-	$titolo=$tipo;
+	$titolo="$tipo";
 }
 
 print $pagina->header('text/html');
