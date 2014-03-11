@@ -17,11 +17,16 @@ my $pagina = new CGI;
 #per prendere parametri 
 my $tipo = $pagina->param('tipo') || undef;
 
+#<link href="./css/home_style.css" rel="stylesheet" type="text/css" media="screen"/>
+#	<link href="./css/home_styleMedium.css" rel="stylesheet" type="text/css" media="handheld, screen and (max-width:1320px), only screen and (max-device-width:1320px)" />
+#	<link href="./css/home_styleSmall.css" rel="stylesheet" type="text/css" media="handheld, screen and (max-width:690px), only screen and (max-device-width:690px)" />
+	
+
 print $pagina->header('text/html');
 print $pagina->start_html(
 				-title=>"$tipo",
-				-style=>{'src'=>'../css/page_style.css',
-						'media'=>'screen'},
+				-style=>{'src'=>['../css/page_style.css','../css/page_styleMedium.css','../css/page_styleSmall.css'],
+						'media'=>['screen','handheld, screen and (max-width:1320px), only screen and (max-device-width:1320px)','handheld, screen and (max-width:690px), only screen and (max-device-width:690px)']},
 				-lang=>'it',
 				
 		);
