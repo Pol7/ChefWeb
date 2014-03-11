@@ -97,7 +97,6 @@ for my $node ($doc->findnodes("//ricetta[\@tipo=\"$tipo\"]")){
 }
 
 sub cerca(){
-	print 'merda';
 	for my $node ($doc->findnodes("//ricetta[nome='Antipasto']")->get_node(1)){
 				print 'merda';
 	}
