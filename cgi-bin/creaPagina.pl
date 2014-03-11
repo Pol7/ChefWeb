@@ -18,6 +18,10 @@ my $pagina = new CGI;
 my $tipo = $pagina->param('tipo') || undef;
 my $cerca = $pagina->param('cerca') || undef;
 
+if($tipo=undef){
+	my $titolo=$cerca;
+}
+
 print $pagina->header('text/html');
 print $pagina->start_html(
 				-title=>"$tipo",				
@@ -88,7 +92,6 @@ sub pasti(){
 }
 
 sub cerca(){
-		$pagina->start_html(-title=>"$cerca");
 		for my $node ($doc->findnodes("//ricetta[nome=\"$cerca\"]")){
 				elencoRicette($node);
 		}
