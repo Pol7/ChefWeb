@@ -26,7 +26,7 @@ print $pagina->header('text/html');
 print $pagina->start_html(
 				-title=>"$tipo",
 				-style=>{'src'=>['../css/page_style.css','../css/page_styleMedium.css','../css/page_styleSmall.css'],
-						'media'=>['screen','handheld','handheld']},
+						'media'=>'screen'},
 				-lang=>'it',
 				
 		);
@@ -56,12 +56,7 @@ print '		<div id="header">
 		</div>
 		
 		<div id="maincol">';
-		for my $node ($doc->findnodes("//ricetta[\@tipo=\"$tipo\"]")){
-				print '<div class="lista">
-						<a class="titolo" href="visualizzaRicetta.pl?nome='.$node->find('./nome').'" class="nomeRicetta">'.$node->find('./nome').'</a>
-						<p class="autore">'.$node->find('./autore').'</p>
-					</div>';
-		}
+		&pasti();
 print	'</div>
 		<div id="footer">
 			<div id="footerImg1">
@@ -79,3 +74,12 @@ print	'</div>
 ';
 
 print $pagina->end_html;
+
+sub pasti(){
+for my $node ($doc->findnodes("//ricetta[\@tipo=\"$tipo\"]")){
+				print '<div class="lista">
+						<a class="titolo" href="visualizzaRicetta.pl?nome='.$node->find('./nome').'" class="nomeRicetta">'.$node->find('./nome').'</a>
+						<p class="autore">'.$node->find('./autore').'</p>
+					</div>';
+		}
+}
