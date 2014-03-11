@@ -3,8 +3,8 @@
 use CGI;
 #use CGI::Carp qw(fatalsToBrowser);
 use XML::LibXML;
-use strict;
-use warnings;
+#use strict;
+#use warnings;
 
 #my $pagina = new CGI;
 
@@ -31,7 +31,7 @@ use warnings;
 
 
 
-print "ciao";
+print 'ciao';
 
 
 #creo una stringa con un nuovo elemento
