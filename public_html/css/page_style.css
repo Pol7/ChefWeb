@@ -106,14 +106,11 @@ padding:0.9em;
 
 
 #registra{
-margin-bottom: 0.7%;
-margin-right: 15%;
-float: right;
+float: left;
 }
 
 #login{
-margin-left: 21%;
-width: 25%;
+float: left;
 }
 
 #clearBoth { 
