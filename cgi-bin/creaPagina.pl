@@ -57,7 +57,7 @@ print '		<div id="header">
 		</div>
 		
 		<div id="maincol">';
-		if($tipo eq 'cerca'){
+		if($tipo eq "cerca"){
 			print 'CERCATO';
 		}
 		else{
