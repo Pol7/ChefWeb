@@ -17,7 +17,7 @@ my $pagina = new CGI;
 #per prendere parametri 
 my $tipo = $pagina->param('tipo') || undef;
 my $cerca = $pagina->param('cerca') || undef;
-
+my $titolo;
 if($tipo=undef){
 	my $titolo=$cerca;
 }else{
