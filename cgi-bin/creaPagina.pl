@@ -19,6 +19,11 @@ my $tipo = $pagina->param('tipo') || undef;
 my $cerca = $pagina->param('cerca') || undef;
 my $titolo='culo';
 
+if($tipo=undef){
+	$titolo=$cerca;
+}else{
+	$titolo=$tipo;
+}
 
 print $pagina->header('text/html');
 print $pagina->start_html(
