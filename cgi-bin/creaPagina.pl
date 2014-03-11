@@ -17,11 +17,12 @@ my $pagina = new CGI;
 #per prendere parametri 
 my $tipo = $pagina->param('tipo') || undef;
 my $cerca = $pagina->param('cerca') || undef;
+my $titolo;
 
 if($tipo){
-	my $titolo="$tipo";
+	$titolo="$tipo";
 }else{
-	my $titolo="$cerca";
+	$titolo="$cerca";
 }
 
 print $pagina->header('text/html');
