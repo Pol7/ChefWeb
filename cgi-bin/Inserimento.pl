@@ -6,7 +6,7 @@ use XML::LibXML;
 use strict;
 use warnings;
 
-#my $pagina = new CGI;
+my $pagina = new CGI;
 
 #my $file = '../public_html/database/ricette.xml';
 #creazione oggetto parser
