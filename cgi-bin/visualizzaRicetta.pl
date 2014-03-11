@@ -49,7 +49,7 @@ print ' <div id="header">
         </div>
         <div id="maincol">';
         #//divisione[manager/text()= “Den Raphaely”] //dipendente
-        for my $node ($doc->findnodes("//ricetta[nome=\"pasta\"]")){
+        for my $node ($doc->findnodes("//ricetta[nome=\"\pasta\"]")){
 				print '<div class="lista">
 						<p>'.$node->find('./nome').'</p>
 						<p class="autore">'.$node->find('./autore').'</p>
