@@ -27,9 +27,8 @@ print $pagina->header('text/html');
 print $pagina->start_html(
 				-title=>"$tipo",
 				-style=>{'src'=>['../css/page_style.css','../css/page_styleMedium.css','../css/page_styleSmall.css'],
-						'media'=>'screen'},
-				-lang=>'it',
-				
+						'media'=>['screen','handheld, screen and (max-width:1320px), only screen and (max-device-width:1320px)','handheld, screen and (max-width:690px), only screen and (max-device-width:690px)']},
+				-lang=>'it'				
 		);
 print '		<div id="header">
 			<div id="register">
@@ -40,7 +39,7 @@ print '		<div id="header">
 		<div id="sottoHeader">
 			<form action="creaPagina.pl?" method="get" >
 				<input class="search" type="submit" value="Cerca!"/>
-				<input class="search" type="text" name="cerca" value="" placeholder="Ricerca"/>
+				<input class="search" type="text" name="cerca" value="" placeholder="Ricerca ricetta"/>
 			</form>
 			<div id="path"> Ti trovi in: <a id="linkPercorso" href="../index.html" xml:lang="en">Home</a> >'.$tipo.' </div>
 		</div>
