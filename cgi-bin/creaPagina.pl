@@ -56,7 +56,12 @@ print '		<div id="header">
 		</div>
 		
 		<div id="maincol">';
-		&pasti();
+		if(%nome eq 'cerca'){
+			print 'CERCATO';
+		}
+		else{
+			&pasti();
+		}
 print	'</div>
 		<div id="footer">
 			<div id="footerImg1">
