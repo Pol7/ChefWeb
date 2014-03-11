@@ -40,19 +40,20 @@ margin-top:0.5%;
 width:1300px; 
 height:40px;
 }
+
 #footerImg1{
 float:left;
 margin-top:0.4%;
 margin-left:0.4%;
-
 }
+
 #footerText{
 	text-align:right;
 	float:left;
 	height:36px;
 	margin-top:0.8%;
 	width:45%;
-	}
+}
 	
 #footerImg2{
 float:right;
@@ -63,23 +64,22 @@ margin-top:0.4%;
 line-height: 22pt;
 display:inline;
 }
+
 #menu{
 background-color:#5f3714;
 margin:auto;
 margin-top:-16px;
 width:1300px;
 }
-#currMenu:hover {
-}
+
 .listMenu{
 color:white;
 display:inline-block;
 margin-right:5%;
 text-transform:uppercase;
 font-weight:bold;
-
-
 }
+
 .listMenu2:link{
 color:white;
 text-decoration:none;
@@ -173,4 +173,23 @@ font-weight: bold;
 #ingredienti{
 	text-align:center;
 	vertical-align:text-top;
+}
+
+.lista{
+margin-left:8%;
+margin-right:8%;
+margin-top:3%;
+border-bottom-width: 1px;
+border-bottom-style: solid;
+}
+
+.immagine{
+	width:150px;
+}
+
+.immagineRicetta{
+	width:150px;
+}
+
+.descr{
 }
