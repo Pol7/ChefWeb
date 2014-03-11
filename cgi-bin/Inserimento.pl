@@ -35,16 +35,8 @@ my $pagina = new CGI;
 #creo una stringa con un nuovo elemento
 #$nuovo_el = "\n<ricetta> $input{'contenuto'}</ricetta>\n";
 
-#codice per visualizzare alcuni
-print "Content-type: text/html\n\n";
-#print "<html> <head><title> Pagina riassuntiva</title></head>";
-#print "<body>";
-#my $in = $ENV{'QUERY_STRING'};
-#my $metodo = $ENV{'REQUEST_METHOD'};
-#print "Query string : <b>$in</b><br>";
-#print "Request method: <b>$metodo</b><br>";
-#print "</body></html>";
 
+print "Content-type: text/html\n\n";
 print '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="it" lang="it">
 <head>
@@ -82,8 +74,12 @@ print '	<body>
 
 <div id="maincol">';
 my $nome = $pagina->param('nomeRicetta');
-print "$nome";
-print ' </div>
+print '     <div id="testo"> 
+            <h1>Ricetta inserita correttamente<h1>
+            <p> Torna alla <a href="../index.html" xml:lang="en"> Home</a></p>
+            <p> Inserisci una <a href="../formRicetta.html">nuova ricetta</a></p> 
+            </div>
+            </div>
             <div id="footer">
             <div id="footerImg1">
               <a href="http://validator.w3.org/">
