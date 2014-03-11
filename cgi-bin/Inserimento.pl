@@ -76,8 +76,8 @@ print '	<body>
 my $nome = $pagina->param('nomeRicetta');
 print '     <div id="testo"> 
             <h1 id="testo1">Ricetta inserita correttamente<h1>
-            <p id="testo2"> Torna alla <a href="../index.html" xml:lang="en"> Home</a></p>
-            <p id="testo3"> Inserisci una <a href="../formRicette.html">Nuova Ricetta</a></p> 
+            <p class="testo2"> Torna alla <a href="../index.html" xml:lang="en"> Home</a></p>
+            <p class="testo2"> Inserisci una <a href="../formRicette.html">Nuova Ricetta</a></p> 
             </div>
             </div>
             <div id="footer">
