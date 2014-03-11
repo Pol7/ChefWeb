@@ -185,11 +185,14 @@ border-bottom-style: solid;
 
 .immagine{
 	width:150px;
+	display:inline-block;
 }
 
 .immagineRicetta{
 	width:150px;
+	
 }
 
 .descr{
+	display:inline-block;
 }
