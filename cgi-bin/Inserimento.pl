@@ -17,7 +17,7 @@ my $proc = $pagina->param('message');
 my $session=undef;
 unless ($nome)
 {
-$session->param("season_error","Nome Obbligatorio");
+$session->param("nomeRicettaErr","Nome Obbligatorio");
 }
 
 my $file = '../public_html/database/ricette.xml';
