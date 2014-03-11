@@ -36,7 +36,7 @@ my $pagina = new CGI;
 #$nuovo_el = "\n<ricetta> $input{'contenuto'}</ricetta>\n";
 
 #codice per visualizzare alcuni
-#print "Content-type: text/html\n\n";
+print "Content-type: text/html\n\n";
 #print "<html> <head><title> Pagina riassuntiva</title></head>";
 #print "<body>";
 #my $in = $ENV{'QUERY_STRING'};
