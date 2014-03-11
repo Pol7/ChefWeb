@@ -55,12 +55,61 @@ function controllaDati() {
 		} else {
 				document.getElementById("procedimentoErr").innerHTML= "";
 		}
-				elem = document.getElementById("ingrediente0");
+		elem = document.getElementById("ingrediente0");
 		if( elem.value.length==0 ) {
 				document.getElementById("ingrediente0Err").innerHTML= "Inserisci almeno il primo ingrediente";
 				err=true;
 		} else {
 				document.getElementById("ingrediente0Err").innerHTML= "";
+		}
+		elem = document.getElementById("usernameL");
+		if( elem.value.length==0 ) {
+				document.getElementById("UsernameErrLogin").innerHTML= "Inserisci Username";
+				err=true;
+		} else {
+				document.getElementById("UsernameErrLogin").innerHTML= "";
+		}
+		elem = document.getElementById("passwordL");
+		if( elem.value.length==0 ) {
+				document.getElementById("PasswordErrLogin").innerHTML= "Inserisci password";
+				err=true;
+		} else {
+				document.getElementById("PasswordErrLogin").innerHTML= "";
+		}
+		elem = document.getElementById("username");
+		if( elem.value.length==0 ) {
+				document.getElementById("UsernameErr").innerHTML= "Username obbligatorio";
+				err=true;
+		} else {
+				document.getElementById("UsernameErr").innerHTML= "";
+		}
+		elem = document.getElementById("password");
+		if( elem.value.length==0 ) {
+				document.getElementById("PasswordErr").innerHTML= "Inserisci password";
+				err=true;
+		} else {
+				document.getElementById("PasswordErr").innerHTML= "";
+		}
+		elem = document.getElementById("nome");
+		if( elem.value.length==0 ) {
+				document.getElementById("NomeErr").innerHTML= "Inserisci il nome";
+				err=true;
+		} else {
+				document.getElementById("NomeErr").innerHTML= "";
+		}
+		elem = document.getElementById("cognome");
+		if( elem.value.length==0 ) {
+				document.getElementById("CognomeErr").innerHTML= "Inserisci il cognome";
+				err=true;
+		} else {
+				document.getElementById("CognomeErr").innerHTML= "";
+		}
+		elem = document.getElementById("anno");
+		if( elem.value.length==0 ) {
+				document.getElementById("AnnoErr").innerHTML= "Inserisci l'anno";
+				err=true;
+		} else {
+				document.getElementById("AnnoErr").innerHTML= "";
 		}
 		return !err;
 }
