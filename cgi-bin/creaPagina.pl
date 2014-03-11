@@ -85,21 +85,23 @@ print $pagina->end_html;
 
 sub pasti(){
 		for my $node ($doc->findnodes("//ricetta[\@tipo=\"$tipo\"]")){
-				print '<div class="lista">
-							<div class="immagine">
-								<a href="visualizzaRicetta.pl?nome='.$node->find('./nome').'"><img src="../images/ricette/pasta.jpg" class="immagineRicetta"  alt="immagine rappresentativa della ricetta"/></a>
-							</div>
-							<div class="descr">
-								<p>Nome: <a class="titolo" href="visualizzaRicetta.pl?nome='.$node->find('./nome').'" class="nomeRicetta">'.$node->find('./nome').'</a></p>
-								<p class="autore">Autore: '.$node->find('./autore').'</p>
-							</div>
-					  </div>';
+				elencoRicette();
 		}
 }
 
 sub cerca(){
 		for my $node ($doc->findnodes("//ricetta[nome=\"$cerca\"]")){
-				print '<p>Nome ricetta: '.$node->find('./nome').'</p>';
-				print '<p>Nome autore: '.$node->find('./autore').'</p>';
+				elencoRicette();
 		}
+}
+sub elencoRicette{
+	print '<div class="lista">
+				<div class="immagine">
+					<a href="visualizzaRicetta.pl?nome='.$node->find('./nome').'"><img src="../images/ricette/pasta.jpg" class="immagineRicetta"  alt="immagine rappresentativa della ricetta"/></a>
+				</div>
+				<div class="descr">
+					<p>Nome: <a class="titolo" href="visualizzaRicetta.pl?nome='.$node->find('./nome').'" class="nomeRicetta">'.$node->find('./nome').'</a></p>
+					<p class="autore">Autore: '.$node->find('./autore').'</p>
+				</div>
+			 </div>';
 }
