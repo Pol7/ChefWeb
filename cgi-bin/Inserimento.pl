@@ -62,19 +62,19 @@ print '	<body>
 </div>
 </div>
 <div id="sottoHeader">
-<div id="path"> Ti trovi in: <a id="linkPercorso" href="index.html" xml:lang="en">Home</a> > Inserisci Ricetta</div>
+<div id="path"> Ti trovi in: <a id="linkPercorso" href="../index.html" xml:lang="en">Home</a> > Inserisci Ricetta</div>
 <input class="search" type="submit" value="Cerca!">
 <input class="search" type="text" name="Cerca:" value="" placeholder="Ricerca">
 </div>
 <div id="menu">
 <ul>
-<li class="listMenu"><a class="listMenu2" href="index.html" xml:lang="en">Home</a></li>
-<li class="listMenu"><a class="listMenu2" href="./cgi-bin/creaPagina.pl?tipo=Primi">Primi</a></li>
-<li class="listMenu"><a class="listMenu2" href="./cgi-bin/creaPagina.pl?tipo=Secondi">Secondi</a></li>
-<li class="listMenu"><a class="listMenu2" href="./cgi-bin/creaPagina.pl?tipo=Contorni">Contorni</a></li>
-<li class="listMenu"><a class="listMenu2" href="./cgi-bin/creaPagina.pl?tipo=Antipasti">Antipasti</a></li>
-<li class="listMenu"><a class="listMenu2" href="./cgi-bin/creaPagina.pl?tipo=Cocktail">Cocktail</a></li>
-<li class="listMenu"><a class="listMenu2" href="./cgi-bin/creaPagina.pl?tipo=Dessert">Dessert</a></li>
+<li class="listMenu"><a class="listMenu2" href="../index.html" xml:lang="en">Home</a></li>
+<li class="listMenu"><a class="listMenu2" href="/creaPagina.pl?tipo=Primi">Primi</a></li>
+<li class="listMenu"><a class="listMenu2" href="/creaPagina.pl?tipo=Secondi">Secondi</a></li>
+<li class="listMenu"><a class="listMenu2" href="/creaPagina.pl?tipo=Contorni">Contorni</a></li>
+<li class="listMenu"><a class="listMenu2" href="/creaPagina.pl?tipo=Antipasti">Antipasti</a></li>
+<li class="listMenu"><a class="listMenu2" href="/creaPagina.pl?tipo=Cocktail">Cocktail</a></li>
+<li class="listMenu"><a class="listMenu2" href="/creaPagina.pl?tipo=Dessert">Dessert</a></li>
 <li class="listMenu"><a class="listMenu2" >Inserisci Ricetta</a></li>
 </ul>
 <div id="clearBoth"></div>
