@@ -107,10 +107,12 @@ padding:0.9em;
 
 #registra{
 float: left;
+margin-left:20%;
 }
 
 #login{
 float: left;
+margin-left:15%;
 }
 
 #clearBoth { 
