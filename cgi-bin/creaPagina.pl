@@ -91,6 +91,7 @@ sub pasti(){
 
 sub cerca(){
 		for my $node ($doc->findnodes("//ricetta[nome=\"$cerca\"]")){
+				print "$node";
 				elencoRicette($node);
 		}
 }
