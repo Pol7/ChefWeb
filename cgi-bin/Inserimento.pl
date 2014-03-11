@@ -14,6 +14,7 @@ my $autore = $pagina->param('nomeAutore');
 my $img = $pagina->param('immagine');
 my $proc = $pagina->param('message');
 
+my $session=undef;
 unless ($nome)
 {
 $session->param("season_error","Nome Obbligatorio");
