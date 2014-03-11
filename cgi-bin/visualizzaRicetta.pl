@@ -52,8 +52,8 @@ print ' <div id="header">
         for my $node ($doc->findnodes("//ricetta[nome=\"$nome\"]")) {
         print '<div id="ingredienti">
         		<p>'.$node->find('./nome')->get_node(0).'</p>
-        	  #	<p>'.$doc->findnodes("//ricetta[nome=\"$nome\"]/autore")->get_node(0).'</p>
-        	  #	<p>'.$doc->findnodes("//ricetta[nome=\"$nome\"]/procedimento")->get_node(0).'</p>
+        	  	<p>'.$node->find('./autore')->get_node(0).''</p>
+        	  	<p>'.$node->find('./procedimento')->get_node(0).''</p>
         	</div>'; 
 	}
 		
