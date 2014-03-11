@@ -51,7 +51,10 @@ print ' <div id="header">
         #"//book[isbn = ‘12345']/pages/text()";
         #my $node = $xmlEvents->findnodes("/ns:events/ns:event[\@id=\"$id\"]")->get_node(0);
 
-        print '<p>'.$doc->findnodes("//ricetta[nome=\"$nome\"]/autore")->get_node(0).'</p>';
+        print   '<p>'.$doc->findnodes("//ricetta[nome=\"$nome\"]/autore")->get_node(0).'</p>'
+        	'<p>'.$doc->findnodes("//ricetta[nome=\"$nome\"]/nome")->get_node(0).'</p>'
+        	'<p>'.$doc->findnodes("//ricetta[nome=\"$nome\"]/procedimento")->get_node(0).'</p>'
+        	;
 		
 
 
