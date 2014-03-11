@@ -19,9 +19,9 @@ my $tipo = $pagina->param('tipo') || undef;
 my $cerca = $pagina->param('cerca') || undef;
 
 if($tipo){
-	$titolo="$tipo";
+	my $titolo="$tipo";
 }else{
-	$titolo="$cerca";
+	my $titolo="$cerca";
 }
 
 print $pagina->header('text/html');
