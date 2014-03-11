@@ -1,14 +1,14 @@
 #!/usr/bin/perl
 # Script che inserisce i dati nell'XML
 use CGI;
-use CGI::Carp qw(fatalsToBrowser);
+#use CGI::Carp qw(fatalsToBrowser);
 use XML::LibXML;
 use strict;
 use warnings;
 
-my $pagina = new CGI;
+#my $pagina = new CGI;
 
-my $file = '../public_html/database/ricette.xml';
+#my $file = '../public_html/database/ricette.xml';
 #creazione oggetto parser
 #my $parser = XML::LibXML->new();
 #apertura file e lettura input
