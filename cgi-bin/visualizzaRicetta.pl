@@ -57,7 +57,7 @@ print ' <div id="header">
 				
 			</div>';
 		
-			if($node->find('./ingrediente')){
+			if($node->find('./fff')){
 			 print 'ca';
 			}
 			
