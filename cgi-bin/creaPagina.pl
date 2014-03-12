@@ -64,6 +64,32 @@ print '		<div id="header">
 		</div>
 		
 		<div id="maincol">';
+		if($tipo eq 'Primi'){
+			print '<p>$tipo</p>';
+		}else{
+			print '<p>else</p>';
+		}if($tipo eq 'Secondi'){
+			print '<p>$tipo</p>';
+		}else{
+			print '<p>else</p>';
+		}if($tipo eq 'Contorni'){
+			print '<p>$tipo</p>';
+		}else{
+			print '<p>else</p>';
+		}if($tipo eq 'Antipasti'){
+			print '<p>$tipo</p>';
+		}else{
+			print '<p>else</p>';
+		}if($tipo eq 'Cocktail'){
+			print '<p>$tipo</p>';
+		}else{
+			print '<p>else</p>';
+		}if($tipo eq 'Dessert'){
+			print '<p>$tipo</p>';
+		}else{
+			print '<p>else</p>';
+		}
+		
 		if($cerca){
 			&cerca();
 		}
