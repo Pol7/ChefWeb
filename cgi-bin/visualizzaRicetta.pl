@@ -54,8 +54,8 @@ print ' <div id="header">
         		<h1>'.$node->find('./nome')->get_node(0).'</h1>
         	  	<p>Autore: '.$node->find('./autore')->get_node(0).'</p>
         	  	<div class="immagine">
-				<img src="../images/ricette/'.$_[0]->find('./img/@src').'" class="immagineRicetta" alt="immagine rappresentativa della ricetta"/>
-			</div>
+				
+				</div>
         	  	<p>'.$node->find('./procedimento')->get_node(0).'</p>
         	</div>'; 
 	}
