@@ -57,8 +57,8 @@ print ' <div id="header">
         	  	<img src=../images/ricette/'.$node->find('./img/@src').' class="immagineVisualizzaRicetta"  alt="immagine rappresentativa della ricetta"/>
 			';
 		
-			if($node->find('./ingrediente')){
-			 print 'ca';
+			if my $query = "//ricetta[ingrediente]" {
+			print 'ca';
 			}
 			
 	
