@@ -82,7 +82,8 @@ print '		<div id="header">
 		}else{
 			print '<li class="listMenu"><a class="listMenu2" href="creaPagina.pl?tipo=Dessert">Dessert</a></li>';
 		}
-		print '</ul>
+		print '<li class="listMenu"><a class="listMenu2" href="../formRicette.html">Inserisci Ricetta</a></li>
+			</ul>
 			<div id="clearBoth"></div>
 		</div>
 		<div id="maincol">';
