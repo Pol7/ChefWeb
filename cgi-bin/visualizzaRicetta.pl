@@ -56,7 +56,8 @@ print ' <div id="header">
         	  	<div class="immagine">
 				
 			</div>';
-			while($node<find('./ingrediente')){
+		
+			while($node->find('./ingrediente')){
 			 print 'ca';
 			}
 			
