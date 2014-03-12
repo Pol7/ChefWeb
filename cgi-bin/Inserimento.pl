@@ -31,8 +31,6 @@ my $radice = $doc->getDocumentElement || die("Non accedo alla radice");
 #recupero input della form
 #my $in = $ENV{'QUERY_STRING'};
 
-$input{‘contenuto'}</elemento>\n";
-
 my $frammento = "<ricetta tipo='$tipo'>\n<nome>$nome</nome>\n<autore>$autore</autore>\n<img></img>\n<procedimento>$proc</procedimento>\n</ricetta>";
 my $nodo = $parser->parse_balanced_chunk($frammento);
 my $radice->appendChild($nodo);
