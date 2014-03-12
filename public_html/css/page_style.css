@@ -189,6 +189,10 @@ border-bottom-style: solid;
 	display:inline-block;
 }
 
+.immagineVisualizzaRicetta{
+	with:300px
+}
+
 .immagineRicetta{
 	width:150px;
 	
