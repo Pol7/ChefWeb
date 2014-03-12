@@ -38,7 +38,7 @@ print $pagina->start_html(
 		);
 print '		<div id="header">
 			<div id="register">
-				<a href="./Registrazione.html">Accedi!</a>
+				<a href="../Registrazione.html">Accedi!</a>
 			</div>
 		</div>
 				
