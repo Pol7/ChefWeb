@@ -34,10 +34,12 @@ function aggiungiIng(){
 			
 function controllaDati() {
 		var err=false;
+		var check=true;
 		var elem = document.getElementById("nomeRicetta");
 		if(elem.value.length == 0) {
 				document.getElementById("nomeRicettaErr").innerHTML= "Inserisci il titolo";
-				err=true;		
+				err=true;
+				check=false;
 		} else {
 				document.getElementById("nomeRicettaErr").innerHTML= "";
 		}
@@ -45,6 +47,7 @@ function controllaDati() {
 		if( elem.value.length==0 ) {
 				document.getElementById("nomeAutoreErr").innerHTML= "Inserisci il nome dell'autore";
 				err=true;
+				check=false;
 		} else {
 				document.getElementById("nomeAutoreErr").innerHTML= "";
 		}
@@ -52,6 +55,7 @@ function controllaDati() {
 		if( elem.value.length==0 ) {
 				document.getElementById("areaProcedimentoErr").innerHTML= "Inserisci il procedimento";
 				err=true;
+				check=false;
 		} else {
 				document.getElementById("areaProcedimentoErr").innerHTML= "";
 		}
@@ -59,6 +63,7 @@ function controllaDati() {
 		if( elem.value.length==0 ) {
 				document.getElementById("ingrediente0Err").innerHTML= "Inserisci almeno il primo ingrediente";
 				err=true;
+				check=false;
 		} else {
 				document.getElementById("ingrediente0Err").innerHTML= "";
 		}
@@ -66,6 +71,7 @@ function controllaDati() {
 		if( elem.value.length==0 ) {
 				document.getElementById("UsernameErrLogin").innerHTML= "Inserisci Username";
 				err=true;
+				check=false;
 		} else {
 				document.getElementById("UsernameErrLogin").innerHTML= "";
 		}
@@ -73,6 +79,7 @@ function controllaDati() {
 		if( elem.value.length==0 ) {
 				document.getElementById("PasswordErrLogin").innerHTML= "Inserisci password";
 				err=true;
+				check=false;
 		} else {
 				document.getElementById("PasswordErrLogin").innerHTML= "";
 		}
@@ -80,6 +87,7 @@ function controllaDati() {
 		if( elem.value.length==0 ) {
 				document.getElementById("UsernameErr").innerHTML= "Username obbligatorio";
 				err=true;
+				check=false;
 		} else {
 				document.getElementById("UsernameErr").innerHTML= "";
 		}
@@ -87,6 +95,7 @@ function controllaDati() {
 		if( elem.value.length==0 ) {
 				document.getElementById("PasswordErr").innerHTML= "Inserisci password";
 				err=true;
+				check=false;
 		} else {
 				document.getElementById("PasswordErr").innerHTML= "";
 		}
@@ -94,6 +103,7 @@ function controllaDati() {
 		if( elem.value.length==0 ) {
 				document.getElementById("NomeErr").innerHTML= "Inserisci il nome";
 				err=true;
+				check=false;
 		} else {
 				document.getElementById("NomeErr").innerHTML= "";
 		}
@@ -101,6 +111,7 @@ function controllaDati() {
 		if( elem.value.length==0 ) {
 				document.getElementById("CognomeErr").innerHTML= "Inserisci il cognome";
 				err=true;
+				check=false;
 		} else {
 				document.getElementById("CognomeErr").innerHTML= "";
 		}
@@ -108,8 +119,12 @@ function controllaDati() {
 		if( elem.value.length==0 ) {
 				document.getElementById("AnnoErr").innerHTML= "Inserisci l'anno";
 				err=true;
+				check=false;
 		} else {
 				document.getElementById("AnnoErr").innerHTML= "";
 		}
 		return !err;
+		if check==true {
+			inserimento.pl
+		}
 }
