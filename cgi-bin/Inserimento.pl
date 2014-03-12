@@ -29,15 +29,17 @@ my $doc = $parser->parse_file($file) || die("Operazioni di parsing fallita");
 my $radice = $doc->getDocumentElement || die("Non accedo alla radice");
 
 #recupero input della form
-my $in = $ENV{'QUERY_STRING'};
+#my $in = $ENV{'QUERY_STRING'};
 
+$input{‘contenuto'}</elemento>\n";
 
+my $frammento = "<ricetta tipo='$tipo'>\n<nome>$nome</nome>\n<autore>$autore</autore>\n<img></img>\n<procedimento>$proc</procedimento>\n</ricetta>";
+my $nodo = $parser->parse_balanced_chunk($frammento);
+my $radice->appendChild($nodo);
 
-#my $new_nodo_string = "<ricetta tipo='$tipo'>\n<nome>$nome</nome>\n<autore>$autore</autore>\n<img></img>\n<procedimento>$proc</procedimento>\n</ricetta>";
-#my $new_nodo = $parser->parse_balanced_chunk($new_nodo_string);
-#my $ricetta_to_insert->appendChild($new_nodo);
-
-
+open(OUT, ">$fileDati");
+print OUT $doc->toString;
+close(OUT);
 
 
 
