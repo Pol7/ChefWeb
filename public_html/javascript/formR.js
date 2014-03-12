@@ -53,7 +53,7 @@ function controllaDati() {
 				document.getElementById("areaProcedimentoErr").innerHTML= "Inserisci il procedimento";
 				err=true;
 		} else {
-				document.getElementById("procedimentoErr").innerHTML= "";
+				document.getElementById("areaProcedimentoErr").innerHTML= "";
 		}
 		elem = document.getElementById("ingrediente0");
 		if( elem.value.length==0 ) {
