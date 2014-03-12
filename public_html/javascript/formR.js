@@ -124,7 +124,7 @@ function controllaDati() {
 				document.getElementById("AnnoErr").innerHTML= "";
 		}
 		return !err;
-		if check==true {
+		if (check==true) {
 			inserimento.pl
 		}
 }
