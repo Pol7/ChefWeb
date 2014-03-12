@@ -55,7 +55,11 @@ print ' <div id="header">
         	  	<p>Autore: '.$node->find('./autore')->get_node(0).'</p>
         	  	<div class="immagine">
 				
-				</div>
+			</div>;
+			while($node="ingrediente"){
+				
+			}
+			
         	  	<p>'.$node->find('./procedimento')->get_node(0).'</p>
         	</div>'; 
 	}
