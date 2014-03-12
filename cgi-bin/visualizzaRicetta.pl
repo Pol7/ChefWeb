@@ -56,7 +56,7 @@ print ' <div id="header">
         	  	<p>Autore: '.$node->find('./ingrediente')->get_node(0).'</p>
         	  	<p>Autore: '.$node->find('./ingrediente')->get_node(0).'</p>
         	  	<div class="immagine">
-				
+				<img src=../images/ricette/'.$node->find('./img/@src').' class="immagineRicetta"  alt="immagine rappresentativa della ricetta"/>
 			</div>';
 		
 			if($node->find('./ingrediente')){
