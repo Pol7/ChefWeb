@@ -50,13 +50,12 @@ print ' <div id="header">
         <div id="maincol">';
         
         for my $node ($doc->findnodes("//ricetta[nome=\"$nome\"]")) {
-        print '<div id="ingredienti">
+        print '<div id="ricetta">
         		<h1>'.$node->find('./nome')->get_node(0).'</h1>
         	  	<p>Autore: '.$node->find('./autore')->get_node(0).'</p>
-        	  	<p>Autore: '.$node->find('./ingrediente')->get_node(0).'</p>
-        	  	<p>Autore: '.$node->find('./ingrediente')->get_node(0).'</p>
+        	  	<p>Ingrediente: '.$node->find('./ingrediente')->get_node(0).'</p>
         	  	<div class="immagine">
-				<img src=../images/ricette/'.$node->find('./img/@src').'  alt="immagine rappresentativa della ricetta"/>
+				<img src=../images/ricette/'.$node->find('./img/@src').' class="immagineVisualizzaRicetta"  alt="immagine rappresentativa della ricetta"/>
 			</div>';
 		
 			if($node->find('./ingrediente')){
@@ -65,7 +64,9 @@ print ' <div id="header">
 			
 	
 		 
-        print '	<p>'.$node->find('./procedimento')->get_node(0).'</p>
+        print '	<div id="procedimento">
+        		<p>'.$node->find('./procedimento')->get_node(0).'</p>
+        	</div>
         	</div>'; 
 	}
 		
