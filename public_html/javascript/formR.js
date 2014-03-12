@@ -124,7 +124,10 @@ function controllaDati() {
 				document.getElementById("AnnoErr").innerHTML= "";
 		}
 		return !err;
-		if (check==true) {
-			inserimento.pl
+		if (check==false) {
+			stop!
+		}
+		else {
+			Inserimento.pl
 		}
 }
