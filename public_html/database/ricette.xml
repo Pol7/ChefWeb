@@ -80,9 +80,9 @@
 	</ricetta>
 	
 	<ricetta tipo="Primi">
-		<nome>Pasta</nome>
+		<nome>Pasta in bianco</nome>
 		<autore>pol</autore>
-		<img src="pasta.jpg" alt="Immagine descrittiva della ricetta"/>
+		<img src="pastabianca.jpg" alt="Immagine descrittiva della ricetta"/>
 		<ingrediente>
 			<nome>i1</nome>
 			<quantita>1</quantita>
@@ -119,7 +119,7 @@
 		<ricetta tipo="Primi">
 		<nome>Pasta al ragù</nome>
 		<autore>pol</autore>
-		<img src="pasta.jpg" alt="Immagine descrittiva della ricetta"/>
+		<img src="pastaragu.jpg" alt="Immagine descrittiva della ricetta"/>
 		<ingrediente>
 			<nome>i1</nome>
 			<quantita>1</quantita>
