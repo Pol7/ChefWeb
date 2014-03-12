@@ -17,7 +17,6 @@ my $pagina = new CGI;
 #per prendere parametri 
 my $tipo = $pagina->param('tipo') || undef;
 my $cerca = $pagina->param('cerca') || undef;
-my $titolo;
 
 if($tipo){
 	$titolo="$tipo";
@@ -31,14 +30,14 @@ print $pagina->start_html(
 				-style=>[{ -media => 'screen',
 							-src => '../css/page_style.css'},
 						  { -media => 'handheld, screen and (max-width:1320px), only screen and (max-device-width:1320px)',
-							-src => '../css/page_styleMedium.css'},
+							-src => '../css/home_styleMedium.css'},
 						  { -media => 'handheld, screen and (max-width:690px), only screen and (max-device-width:690px)',
-							-src => '../css/page_styleSmall.css'}],	
+							-src => '../css/home_styleSmall.css'}],	
 				-lang=>'it'				
 		);
 print '		<div id="header">
 			<div id="register">
-				<a href="../Registrazione.html">Accedi!</a>
+				<a href="Registrazione.html">Accedi!</a>
 			</div>
 		</div>
 				
@@ -51,9 +50,35 @@ print '		<div id="header">
 		</div>
 		<div id="menu">
 			<ul>
-				<li class="listMenu"><a class="listMenu2" href="../index.html">Home</a></li>
-				<li class="listMenu"><a class="listMenu2" href="creaPagina.pl?tipo=Primi">Primi</a></li>
-				<li class="listMenu"><a class="listMenu2" href="creaPagina.pl?tipo=Secondi">Secondi</a></li>
+				<li class="listMenu"><a class="listMenu2" href="../index.html">Home</a></li>';
+			if($tipo eq 'Primi'){
+				print '<li class="listMenu"><p class="listMenu2">Primi</p></li>';
+			}else{
+				print '<li class="listMenu"><a class="listMenu2" href="creaPagina.pl?tipo=Primi">Primi</a></li>';
+		}if($tipo eq 'Secondi'){
+			print '<p>$tipo</p>';
+		}else{
+			print '<p>else</p>';
+		}if($tipo eq 'Contorni'){
+			print '<p>$tipo</p>';
+		}else{
+			print '<p>else</p>';
+		}if($tipo eq 'Antipasti'){
+			print '<p>$tipo</p>';
+		}else{
+			print '<p>else</p>';
+		}if($tipo eq 'Cocktail'){
+			print '<p>$tipo</p>';
+		}else{
+			print '<p>else</p>';
+		}if($tipo eq 'Primi'){
+			print '<p>$tipo</p>';
+		}else{
+			print '<p>else</p>';
+		}
+		
+		
+		print ' <li class="listMenu"><a class="listMenu2" href="creaPagina.pl?tipo=Secondi">Secondi</a></li>
 				<li class="listMenu"><a class="listMenu2" href="creaPagina.pl?tipo=Contorni">Contorni</a></li>
 				<li class="listMenu"><a class="listMenu2" href="creaPagina.pl?tipo=Antipasti">Antipasti</a></li>
 				<li class="listMenu"><a class="listMenu2" href="creaPagina.pl?tipo=Cocktail">Cocktail</a></li>
@@ -62,24 +87,7 @@ print '		<div id="header">
 			</ul>
 			<div id="clearBoth"></div>
 		</div>
-		
 		<div id="maincol">';
-		if($tipo eq 'Primi'){
-			print '<p>'."$tipo".'</p>';
-		}elsif($tipo eq 'Secondi'){
-			print '<p>'."$tipo".'</p>';
-		}elsif($tipo eq 'Contorni'){
-			print '<p>'."$tipo".'</p>';
-		}elsif($tipo eq 'Antipasti'){
-			print '<p>'."$tipo".'</p>';
-		}elsif($tipo eq 'Cocktail'){
-			print '<p>'."$tipo".'</p>';
-		}elsif($tipo eq 'Dessert'){
-			print '<p>'."$tipo".'</p>';
-		}else{
-			print '<p>else</p>';
-		}
-		
 		if($cerca){
 			&cerca();
 		}
