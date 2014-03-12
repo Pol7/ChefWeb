@@ -57,8 +57,8 @@ print ' <div id="header">
 				
 			</div>';
 			
-			while($node="ingrediente"){
-				
+			for my ($node="ingrediente"){
+				print 'cacca';
 			}
 			
         print    '<p>'.$node->find('./procedimento')->get_node(0).'</p>
