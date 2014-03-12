@@ -56,10 +56,11 @@ print ' <div id="header">
         	  	<div class="immagine">
 				
 			</div>';
+			while($node<find('./ingrediente')){
+			 print 'ca';
+			}
 			
-		 for my $node ($doc->findnodes("//ricetta[ingrediente='ingrediente']")) {
-			print 'cacca';
-		 }
+	
 		 
         print '	<p>'.$node->find('./procedimento')->get_node(0).'</p>
         	</div>'; 
