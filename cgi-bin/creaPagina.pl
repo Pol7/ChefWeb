@@ -50,15 +50,9 @@ print '		<div id="header">
 		</div>
 		<div id="menu">
 			<ul>
-				<li class="listMenu"><a class="listMenu2" href="../index.html">Home</a></li>';
-			if($tipo eq 'Primi'){
-				print '<li class="listMenu"><p class="listMenu2">Primi</p></li>';
-			}else{
-				print '<li class="listMenu"><a class="listMenu2" href="creaPagina.pl?tipo=Primi">Primi</a></li>';
-			}
-		
-		
-		print ' <li class="listMenu"><a class="listMenu2" href="creaPagina.pl?tipo=Secondi">Secondi</a></li>
+				<li class="listMenu"><a class="listMenu2" href="../index.html">Home</a></li>
+				<li class="listMenu"><a class="listMenu2" href="creaPagina.pl?tipo=Primi">Primi</a></li>
+				<li class="listMenu"><a class="listMenu2" href="creaPagina.pl?tipo=Secondi">Secondi</a></li>
 				<li class="listMenu"><a class="listMenu2" href="creaPagina.pl?tipo=Contorni">Contorni</a></li>
 				<li class="listMenu"><a class="listMenu2" href="creaPagina.pl?tipo=Antipasti">Antipasti</a></li>
 				<li class="listMenu"><a class="listMenu2" href="creaPagina.pl?tipo=Cocktail">Cocktail</a></li>
