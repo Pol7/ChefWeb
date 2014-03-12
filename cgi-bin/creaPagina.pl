@@ -37,10 +37,7 @@ print $pagina->start_html(
 				-lang=>'it'				
 		);
 print '		<div id="header">
-			<div id="register">
-				<a href="Registrazione.html">Accedi!</a>
 			</div>
-		</div>
 				
 		<div id="sottoHeader">
 			<form action="creaPagina.pl?" method="get" >
