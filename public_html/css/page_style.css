@@ -177,8 +177,8 @@ font-weight: bold;
 }
 
 .lista{
-margin-left:20%;
-margin-right:20%;
+margin:auto;
+width:60%;
 margin-top:0.5%;
 border-bottom-width: 1px;
 border-bottom-style: solid;
