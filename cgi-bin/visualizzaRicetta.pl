@@ -65,6 +65,7 @@ print ' <div id="header">
 		 
         print '	</div>
         	<div id="procedimento">
+        		<h2>Procedimento :</h2>
         		<p>'.$node->find('./procedimento')->get_node(0).'</p>
         	</div>
         	'; 
