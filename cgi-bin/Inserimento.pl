@@ -33,7 +33,7 @@ my $radice = $doc->getDocumentElement || die("Non accedo alla radice");
 
 my $frammento = "<ricetta tipo='$tipo'>\n<nome>$nome</nome>\n<autore>$autore</autore>\n<img></img>\n<procedimento>$proc</procedimento>\n</ricetta>";
 my $nodo = $parser->parse_balanced_chunk($frammento);
-my $radice->appendChild($nodo);
+my $radice->get_node(1)->appendChild($nodo);
 
 open(OUT, ">$file");
 print OUT $doc->toString;
