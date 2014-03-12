@@ -54,7 +54,7 @@ print ' <div id="header">
         		<h1>'.$node->find('./nome')->get_node(0).'</h1>
         	  	<p>Autore: '.$node->find('./autore')->get_node(0).'</p>
         	  	<p>Autore: '.$node->find('./ingrediente')->get_node(0).'</p>
-        	  	<p>Autore: '.$node->find('./autore')->get_node(0).'</p>
+        	  	<p>Autore: '.$node->find('./ingrediente')->get_node(0).'</p>
         	  	<div class="immagine">
 				
 			</div>';
