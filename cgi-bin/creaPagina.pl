@@ -65,17 +65,17 @@ print '		<div id="header">
 		
 		<div id="maincol">';
 		if($tipo eq 'Primi'){
-			print '<p>"$tipo"</p>';
+			print '<p>'."$tipo".'</p>';
 		}elsif($tipo eq 'Secondi'){
-			print '<p>"$tipo"</p>';
+			print '<p>'."$tipo".'</p>';
 		}elsif($tipo eq 'Contorni'){
-			print '<p>"$tipo"</p>';
+			print '<p>'."$tipo".'</p>';
 		}elsif($tipo eq 'Antipasti'){
-			print '<p>"$tipo"</p>';
+			print '<p>'."$tipo".'</p>';
 		}elsif($tipo eq 'Cocktail'){
-			print '<p>"$tipo"</p>';
+			print '<p>'."$tipo".'</p>';
 		}elsif($tipo eq 'Dessert'){
-			print '<p>"$tipo"</p>';
+			print '<p>'."$tipo".'</p>';
 		}else{
 			print '<p>else</p>';
 		}
