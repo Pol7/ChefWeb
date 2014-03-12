@@ -128,6 +128,6 @@ function controllaDati() {
 			return !err;
 		}
 		else {
-			../cgi-bin/Inserimento.pl
+			
 		}
 }
