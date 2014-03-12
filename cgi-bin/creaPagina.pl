@@ -55,27 +55,7 @@ print '		<div id="header">
 				print '<li class="listMenu"><p class="listMenu2">Primi</p></li>';
 			}else{
 				print '<li class="listMenu"><a class="listMenu2" href="creaPagina.pl?tipo=Primi">Primi</a></li>';
-		}if($tipo eq 'Secondi'){
-			print '<p>$tipo</p>';
-		}else{
-			print '<p>else</p>';
-		}if($tipo eq 'Contorni'){
-			print '<p>$tipo</p>';
-		}else{
-			print '<p>else</p>';
-		}if($tipo eq 'Antipasti'){
-			print '<p>$tipo</p>';
-		}else{
-			print '<p>else</p>';
-		}if($tipo eq 'Cocktail'){
-			print '<p>$tipo</p>';
-		}else{
-			print '<p>else</p>';
-		}if($tipo eq 'Primi'){
-			print '<p>$tipo</p>';
-		}else{
-			print '<p>else</p>';
-		}
+			}
 		
 		
 		print ' <li class="listMenu"><a class="listMenu2" href="creaPagina.pl?tipo=Secondi">Secondi</a></li>
