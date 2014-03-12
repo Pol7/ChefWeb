@@ -3,8 +3,8 @@
 use CGI;
 use CGI::Carp qw(fatalsToBrowser);
 use XML::LibXML;
-#use strict;
-#use warnings;
+use strict;
+use warnings;
 
 my $pagina = new CGI;
 
@@ -33,7 +33,7 @@ my $radice = $doc->getDocumentElement || die("Non accedo alla radice");
 
 my $frammento = "<ricetta tipo='$tipo'>\n<nome>$nome</nome>\n<autore>$autore</autore>\n<img></img>\n<procedimento>$proc</procedimento>\n</ricetta>";
 my $nodo = $parser->parse_balanced_chunk($frammento);
-my $radice->get_node(1)->appendChild($nodo);
+$radice->appendChild($nodo)|| die("no append");
 
 open(OUT, ">$file");
 print OUT $doc->toString;
