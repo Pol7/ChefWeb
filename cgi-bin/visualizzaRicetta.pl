@@ -55,13 +55,9 @@ print ' <div id="header">
         	  	<p>Autore: '.$node->find('./autore')->get_node(0).'</p>
         	  	<div class="immagine">
 				
-			</div>';
+			</div>
 			
-		for my $node ($doc->findnodes("//ricetta[nome='ingrediente']"){
-				print 'cacca';
-			}
-			
-        print    '<p>'.$node->find('./procedimento')->get_node(0).'</p>
+        	<p>'.$node->find('./procedimento')->get_node(0).'</p>
         	</div>'; 
 	}
 		
