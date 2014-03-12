@@ -53,15 +53,36 @@ print '		<div id="header">
 			<ul>
 				<li class="listMenu"><a class="listMenu2" href="../index.html">Home</a></li>';
 		if($tipo eq 'Primi'){
+			print '<li class="listMenu"><p class="listMenu2">Primi</p></li>';
+		}else{
 			print '<li class="listMenu"><a class="listMenu2" href="creaPagina.pl?tipo=Primi">Primi</a></li>';
-		}	
-		print '	<li class="listMenu"><a class="listMenu2" href="creaPagina.pl?tipo=Secondi">Secondi</a></li>
-				<li class="listMenu"><a class="listMenu2" href="creaPagina.pl?tipo=Contorni">Contorni</a></li>
-				<li class="listMenu"><a class="listMenu2" href="creaPagina.pl?tipo=Antipasti">Antipasti</a></li>
-				<li class="listMenu"><a class="listMenu2" href="creaPagina.pl?tipo=Cocktail">Cocktail</a></li>
-				<li class="listMenu"><a class="listMenu2" href="creaPagina.pl?tipo=Dessert">Dessert</a></li>
-				<li class="listMenu"><a class="listMenu2" href="../formRicette.html">Inserisci Ricetta</a></li>
-			</ul>
+		}
+		if($tipo eq 'Secondi'){
+			print '<li class="listMenu"><p class="listMenu2">Secondi</p></li>';
+		}else{
+			print '<li class="listMenu"><a class="listMenu2" href="creaPagina.pl?tipo=Secondi">Secondi</a></li>';
+		}
+		if($tipo eq 'Contorni'){
+			print '<li class="listMenu"><p class="listMenu2">Contorni</p></li>';
+		}else{
+			print '<li class="listMenu"><a class="listMenu2" href="creaPagina.pl?tipo=Contorni">Contorni</a></li>';
+		}
+		if($tipo eq 'Antipasti'){
+			print '<li class="listMenu"><p class="listMenu2">Antipasti</p></li>';
+		}else{
+			print '<li class="listMenu"><a class="listMenu2" href="creaPagina.pl?tipo=Antipasti">Antipasti</a></li>';
+		}
+		if($tipo eq 'Cocktail'){
+			print '<li class="listMenu"><p class="listMenu2">Cocktail</p></li>';
+		}else{
+			print '<li class="listMenu"><a class="listMenu2" href="creaPagina.pl?tipo=Cocktail">Cocktail</a></li>';
+		}
+		if($tipo eq 'Dessert'){
+			print '<li class="listMenu"><p class="listMenu2">Dessert</p></li>';
+		}else{
+			print '<li class="listMenu"><a class="listMenu2" href="creaPagina.pl?tipo=Dessert">Dessert</a></li>';
+		}
+		print '</ul>
 			<div id="clearBoth"></div>
 		</div>
 		<div id="maincol">';
