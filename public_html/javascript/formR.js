@@ -123,9 +123,9 @@ function controllaDati() {
 		} else {
 				document.getElementById("AnnoErr").innerHTML= "";
 		}
-		return !err;
+		
 		if (check==false) {
-			stop!
+			return !err;
 		}
 		else {
 			Inserimento.pl
