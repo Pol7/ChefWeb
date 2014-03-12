@@ -63,10 +63,11 @@ print ' <div id="header">
 			
 	
 		 
-        print '	<div id="procedimento">
+        print '	</div>
+        	<div id="procedimento">
         		<p>'.$node->find('./procedimento')->get_node(0).'</p>
         	</div>
-        	</div>'; 
+        	'; 
 	}
 		
 
