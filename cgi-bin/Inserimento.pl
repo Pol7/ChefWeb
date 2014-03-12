@@ -35,7 +35,7 @@ my $frammento = "<ricetta tipo='$tipo'>\n<nome>$nome</nome>\n<autore>$autore</au
 my $nodo = $parser->parse_balanced_chunk($frammento);
 my $radice->appendChild($nodo);
 
-open(OUT, ">$fileDati");
+open(OUT, ">$file");
 print OUT $doc->toString;
 close(OUT);
 
