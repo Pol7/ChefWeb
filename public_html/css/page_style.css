@@ -176,13 +176,11 @@ border-bottom-style: solid;
 .immagine{
 	width:150px;
 	display:inline-block;
-	vertical-align:1px;
+	vertical-align:8px;
 }
 
 .immagineRicetta{
 	width:150px;
-	vertical-align:6px;
-	
 }
 
 .descr{
