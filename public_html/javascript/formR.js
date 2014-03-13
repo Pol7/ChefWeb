@@ -66,7 +66,14 @@ function controllaDati() {
 		} else {
 				document.getElementById("ingrediente0Err").innerHTML= "";
 		}
-		
+		elem = document.getElementById("quantita0");
+		if( isNaN(elem.value) || parseInt(elem.value)<0 || parseInt(elem.value) > 9999) {
+				document.getElementById("ingrediente0Err").innerHTML= "La quantità deve essere numerica";
+				err=true;
+				check=false;
+		} else {
+				document.getElementById("ingrediente0Err").innerHTML= "";
+		}
 		if (check==false) {
 			return !err;
 		}
