@@ -18,9 +18,15 @@ my $i=0;
 my $check=1;
 while($check==1){
 my $ing="ingrediente$i";
+my $qua="quantita$i";
+my $uni="unita$i";
 my $a=$pagina->param("$ing");
+my $b=$pagina->param("$qua");
+my $c=$pagina->param("$uni");
 if($a){
 @ingrediente[$i]=$a;
+@quantita[$i]=$b;
+@unita[$i]=$c;
 $i++;
 }
 else{
@@ -86,7 +92,7 @@ print '	<body>
 <div id="maincol">';
 print '     <div id="testo"> 
             <h1 id="testo1">Ricetta inserita correttament<h1>';
-print "@ingrediente<br/>";        
+print "@ingrediente , @quantita, @unita<br/>";        
 print "$doc"; 
 print '     <p class="testo2"> Torna alla <a href="../index.html" xml:lang="en"> Home</a></p>
             <p class="testo2"> Inserisci una <a href="../formRicette.html">Nuova Ricetta</a></p> 
