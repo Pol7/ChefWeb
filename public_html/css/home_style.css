@@ -18,6 +18,10 @@ background-color:#e8e7e3;
 	margin-bottom:0.5%;
 }
 
+#insRicetta{
+	float:right;
+}
+
 #maincol{
 	padding:0%;	
 	border-style:double;
