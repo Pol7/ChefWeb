@@ -30,6 +30,19 @@ function aggiungiIng(){
 				"</select></div><div id='insIng"+(i+1)+"'>";
 		return false;
 }
+
+function rimuoviIng(){
+		var fI;
+		var i=0;
+		while(fI = document.getElementById("insIng"-i)){
+				i++;
+		}
+		i--;
+		var div = document.getElementById("insIng"-i);
+		var ingr = "ingrediente"-i;
+		var quant = "quantita"-i;
+		var unit = "unita"-i;
+}
                 
 			
 function controllaDati() {
