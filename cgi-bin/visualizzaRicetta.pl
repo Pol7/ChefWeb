@@ -15,19 +15,12 @@ my $doc = $parser->parse_file($file) || die("Operazioni di parsing fallita");
 my $pagina = new CGI;
 
 #per prendere parametri 
-my $tipo = $pagina->param('tipo') || undef;
+my $nome = $pagina->param('nome') || undef;
 my $cerca = $pagina->param('cerca') || undef;
-my $titolo;
-
-if($tipo){
-	$titolo="$tipo";
-}else{
-	$titolo="$cerca";
-}
 
 print $pagina->header('text/html');
 print $pagina->start_html(
-				-title=>"$titolo",				
+				-title=>"$nome",				
 				-style=>[{ -media => 'screen',
 							-src => '../css/page_style.css'},
 						  { -media => 'handheld, screen and (max-width:1320px), only screen and (max-device-width:1320px)',
