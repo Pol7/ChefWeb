@@ -57,22 +57,22 @@
 		<autore>pol</autore>
 		<img src="capra.jpg" alt="Immagine descrittiva della ricetta"/>
 		<ingrediente>
-			<nome>i1</nome>
+			<nome>pelo</nome>
 			<quantita>1</quantita>
 			<unitadimisura>g</unitadimisura>
 		</ingrediente>
 		<ingrediente>
-			<nome>i2</nome>
+			<nome>carne</nome>
 			<quantita>2</quantita>
 			<unitadimisura>g</unitadimisura>
 		</ingrediente>
 		<ingrediente>	
-			<nome>i3</nome>
+			<nome>patate</nome>
 			<quantita>3</quantita>
 			<unitadimisura>g</unitadimisura>
 		</ingrediente>
 		<ingrediente>	
-			<nome>i4</nome>
+			<nome>fuoco</nome>
 			<quantita>4</quantita>
 			<unitadimisura>g</unitadimisura> 
 		</ingrediente>
