@@ -45,7 +45,7 @@ if ( !$img )
 $img="default.jpg";
 }
 else{
-my $upload_filehandle = $page->upload("immagine");
+my $upload_filehandle = $pagina->upload("immagine");
 open ( UPLOADFILE, ">$upload_dir/$img" ) or die "no open upload";
 binmode UPLOADFILE;
 while ( <$upload_filehandle> )
