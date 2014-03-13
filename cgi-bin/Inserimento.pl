@@ -20,8 +20,8 @@ while($check==1){
 my $ing="ingrediente$i";
 my $a=$pagina->param("$ing");
 if($a){
-@ingrediente[i]=$a;
-i++;
+@ingrediente[$i]=$a;
+$i++;
 }
 else{
 $check=0;
