@@ -49,8 +49,8 @@ my $radice = $doc->getDocumentElement || die("Non accedo alla radice");
 
 my $frammento = "<ricetta tipo='$tipo'>\n<nome>$nome</nome>\n<autore>$autore</autore>\n<img src='$img' alt='Immagine descrittiva della ricetta'></img>\n";
 my $frammento2="";
-i=0;
-foreach $ingred(@ingrediente){
+$i=0;
+foreach my $ingred(@ingrediente){
 my $frammento2="$frammento2<ingrediente><nome>$ingred</nome><quantita>@quantita[$i]</quantita><unita>@unita[$i]</unita></ingrediente>/n";
 }
 $frammento="$frammento$frammento2<procedimento>$proc</procedimento>\n</ricetta>";
