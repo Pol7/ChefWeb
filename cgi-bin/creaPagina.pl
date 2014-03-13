@@ -50,32 +50,32 @@ print '		<div id="header">
 			<ul>
 				<li class="listMenu"><a class="listMenu2" href="../index.html">Home</a></li>';
 		if($tipo eq 'Primi'){
-			print '<li class="listMenu"><p class="listMenu2">Primi</p></li>';
+			print '<li class="listMenu">Primi</li>';
 		}else{
 			print '<li class="listMenu"><a class="listMenu2" href="creaPagina.pl?tipo=Primi">Primi</a></li>';
 		}
 		if($tipo eq 'Secondi'){
-			print '<li class="listMenu"><p class="listMenu2">Secondi</p></li>';
+			print '<li class="listMenu">Secondi</li>';
 		}else{
 			print '<li class="listMenu"><a class="listMenu2" href="creaPagina.pl?tipo=Secondi">Secondi</a></li>';
 		}
 		if($tipo eq 'Contorni'){
-			print '<li class="listMenu"><p class="listMenu2">Contorni</p></li>';
+			print '<li class="listMenu">Contorni</li>';
 		}else{
 			print '<li class="listMenu"><a class="listMenu2" href="creaPagina.pl?tipo=Contorni">Contorni</a></li>';
 		}
 		if($tipo eq 'Antipasti'){
-			print '<li class="listMenu"><p class="listMenu2">Antipasti</p></li>';
+			print '<li class="listMenu">Antipasti</li>';
 		}else{
 			print '<li class="listMenu"><a class="listMenu2" href="creaPagina.pl?tipo=Antipasti">Antipasti</a></li>';
 		}
 		if($tipo eq 'Cocktail'){
-			print '<li class="listMenu"><p class="listMenu2">Cocktail</p></li>';
+			print '<li class="listMenu">Cocktail</li>';
 		}else{
 			print '<li class="listMenu"><a class="listMenu2" href="creaPagina.pl?tipo=Cocktail">Cocktail</a></li>';
 		}
 		if($tipo eq 'Dessert'){
-			print '<li class="listMenu"><p class="listMenu2">Dessert</p></li>';
+			print '<li class="listMenu">Dessert</li>';
 		}else{
 			print '<li class="listMenu"><a class="listMenu2" href="creaPagina.pl?tipo=Dessert">Dessert</a></li>';
 		 }
