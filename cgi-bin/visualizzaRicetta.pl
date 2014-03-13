@@ -56,15 +56,16 @@ print '		<div id="header">
         
         for my $node ($doc->findnodes("//ricetta[nome=\"$nome\"]")) {
         	print '<div id="ricetta">
-        		<div class="divImmagine"><img src="../images/ricette/'.$node->find('./img/@src').'" class="immagineVisualizzaRicetta" alt="immagine rappresentativa della ricetta"/></div>
-        		<h1>'.$node->find('./nome')->get_node(0).'</h1>
-        		<p>Autore: '.$node->find('./autore')->get_node(0).'</p>
-        		<p>Ingredienti:</p>';
-        		for my $ingredient ($doc->findnodes(".//ricetta[nome=\"$nome\"]/ingrediente")) {
-	        	  	print '<p class="pingredien">'."$ingredient".'</p>';
-        	  	}
+        		<div class="divImmagine"><img src="../images/ricette/'.$node->find('./img/@src').'" class="immagineVisualizzaRicetta" alt="immagine rappresentativa della ricetta"/></div>';
         	print '	</div>
         		<div id="procedimento">
+        		
+        			<h1>'.$node->find('./nome')->get_node(0).'</h1>
+        			<p>Autore: '.$node->find('./autore')->get_node(0).'</p>
+        			<p>Ingredienti:</p>';
+        			for my $ingredient ($doc->findnodes(".//ricetta[nome=\"$nome\"]/ingrediente")) {
+	        	  		print '<p class="pingredien">'."$ingredient".'</p>';
+        			}
         			<h2>Procedimento :</h2>
         			<p>'.$node->find('./procedimento')->get_node(0).'</p>
         		</div>
