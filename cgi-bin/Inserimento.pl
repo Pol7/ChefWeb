@@ -36,12 +36,9 @@ my $nodo = $parser->parse_balanced_chunk($frammento);
 $radice->appendChild($nodo)|| die("no append");
 
 open(OUT, ">$file");
-print OUT $doc->toString;
+print OUT "ciao";
 close(OUT);
 
-open (MYFILE, '>>data.txt');
-print MYFILE "Bob\n";
-close (MYFILE);
 
 
 #pagina HTML
@@ -58,9 +55,6 @@ print '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.o
 </head>';
 print '	<body>
 <div id="header">
-<div id="register">
-<a href="../Registrazione.html">Accedi!</a>
-</div>
 </div>
 <div id="sottoHeader">
 <div id="path"> Ti trovi in: <a id="linkPercorso" href="../index.html" xml:lang="en">Home</a> > Ricetta Inserita</div>
