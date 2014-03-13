@@ -67,67 +67,11 @@ function controllaDati() {
 		} else {
 				document.getElementById("ingrediente0Err").innerHTML= "";
 		}
-		elem = document.getElementById("usernameL");
-		if( elem.value.length==0 ) {
-				document.getElementById("UsernameErrLogin").innerHTML= "Inserisci Username";
-				err=true;
-				check=false;
-		} else {
-				document.getElementById("UsernameErrLogin").innerHTML= "";
-		}
-		elem = document.getElementById("passwordL");
-		if( elem.value.length==0 ) {
-				document.getElementById("PasswordErrLogin").innerHTML= "Inserisci password";
-				err=true;
-				check=false;
-		} else {
-				document.getElementById("PasswordErrLogin").innerHTML= "";
-		}
-		elem = document.getElementById("username");
-		if( elem.value.length==0 ) {
-				document.getElementById("UsernameErr").innerHTML= "Username obbligatorio";
-				err=true;
-				check=false;
-		} else {
-				document.getElementById("UsernameErr").innerHTML= "";
-		}
-		elem = document.getElementById("password");
-		if( elem.value.length==0 ) {
-				document.getElementById("PasswordErr").innerHTML= "Inserisci password";
-				err=true;
-				check=false;
-		} else {
-				document.getElementById("PasswordErr").innerHTML= "";
-		}
-		elem = document.getElementById("nome");
-		if( elem.value.length==0 ) {
-				document.getElementById("NomeErr").innerHTML= "Inserisci il nome";
-				err=true;
-				check=false;
-		} else {
-				document.getElementById("NomeErr").innerHTML= "";
-		}
-		elem = document.getElementById("cognome");
-		if( elem.value.length==0 ) {
-				document.getElementById("CognomeErr").innerHTML= "Inserisci il cognome";
-				err=true;
-				check=false;
-		} else {
-				document.getElementById("CognomeErr").innerHTML= "";
-		}
-		elem = document.getElementById("anno");
-		if( elem.value.length==0 ) {
-				document.getElementById("AnnoErr").innerHTML= "Inserisci l'anno";
-				err=true;
-				check=false;
-		} else {
-				document.getElementById("AnnoErr").innerHTML= "";
-		}
+		
+		return !err;
 		
 		if (check==false) {
-			return !err;
+			break;
 		}
-		else {
-			
-		}
+		
 }
