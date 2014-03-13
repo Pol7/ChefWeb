@@ -68,10 +68,9 @@ function controllaDati() {
 				document.getElementById("ingrediente0Err").innerHTML= "";
 		}
 		
-		return !err;
-		
 		if (check==false) {
-			break;
+			return !err;
+			Inserimento.pl break;
 		}
 		
 }
