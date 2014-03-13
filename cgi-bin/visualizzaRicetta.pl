@@ -84,7 +84,24 @@ print '		<div id="header">
 			<div id="clearBoth"></div>
 		</div>
 		<div id="maincol">';
-		print '<p>culo</p>';
+        
+        for my $node ($doc->findnodes("//ricetta[nome=\"$nome\"]")) {
+        	print '<div id="ricetta">
+        		<h1>'.$node->find('./nome')->get_node(0).'</h1>
+        	  	';
+		
+
+		
+			
+	
+		 
+        	print '	</div>
+        		<div id="procedimento">
+        			<h2>Procedimento :</h2>
+        			<p>'.$node->find('./procedimento')->get_node(0).'</p>
+        		</div>
+        		'; 
+		}#for
 print	'</div>
 		<div id="footer">
 			<div id="footerImg1">
