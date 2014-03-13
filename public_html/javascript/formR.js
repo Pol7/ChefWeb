@@ -42,6 +42,7 @@ function rimuoviIng(){
 		var ingr = "ingrediente"-i;
 		var quant = "quantita"-i;
 		var unit = "unita"-i;
+		return false;
 }
                 
 			
