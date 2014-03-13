@@ -40,20 +40,20 @@ $check=0;
 my $upload_dir = '../public_html/database/images/ricette';
 my $file = '../public_html/database/ricette.xml';
 
-if ( !$img )
-{
-$img="default.jpg";
-}
-else{
-my $upload_filehandle = $pagina->upload("immagine");
-open ( UPLOADFILE, ">$upload_dir/$img" ) or die "no open upload";
-binmode UPLOADFILE;
-while ( <$upload_filehandle> )
-{
-print UPLOADFILE;
-}
-close UPLOADFILE;
-}
+#if ( !$img )
+#{
+#$img="default.jpg";
+#}
+#else{
+#my $upload_filehandle = $pagina->upload("immagine");
+#open ( UPLOADFILE, ">$upload_dir/$img" ) || die "no open upload";
+#binmode UPLOADFILE;
+#while ( <$upload_filehandle> )
+#{
+#print UPLOADFILE;
+#}
+#close UPLOADFILE;
+#}
 
 #creazione oggetto parser
 my $parser = XML::LibXML->new();
