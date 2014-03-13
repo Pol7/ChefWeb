@@ -171,6 +171,15 @@ font-weight: bold;
 	vertical-align:text-top;
 }
 
+.h3{
+	margin-top: 2%;
+	margin-bottom: 2%;
+}
+
+.bottone{
+	margin-top: 1%;
+}
+
 #invia{
 	display:block
 	margin-top: 1%;
