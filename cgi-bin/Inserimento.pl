@@ -100,8 +100,8 @@ print '	<body>
 
 <div id="maincol">';
 print '     <div id="testo"> 
-            <h1 id="testo1">Ricetta inserita correttament<h1>';
-print "@ingrediente , @quantita, @unita, $frammento2<br/>";        
+            <h1 id="testo1">Ricetta inserita correttamente</h1>';
+print "@ingrediente , @quantita, @unita, $frammento2,$i<br/>";        
 print "$doc"; 
 print '     <p class="testo2"> Torna alla <a href="../index.html" xml:lang="en"> Home</a></p>
             <p class="testo2"> Inserisci una <a href="../formRicette.html">Nuova Ricetta</a></p> 
