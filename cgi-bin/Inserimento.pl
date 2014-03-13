@@ -51,10 +51,10 @@ my $frammento = "<ricetta tipo='$tipo'>\n<nome>$nome</nome>\n<autore>$autore</au
 my $frammento2="";
 $i=0;
 foreach my $ingred(@ingrediente){
-my $frammento2="$frammento2<ingrediente><nome>$ingred</nome><quantita>@quantita[$i]</quantita><unita>@unita[$i]</unita></ingrediente>/n";
+my $frammento2=$frammento2."<ingrediente><nome>$ingred</nome><quantita>@quantita[$i]</quantita><unita>@unita[$i]</unita></ingrediente>/n";
 $i++;
 }
-$frammento="$frammento$frammento2<procedimento>$proc</procedimento>\n</ricetta>";
+$frammento=$frammento.$frammento2."<procedimento>$proc</procedimento>\n</ricetta>";
 my $nodo = $parser->parse_balanced_chunk($frammento);
 $radice->appendChild($nodo)|| die("no append");
 
