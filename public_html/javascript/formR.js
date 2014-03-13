@@ -42,7 +42,7 @@ function rimuoviIng(){
 		var ingr = "ingrediente"-i;
 		var quant = "quantita"-i;
 		var unit = "unita"-i;
-		div.innerHTML +="<label for=\""+ingr+"\">Ingrediente "+(i-1)+": </label>"+
+		div.innerHTML +="<label for=\""+ingr+"\">Ingrediente "-(i+1)+": </label>"+
 				"<input type=\"text\" name=\""+ingr+"\" id=\""+ingr+"\" class=\"ingrediente\" size=\"20\" tabindex=\""+(tabindex++)+"\" />"+
 				"<label for=\""+quant+"\"> Quantità: </label>"+
 				"<input type=\"text\" name=\""+quant+"\" id=\""+quant+"\" size=\"5\" tabindex=\""+(tabindex++)+"\"/>"+
@@ -58,7 +58,7 @@ function rimuoviIng(){
 						"<option value=\"Cucchiaio\">Cucchiaio</option>"+
 						"<option value=\"Cucchiaino\">Cucchiaino</option>"+
 						"<option value=\"Tazzina\">Tazzina</option>"+
-				"</select></div><div id='insIng"+(i-1)+"'>";
+				"</select></div><div id='insIng"-(i+1)+"'>";
 		return false;
 }
                 
