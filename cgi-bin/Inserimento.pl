@@ -20,7 +20,7 @@ my $proc = $pagina->param('message');
 #$session->param("nomeRicetta_error","Nome Obbligatorio");
 #}
 
-my $file = '../public_html/database/ricette.xml';
+my $file = '/home/pi/sites/ChefWeb/public_html/database/ricette.xml';
 #creazione oggetto parser
 my $parser = XML::LibXML->new();
 #apertura file e lettura input
