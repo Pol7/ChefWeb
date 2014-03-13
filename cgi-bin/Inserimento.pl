@@ -36,7 +36,7 @@ my $nodo = $parser->parse_balanced_chunk($frammento);
 $radice->appendChild($nodo)|| die("no append");
 
 open(OUT,">$file")|| die("non riesco ad aprire: $file");
-print OUT "$doc->toString";
+print OUT "$doc";
 close(OUT);
 
 
