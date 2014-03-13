@@ -47,7 +47,13 @@ my $radice = $doc->getDocumentElement || die("Non accedo alla radice");
 #recupero input della form
 #my $in = $ENV{'QUERY_STRING'};
 
-my $frammento = "<ricetta tipo='$tipo'>\n<nome>$nome</nome>\n<autore>$autore</autore>\n<img src='$img' alt='Immagine descrittiva della ricetta'></img>\n<ingrediente><nome></nome></ingrediente><procedimento>$proc</procedimento>\n</ricetta>";
+my $frammento = "<ricetta tipo='$tipo'>\n<nome>$nome</nome>\n<autore>$autore</autore>\n<img src='$img' alt='Immagine descrittiva della ricetta'></img>\n";
+my $frammento2="";
+i=0;
+foreach $ingred(@ingrediente){
+my $frammento2="$frammento2<ingrediente><nome>$ingred</nome><quantita>@quantita[$i]</quantita><unita>@unita[$i]</unita></ingrediente>/n";
+}
+$frammento="$frammento$frammento2<procedimento>$proc</procedimento>\n</ricetta>";
 my $nodo = $parser->parse_balanced_chunk($frammento);
 $radice->appendChild($nodo)|| die("no append");
 
