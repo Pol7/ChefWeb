@@ -203,13 +203,13 @@ border-bottom-style: solid;
 
 .immagine{
 	width:150px;
-	margin-top:2%;
 	display:inline-block;
 	vertical-align:8px;
 }
 
 .immagineRicetta{
 	width:150px;
+	margin-top:2%;
 }
 
 .immagineVisualizzaRicetta{
