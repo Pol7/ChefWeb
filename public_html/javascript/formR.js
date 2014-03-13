@@ -70,7 +70,6 @@ function controllaDati() {
 		
 		if (check==false) {
 			return !err;
-			Inserimento.pl break;
 		}
 		
 }
