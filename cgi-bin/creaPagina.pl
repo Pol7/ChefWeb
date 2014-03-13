@@ -127,7 +127,7 @@ sub elencoRicette(){
 				<div class="descr">
 					<p>Nome: <a class="titolo" href="visualizzaRicetta.pl?nome='.$_[0]->find('./nome').'" class="nomeRicetta">'.$_[0]->find('./nome').'</a></p>
 					<p class="autore">Autore: '.$_[0]->find('./autore').'</p>';
-					$proced=$_[0]->find('./procedimento');
+					my $proced=$_[0]->find('./procedimento');
 					print '<p class="procedimento">"$proced"('./autore').'</p>';
 				</div>
 			 </div>';
