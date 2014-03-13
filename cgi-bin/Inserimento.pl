@@ -39,7 +39,9 @@ open(OUT, ">$file");
 print OUT $doc->toString;
 close(OUT);
 
-
+open (MYFILE, '>>data.txt');
+print MYFILE "Bob\n";
+close (MYFILE);
 
 
 #pagina HTML
