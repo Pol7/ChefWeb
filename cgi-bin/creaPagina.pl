@@ -127,21 +127,8 @@ sub elencoRicette(){
 				<div class="descr">
 					<p>Nome: <a class="titolo" href="visualizzaRicetta.pl?nome='.$_[0]->find('./nome').'" class="nomeRicetta">'.$_[0]->find('./nome').'</a></p>
 					<p class="autore">Autore: '.$_[0]->find('./autore').'</p>';
-					my $procedimento=substr($_[0]->find('./procedimento'),0,30);
-					print '<p class="procedimento">'.$procedimento.'</p>
+					my $procedimento=substr($_[0]->find('./procedimento'),0,90);
+					print '<p class="procedimento">Procedimento:'.$procedimento.'<a href="visualizzaRicetta.pl?nome='.$_[0]->find('./nome').'">Leggi tutto</a></p>
 				</div>
 			 </div>';
-}
-
-sub cutString(){
-	my $stringa=$_[0];
-	my $max_char=$_[1];
-	if(strlen($stringa)>$max_char){
-		my $stringa_tagliata=substr($stringa, 0,$max_char);
-		my $last_space=strrpos($stringa_tagliata," ");
-		my $stringa_ok=substr($stringa_tagliata, 0,$last_space);
-		return $stringa_ok."...";
-	}else{
-		return $stringa;
-	}
 }
