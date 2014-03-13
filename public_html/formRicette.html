@@ -35,7 +35,7 @@
 			<div id="ricetta">
 				<h1>Inserisci Ricetta</h1>
 				<p>Nome Ricetta :<input name="nomeRicetta" id="nomeRicetta" value=""  placeholder="Nome Ricetta"/> (<span class="asterisco">*</span>)<span id="nomeRicettaErr" class="error"></span></p>
-				<p>Nome Autore :<input name="nomeAutore" id="nomeAutore" value=""  placeholder="Nome Autore"/><span id="nomeAutoreErr" class="error"></span></p>
+				<p>Nome Autore :<input name="nomeAutore" id="nomeAutore" value=""  placeholder="Nome Autore"/> (<span class="asterisco">*</span>)<span id="nomeAutoreErr" class="error"></span></p>
 				<p>Tipologia Ricetta :</p>
 				<input type="radio" name="tipologia" value="antipasto" checked/>Antipasto
 				<input type="radio" name="tipologia" value="primo"/>Primo
@@ -66,21 +66,21 @@
 						<option value="Cucchiaino">Cucchiaino</option>
 						<option value="Tazzina">Tazzina</option>                            
 					</select>
+					(<span class="asterisco">*</span>)
 					<span id="ingrediente0Err" class="error"></span>
 				</div>
                         <div id="insIng1"></div>
                         	<input type="submit" class="bottone" value="Aggiungi" name="action"  id="aggiungi" onclick="return aggiungiIng();" tabindex="100"/>
 				<input type="reset" value="Cancella Tutto">
-				
-                		<input type="submit" class="bottone" value="Invia" name="action"  id="invia" onclick="return controllaDati();" tabindex="100"/>
-			
 			</div>
 			
 			<div id="procedimento">
 				<h3>Inserisci procedimento: </h3>
 				<textarea id="areaProcedimento" rows="20" cols="35" name="message"   placeholder="Scrivi qui il procedimento"></textarea>		
+				(<span class="asterisco">*</span>)
 				<span id="areaProcedimentoErr" class="error"></span>
 			</div>
+			<input type="submit" class="bottone" value="Invia" name="action"  id="invia" onclick="return controllaDati();" tabindex="100"/>
 			</form>
 			<div id="clearBoth"></div>
 			
