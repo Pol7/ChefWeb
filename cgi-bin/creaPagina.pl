@@ -133,8 +133,8 @@ sub elencoRicette(){
 }
 
 sub cutString(){
-	$stringa=$_[0];
-	$max_char=$_[1];
+	my $stringa=$_[0];
+	my $max_char=$_[1];
 	if(strlen($stringa)>$max_char){
 		$stringa_tagliata=substr($stringa, 0,$max_char);
 		$last_space=strrpos($stringa_tagliata," ");
