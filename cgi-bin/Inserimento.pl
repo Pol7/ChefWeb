@@ -13,11 +13,12 @@ my $tipo = $pagina->param('tipologia');
 my $autore = $pagina->param('nomeAutore');
 my $img = $pagina->param('immagine');
 my $proc = $pagina->param('message');
-
-#my $session=undef;
-#unless ($nome)
-#{
-#$session->param("nomeRicetta_error","Nome Obbligatorio");
+my @ingrediente;
+my $i=0;
+my $ing = $pagina->param('ingrediente1');
+#while($check==1){
+#my $ing="ingrediente$i";
+#@ingrediente[i]=$pagina->param("$ing");
 #}
 
 my $file = '/home/pi/sites/ChefWeb/public_html/database/ricette.xml';
@@ -31,7 +32,7 @@ my $radice = $doc->getDocumentElement || die("Non accedo alla radice");
 #recupero input della form
 #my $in = $ENV{'QUERY_STRING'};
 
-my $frammento = "<ricetta tipo='$tipo'>\n<nome>$nome</nome>\n<autore>$autore</autore>\n<img src='$img' alt='Immagine descrittiva della ricetta'></img>\n<procedimento>$proc</procedimento>\n</ricetta>";
+my $frammento = "<ricetta tipo='$tipo'>\n<nome>$nome</nome>\n<autore>$autore</autore>\n<img src='$img' alt='Immagine descrittiva della ricetta'></img>\n<ingrediente><nome>$ing<nome></ingrediente><procedimento>$proc</procedimento>\n</ricetta>";
 my $nodo = $parser->parse_balanced_chunk($frammento);
 $radice->appendChild($nodo)|| die("no append");
 
@@ -78,7 +79,7 @@ print '	<body>
 <div id="maincol">';
 print '     <div id="testo"> 
             <h1 id="testo1">Ricetta inserita correttament<h1>';
-print "$nome<br/>";        
+print "$ing<br/>";        
 print "$doc"; 
 print '     <p class="testo2"> Torna alla <a href="../index.html" xml:lang="en"> Home</a></p>
             <p class="testo2"> Inserisci una <a href="../formRicette.html">Nuova Ricetta</a></p> 
