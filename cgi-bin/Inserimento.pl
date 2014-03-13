@@ -37,7 +37,6 @@ $radice->appendChild($nodo)|| die("no append");
 
 open(OUT, ">$file");
 print OUT "$doc->toString";
-$doc->toFile("file",1);
 close(OUT);
 
 
