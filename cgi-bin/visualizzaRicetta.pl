@@ -58,7 +58,7 @@ print '		<div id="header">
         	print '<div id="ricetta">
         		<h1>'.$node->find('./nome')->get_node(0).'</h1>
         		<p>Autore: '.$node->find('./autore')->get_node(0).'</p>
-        	  	<p>Ingrediente: '.$node->find('./ingrediente')->get_node(0).'</p>
+        	  	<p>Ingrediente: '.$node->find('./ingrediente').'</p>
         	  	<img src=../images/ricette/'.$node->find('./img/@src').' class="immagineVisualizzaRicetta"  alt="immagine rappresentativa della ricetta"/>
         	  	';
 		
