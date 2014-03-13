@@ -20,7 +20,7 @@ my $proc = $pagina->param('message');
 #$session->param("nomeRicetta_error","Nome Obbligatorio");
 #}
 
-my $file = 'public_html/database/ricette.xml';
+my $file = '../public_html/database/ricette.xml';
 #creazione oggetto parser
 my $parser = XML::LibXML->new();
 #apertura file e lettura input
@@ -35,7 +35,7 @@ my $frammento = "<ricetta tipo='$tipo'>\n<nome>$nome</nome>\n<autore>$autore</au
 my $nodo = $parser->parse_balanced_chunk($frammento);
 $radice->appendChild($nodo)|| die("no append");
 
-open(OUT,">$file")|| die("no open");
+open(OUT,">$file")|| die("non riesco ad aprire: $file");
 print OUT "$doc->toString";
 close(OUT);
 
