@@ -18,6 +18,7 @@ my @unita;
 my @quantita;
 my $i=0;
 my $check=1;
+
 while($check==1){
 my $ing="ingrediente$i";
 my $qua="quantita$i";
@@ -36,7 +37,24 @@ $check=0;
 }
 }
 
-my $file = '/home/pi/sites/ChefWeb/public_html/database/ricette.xml';
+my $upload_dir = '../public_html/database/images/ricette';
+my $file = '../public_html/database/ricette.xml';
+
+if ( !$img )
+{
+$img="default.jpg";
+}
+else{
+my $upload_filehandle = $page->upload("immagine");
+open ( UPLOADFILE, ">$upload_dir/$img" ) or die "no open upload";
+binmode UPLOADFILE;
+while ( <$upload_filehandle> )
+{
+print UPLOADFILE;
+}
+close UPLOADFILE;
+}
+
 #creazione oggetto parser
 my $parser = XML::LibXML->new();
 #apertura file e lettura input
