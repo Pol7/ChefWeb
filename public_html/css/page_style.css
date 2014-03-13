@@ -183,6 +183,10 @@ border-bottom-style: solid;
 	width:150px;
 }
 
+.immagineVisualizzaRicetta{
+	width:300px;
+}
+
 .descr{
 	display:inline-block;
     margin-left: 1%;
