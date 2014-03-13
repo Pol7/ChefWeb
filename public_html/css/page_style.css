@@ -143,6 +143,11 @@ font-weight: bold;
 	width:40px;
 }
 
+#campi{
+	font-size: 0.8em;
+	margin-top: -4%;
+	margin-left: 0.5%;
+}
 
 #testo{
  text-align:center;
