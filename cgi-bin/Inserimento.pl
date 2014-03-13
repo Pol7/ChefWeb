@@ -14,6 +14,8 @@ my $autore = $pagina->param('nomeAutore');
 my $img = $pagina->param('immagine');
 my $proc = $pagina->param('message');
 my @ingrediente;
+my @unita;
+my @quantita;
 my $i=0;
 my $check=1;
 while($check==1){
