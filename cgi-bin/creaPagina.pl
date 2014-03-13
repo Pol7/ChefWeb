@@ -136,9 +136,9 @@ sub cutString(){
 	my $stringa=$_[0];
 	my $max_char=$_[1];
 	if(strlen($stringa)>$max_char){
-		$stringa_tagliata=substr($stringa, 0,$max_char);
-		$last_space=strrpos($stringa_tagliata," ");
-		$stringa_ok=substr($stringa_tagliata, 0,$last_space);
+		my $stringa_tagliata=substr($stringa, 0,$max_char);
+		my $last_space=strrpos($stringa_tagliata," ");
+		my $stringa_ok=substr($stringa_tagliata, 0,$last_space);
 		return $stringa_ok."...";
 	}else{
 		return $stringa;
