@@ -47,7 +47,7 @@ print '		<div id="header">
 			<div id="path"> Ti trovi in: <a id="linkPercorso" href="../index.html" xml:lang="en">Home</a> >'.$tipo.' </div>
 		</div>
 		<div id="menu">
-			<ul>
+			<ul id="ulmenu">
 				<li class="listMenu"><a class="listMenu2" href="../index.html">Home</a></li>';
 		if($tipo eq 'Primi'){
 			print '<li class="listMenu">Primi</li>';
