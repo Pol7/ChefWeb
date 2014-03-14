@@ -93,8 +93,8 @@ print $pagina->start_html(
 -src => '../css/page_styleMedium.css'},
 { -media => 'handheld, screen and (max-width:690px), only screen and (max-device-width:690px)',
 -src => '../css/page_styleSmall.css'}],	
--lang=>'it'
--head =>$q-> Link ({-href => '../images/chef.ico', -rel=>'shortcut icon',-type => 'image/x-icon'})	
+-lang=>'it',
+-head =>$q -> Link ({-rel=>'shortcut icon', -href => '../images/chef.ico', -type => 'image/x-icon'})	
 );
 
 
