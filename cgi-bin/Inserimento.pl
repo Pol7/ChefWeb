@@ -101,10 +101,10 @@ print ' <div id="header">
 </div>
 <div id="sottoHeader">
 <form action="creaPagina.pl?" method="get" >
-<input class="search" type="submit" value="Cerca!"/>
-<input class="search" type="text" name="cerca" value="" placeholder="Ricerca ricetta"/>
+<input class="search" type="submit" value="Cerca!" tabindex="3"/>
+<input class="search" type="text" name="cerca" value="" placeholder="Ricerca ricetta" tabindex="2"/>
 </form>
-<div id="path"> Ti trovi in: <a id="linkPercorso" href="../index.html" xml:lang="en">Home</a> > Ricetta Inserita</div>
+<div id="path"> Ti trovi in: <a id="linkPercorso" href="../index.html" xml:lang="en" tabindex="1">Home</a> > Ricetta Inserita</div>
 </div>
 <div id="menu">
 <ul id="ulmenu">
