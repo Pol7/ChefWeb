@@ -143,6 +143,7 @@ font-weight: bold;
 	width:40px;
 }
 
+
 #campi{
 	font-size: 0.8em;
 	margin-top: -4%;
@@ -150,7 +151,15 @@ font-weight: bold;
 }
 
 .pingredien{
-	margin-left:1%;
+	margin-left:7%;
+}
+
+#autore{
+	display:inline;
+}
+
+#testoAutore{
+	display:inline;
 }
 
 #testo{
