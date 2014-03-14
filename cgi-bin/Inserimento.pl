@@ -20,21 +20,21 @@ my $i=0;
 my $check=1;
 
 while($check==1){
-my $ing="ingrediente$i";
-my $qua="quantita$i";
-my $uni="unita$i";
-my $a=$pagina->param("$ing");
-my $b=$pagina->param("$qua");
-my $c=$pagina->param("$uni");
-if($a){
-@ingrediente[$i]=$a;
-@quantita[$i]=$b;
-@unita[$i]=$c;
-$i++;
-}
-else{
-$check=0;
-}
+            my $ing="ingrediente$i";
+            my $qua="quantita$i";
+            my $uni="unita$i";
+            my $a=$pagina->param("$ing");
+            my $b=$pagina->param("$qua");
+            my $c=$pagina->param("$uni");
+            if($a){
+                        @ingrediente[$i]=$a;
+                        @quantita[$i]=$b;
+                        @unita[$i]=$c;
+                        $i++;
+            }
+            else{
+                        $check=0;
+            }
 }
 
 my $upload_dir = '../public_html/database/images/ricette';
@@ -69,8 +69,8 @@ my $frammento = "<ricetta tipo='$tipo'>\n<nome>$nome</nome>\n<autore>$autore</au
 my $frammento2="";
 $i=0;
 foreach my $ingred(@ingrediente){
-$frammento2=$frammento2."<ingrediente><nome>$ingred</nome><quantita>@quantita[$i]</quantita><unitadimisura>@unita[$i]</unitadimisura></ingrediente>";
-$i++;
+            $frammento2=$frammento2."<ingrediente><nome>$ingred</nome><quantita>@quantita[$i]</quantita><unitadimisura>@unita[$i]</unitadimisura></ingrediente>";
+            $i++;
 }
 $frammento=$frammento.$frammento2."<procedimento>$proc</procedimento>\n</ricetta>";
 my $nodo = $parser->parse_balanced_chunk($frammento);
