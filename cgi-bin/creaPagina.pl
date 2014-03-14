@@ -25,7 +25,6 @@ if($tipo){
 	$titolo="$cerca";
 }
 
-my $favicon=0;
 
 print $pagina->header('text/html');
 print $pagina->start_html(
@@ -37,7 +36,7 @@ print $pagina->start_html(
 						  { -media => 'handheld, screen and (max-width:690px), only screen and (max-device-width:690px)',
 							-src => '../css/page_styleSmall.css'}],	
 				-lang=>'it',
-				-Link({ -rel=>'shortcut icon', 
+				-head=>my $pagina->Link({ -rel=>'shortcut icon', 
 						  -href => '../images/chef.ico', 
 						  -type => 'image/x-icon'})				
 		);
