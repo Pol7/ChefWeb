@@ -112,8 +112,7 @@ clear:both;
 
 #ricetta{
 float:left;
-margin-left:0.7%;
-margin-bottom: 0.7%;
+margin:1%;
 }
 
 #insimg{
@@ -185,10 +184,6 @@ font-weight: bold;
 #ingredienti{
 	text-align:center;
 	vertical-align:text-top;
-}
-
-#ricetta{
-	margin:1%;
 }
 
 #titoloingredienti{
