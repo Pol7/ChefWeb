@@ -59,11 +59,11 @@ print '		<div id="header">
         			<div class="divImmagine"><img src="../images/ricette/'.$node->find('./img/@src').'" class="immagineVisualizzaRicetta" alt="immagine rappresentativa della ricetta"/></div>
         			<h1>'.$node->find('./nome')->get_node(0).'</h1>
         			<p>Autore: '.$node->find('./autore')->get_node(0).'</p>
-        			<p>Ingredienti:</p>';
+        			<ul>Ingredienti:';
         			for my $ingredient ($doc->findnodes(".//ricetta[nome=\"$nome\"]/ingrediente")) {
-	        	  		print '<p class="pingredien">'."$ingredient".'</p>';
+	        	  		print '<li class="pingredien">'."$ingredient".'</li>';
         			}
-        	print '  </div> 
+        	print '  </ul></div> 
         	        <div id="procedimento">
         		<h2>Procedimento :</h2>
         		<p>'.$node->find('./procedimento')->get_node(0).'</p>
