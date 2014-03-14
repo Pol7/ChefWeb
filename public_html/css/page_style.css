@@ -126,6 +126,12 @@ width:48%;
 margin-left:3%;
 }
 
+#mostraprocedimento{
+float:left;
+width:48%;
+margin-left:3%;
+}
+
 .error {
 color: red;
 margin-left: 1%;
