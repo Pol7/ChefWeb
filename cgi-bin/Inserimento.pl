@@ -107,7 +107,7 @@ print ' <div id="header">
 <div id="path"> Ti trovi in: <a id="linkPercorso" href="../index.html" xml:lang="en">Home</a> > Ricetta Inserita</div>
 </div>
 <div id="menu">
-<ul>
+<ul id="ulmenu">
 <li class="listMenu"><a class="listMenu2" href="../index.html" xml:lang="en">Home</a></li>
 <li class="listMenu"><a class="listMenu2" href="creaPagina.pl?tipo=Primi">Primi</a></li>
 <li class="listMenu"><a class="listMenu2" href="creaPagina.pl?tipo=Secondi">Secondi</a></li>
