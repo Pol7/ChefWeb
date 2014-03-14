@@ -35,7 +35,7 @@ print $pagina->start_html(
 						  { -media => 'handheld, screen and (max-width:690px), only screen and (max-device-width:690px)',
 							-src => '../css/page_styleSmall.css'}],	
 				-lang=>'it',
-				-head=>$q->Link({ -rel=>'shortcut icon', 
+				-head=>my $q->Link({ -rel=>'shortcut icon', 
 						  -href => '../images/chef.ico', 
 						  -type => 'image/x-icon'})				
 		);
