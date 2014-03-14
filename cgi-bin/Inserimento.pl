@@ -86,7 +86,7 @@ close(OUT);
 
 print $pagina->header('text/html');
 print $pagina->start_html(
--title=>"$titolo",	
+-title=>"Ricetta Inserita",	
 -style=>[{ -media => 'screen',
 -src => '../css/page_style.css'},
 { -media => 'handheld, screen and (max-width:1320px), only screen and (max-device-width:1320px)',
