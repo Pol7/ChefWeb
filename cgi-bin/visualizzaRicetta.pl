@@ -60,7 +60,7 @@ print '		<div id="header">
         			<p id="testoAutore"><h3 id="autore">Autore:</h3> '.$node->find('./autore')->get_node(0).'</p>
         			<div class="divImmagine"><img src="../images/ricette/'.$node->find('./img/@src').'" class="immagineVisualizzaRicetta" alt="immagine rappresentativa della ricetta"/></div>
         			</div>
-        			<div id="procedimento">
+        			<div id="mostraprocedimento">
         			<ul id="uling"><h2>Ingredienti:</h3>';
         			for my $ingredient ($doc->findnodes(".//ricetta[nome=\"$nome\"]/ingrediente")) {
 	        	  		print '<li class="pingredien">'."$ingredient".'</li>';
