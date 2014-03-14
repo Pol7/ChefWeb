@@ -34,21 +34,21 @@ print '		<div id="header">
 				
 		<div id="sottoHeader">
 			<form action="creaPagina.pl?" method="get" >
-				<input class="search" type="submit" value="Cerca!"/>
-				<input class="search" type="text" name="cerca" value="" placeholder="Ricerca ricetta"/>
+				<input class="search" type="submit" value="Cerca!" tabindex="3"/>
+				<input class="search" type="text" name="cerca" value="" placeholder="Ricerca ricetta" tabindex="2"/>
 			</form>
-			<div id="path"> Ti trovi in: <a id="linkPercorso" href="../index.html" xml:lang="en">Home</a> >'.$nome.' </div>
+			<div id="path"> Ti trovi in: <a id="linkPercorso" href="../index.html" xml:lang="en" tabindex="1">Home</a> >'.$nome.' </div>
 		</div>
 		<div id="menu">
 			<ul id="ulmenu">
-				<li class="listMenu"><a class="listMenu2" href="../index.html">Home</a></li>
-				<li class="listMenu"><a class="listMenu2" href="creaPagina.pl?tipo=Antipasti">Antipasti</a></li>
-				<li class="listMenu"><a class="listMenu2" href="creaPagina.pl?tipo=Primi">Primi</a></li>
-				<li class="listMenu"><a class="listMenu2" href="creaPagina.pl?tipo=Secondi">Secondi</a></li>
-				<li class="listMenu"><a class="listMenu2" href="creaPagina.pl?tipo=Contorni">Contorni</a></li>
-				<li class="listMenu"><a class="listMenu2" href="creaPagina.pl?tipo=Dessert">Dessert</a></li>
-				<li class="listMenu"><a class="listMenu2" href="creaPagina.pl?tipo=Cocktail">Cocktail</a></li>
-				<li class="listMenu"><a class="listMenu2" href="../formRicette.html">Inserisci Ricetta</a></li>
+				<li class="listMenu"><a class="listMenu2" href="../index.html" tabindex="4">Home</a></li>
+				<li class="listMenu"><a class="listMenu2" href="creaPagina.pl?tipo=Antipasti" tabindex="5">Antipasti</a></li>
+				<li class="listMenu"><a class="listMenu2" href="creaPagina.pl?tipo=Primi" tabindex="6">Primi</a></li>
+				<li class="listMenu"><a class="listMenu2" href="creaPagina.pl?tipo=Secondi" tabindex="7">Secondi</a></li>
+				<li class="listMenu"><a class="listMenu2" href="creaPagina.pl?tipo=Contorni" tabindex="8">Contorni</a></li>
+				<li class="listMenu"><a class="listMenu2" href="creaPagina.pl?tipo=Dessert" tabindex="9">Dessert</a></li>
+				<li class="listMenu"><a class="listMenu2" href="creaPagina.pl?tipo=Cocktail" tabindex="10">Cocktail</a></li>
+				<li class="listMenu"><a class="listMenu2" href="../formRicette.html" tabindex="11">Inserisci Ricetta</a></li>
 			</ul>
 			<div id="clearBoth"></div>
 		</div>
@@ -75,14 +75,14 @@ print	'	<div id="clearBoth"></div>
 		</div>
 		<div id="footer">
 			<div id="footerImg1">
-				<a href="http://validator.w3.org/">
+				<a href="http://validator.w3.org/" tabindex="12">
 					<img src="../images/valid-xhtml10.png" alt="CSS Valid!"/></a>
 			</div>
 			<div id="footerText">
 			Gruppo beo
 			</div>
 			<div id="footerImg2">
-				<a href="http://jigsaw.w3.org/css-validator/">
+				<a href="http://jigsaw.w3.org/css-validator/" tabindex="13">
 				<img src="../images/vcss-blue.gif" alt="XHTML 1.0 Valid!"/></a>
 			</div>
 		</div>
