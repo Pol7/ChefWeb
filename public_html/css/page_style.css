@@ -112,7 +112,8 @@ clear:both;
 
 #ricetta{
 float:left;
-margin:1%;
+margin-left:0.7%;
+margin-bottom:0.7%;
 }
 
 #insimg{
@@ -163,6 +164,10 @@ font-weight: bold;
 
 #uling{
 	padding:0%;
+}
+
+#insRicetta{
+	margin:1%;
 }
 
 #testo{
