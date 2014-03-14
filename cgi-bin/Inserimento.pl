@@ -93,7 +93,8 @@ print $pagina->start_html(
 -src => '../css/page_styleMedium.css'},
 { -media => 'handheld, screen and (max-width:690px), only screen and (max-device-width:690px)',
 -src => '../css/page_styleSmall.css'}],	
--lang=>'it'	
+-lang=>'it'
+-icon => {-src => '../images/chef.ico'}	
 );
 
 
