@@ -40,10 +40,10 @@ while($check==1){
 my $upload_dir = '../public_html/database/images/ricette';
 my $file = '../public_html/database/ricette.xml';
 
-#if ( !$img )
-#{
-#$img="default.jpg";
-#}
+if ( !$img )
+{
+$img="default.jpg";
+}
 #else{
 #my $upload_filehandle = $pagina->upload("immagine");
 #open ( UPLOADFILE, ">$upload_dir/$img" ) || die "no open upload";
