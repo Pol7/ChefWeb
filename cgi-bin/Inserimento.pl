@@ -83,24 +83,28 @@ close(OUT);
 
 
 #pagina HTML
-print "Content-type: text/html\n\n";
-print '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="it" lang="it">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Ricetta inserita</title>
-<link href="../css/page_style.css" rel="stylesheet" type="text/css" media="screen"/>
-<link href="../css/page_styleMedium.css" rel="stylesheet" type="text/css" media="handheld, screen and (max-width:1320px), only screen and (max-device-width:1320px)" />
-<link href="../css/page_styleSmall.css" rel="stylesheet" type="text/css" media="handheld, screen and (max-width:690px), only screen and (max-device-width:690px)" />
-<script type="text/javascript" src="./javascript/formR.js"></script>
-</head>';
-print '	<body>
-<div id="header">
+
+print $pagina->header('text/html');
+print $pagina->start_html(
+-title=>"$titolo",	
+-style=>[{ -media => 'screen',
+-src => '../css/page_style.css'},
+{ -media => 'handheld, screen and (max-width:1320px), only screen and (max-device-width:1320px)',
+-src => '../css/page_styleMedium.css'},
+{ -media => 'handheld, screen and (max-width:690px), only screen and (max-device-width:690px)',
+-src => '../css/page_styleSmall.css'}],	
+-lang=>'it'	
+);
+
+
+print ' <div id="header">
 </div>
 <div id="sottoHeader">
+<form action="creaPagina.pl?" method="get" >
+<input class="search" type="submit" value="Cerca!"/>
+<input class="search" type="text" name="cerca" value="" placeholder="Ricerca ricetta"/>
+</form>
 <div id="path"> Ti trovi in: <a id="linkPercorso" href="../index.html" xml:lang="en">Home</a> > Ricetta Inserita</div>
-<input class="search" type="submit" value="Cerca!">
-<input class="search" type="text" name="Cerca:" value="" placeholder="Ricerca">
 </div>
 <div id="menu">
 <ul>
@@ -115,8 +119,8 @@ print '	<body>
 </ul>
 <div id="clearBoth"></div>
 </div>
-
 <div id="maincol">';
+
 print '     <div id="testo"> 
             <h1 id="testo1">Ricetta inserita correttamente</h1>';    
 print "$doc"; 
