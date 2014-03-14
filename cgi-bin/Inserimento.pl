@@ -94,7 +94,7 @@ print $pagina->start_html(
 { -media => 'handheld, screen and (max-width:690px), only screen and (max-device-width:690px)',
 -src => '../css/page_styleSmall.css'}],	
 -lang=>'it'
-$pagina-> Link ({-src => '../images/chef.ico', -rel=>'icon'})	
+$pagina-> Link ({-src => '../images/chef.ico', -rel=>'shortcut icon'})	
 );
 
 
