@@ -70,7 +70,8 @@ print '		<div id="header">
         	</div>';
 		}#for
 		
-print	'</div>
+print	'	<div id="clearBoth"></div>
+		</div>
 		<div id="footer">
 			<div id="footerImg1">
 				<a href="http://validator.w3.org/">
