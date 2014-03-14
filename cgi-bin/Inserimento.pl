@@ -80,7 +80,6 @@ open(OUT,">$file")|| die("non riesco ad aprire: $file");
 print OUT "$doc";
 close(OUT);
 
-my $favicon=0;
 
 #pagina HTML
 
@@ -94,7 +93,9 @@ print $pagina->start_html(
 { -media => 'handheld, screen and (max-width:690px), only screen and (max-device-width:690px)',
 -src => '../css/page_styleSmall.css'}],	
 -lang=>'it',
--head=>my $favicon->Link({-rel=>'shortcut icon', -href => '../images/chef.ico', -type => 'image/x-icon'})	
+-head=> $pagina->Link({ -rel=>'shortcut icon', 
+	            -href => '../images/chef.ico', 
+		-type => 'image/x-icon'})	
 );
 
 
