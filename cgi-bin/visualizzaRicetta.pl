@@ -56,15 +56,16 @@ print '		<div id="header">
         
         for my $node ($doc->findnodes("//ricetta[nome=\"$nome\"]")) {
         	print '     <div id="ricetta">
-        			<div class="divImmagine"><img src="../images/ricette/'.$node->find('./img/@src').'" class="immagineVisualizzaRicetta" alt="immagine rappresentativa della ricetta"/></div>
         			<h1>'.$node->find('./nome')->get_node(0).'</h1>
         			<h3 id="autore">Autore:</h3><p id="testoAutore"> '.$node->find('./autore')->get_node(0).'</p>
+        			<div class="divImmagine"><img src="../images/ricette/'.$node->find('./img/@src').'" class="immagineVisualizzaRicetta" alt="immagine rappresentativa della ricetta"/></div>
+        			</div>
+        			<div id="procedimento">
         			<ul><h3>Ingredienti:</h3>';
         			for my $ingredient ($doc->findnodes(".//ricetta[nome=\"$nome\"]/ingrediente")) {
 	        	  		print '<li class="pingredien">'."$ingredient".'</li>';
         			}
-        	print '  </ul></div> 
-        	        <div id="procedimento">
+        	print '  </ul> 
         		<h2>Procedimento :</h2>
         		<p>'.$node->find('./procedimento')->get_node(0).'</p>
         	</div>';
