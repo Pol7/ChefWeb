@@ -49,6 +49,11 @@ print '		<div id="header">
 		<div id="menu">
 			<ul id="ulmenu">
 				<li class="listMenu"><a class="listMenu2" href="../index.html">Home</a></li>';
+		if($tipo eq 'Antipasti'){
+			print '<li class="listMenu">Antipasti</li>';
+		}else{
+			print '<li class="listMenu"><a class="listMenu2" href="creaPagina.pl?tipo=Antipasti">Antipasti</a></li>';
+		}
 		if($tipo eq 'Primi'){
 			print '<li class="listMenu">Primi</li>';
 		}else{
@@ -64,21 +69,16 @@ print '		<div id="header">
 		}else{
 			print '<li class="listMenu"><a class="listMenu2" href="creaPagina.pl?tipo=Contorni">Contorni</a></li>';
 		}
-		if($tipo eq 'Antipasti'){
-			print '<li class="listMenu">Antipasti</li>';
-		}else{
-			print '<li class="listMenu"><a class="listMenu2" href="creaPagina.pl?tipo=Antipasti">Antipasti</a></li>';
-		}
-		if($tipo eq 'Cocktail'){
-			print '<li class="listMenu">Cocktail</li>';
-		}else{
-			print '<li class="listMenu"><a class="listMenu2" href="creaPagina.pl?tipo=Cocktail">Cocktail</a></li>';
-		}
 		if($tipo eq 'Dessert'){
 			print '<li class="listMenu">Dessert</li>';
 		}else{
 			print '<li class="listMenu"><a class="listMenu2" href="creaPagina.pl?tipo=Dessert">Dessert</a></li>';
 		 }
+		if($tipo eq 'Cocktail'){
+			print '<li class="listMenu">Cocktail</li>';
+		}else{
+			print '<li class="listMenu"><a class="listMenu2" href="creaPagina.pl?tipo=Cocktail">Cocktail</a></li>';
+		}
 		print '<li class="listMenu"><a class="listMenu2" href="../formRicette.html">Inserisci Ricetta</a></li>
 			</ul>
 			<div id="clearBoth"></div>
@@ -128,7 +128,7 @@ sub elencoRicette(){
 					<p>Nome: <a class="titolo" href="visualizzaRicetta.pl?nome='.$_[0]->find('./nome').'" class="nomeRicetta">'.$_[0]->find('./nome').'</a></p>
 					<p class="autore">Autore: '.$_[0]->find('./autore').'</p>';
 					my $procedimento=substr($_[0]->find('./procedimento'),0,80);
-					print '<p class="procedimento">Procedimento: '.$procedimento.'... <a href="visualizzaRicetta.pl?nome='.$_[0]->find('./nome').'">Leggi tutto</a></p>
+					print '<div><p class="procedimento">Procedimento: '.$procedimento.'... <a href="visualizzaRicetta.pl?nome='.$_[0]->find('./nome').'">Leggi tutto</a></p></div>
 				</div>
 			 </div>';
 }
