@@ -57,7 +57,7 @@ print '		<div id="header">
         for my $node ($doc->findnodes("//ricetta[nome=\"$nome\"]")) {
         	print '     <div id="ricetta">
         			<h1>'.$node->find('./nome')->get_node(0).'</h1>
-        			<h3 id="autore">Autore:</h3><p id="testoAutore"> '.$node->find('./autore')->get_node(0).'</p>
+        			<p id="testoAutore"><h3 id="autore">Autore:</h3> '.$node->find('./autore')->get_node(0).'</p>
         			<div class="divImmagine"><img src="../images/ricette/'.$node->find('./img/@src').'" class="immagineVisualizzaRicetta" alt="immagine rappresentativa della ricetta"/></div>
         			</div>
         			<div id="procedimento">
