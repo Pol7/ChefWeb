@@ -69,7 +69,7 @@ my $frammento = "<ricetta tipo='$tipo'>\n<nome>$nome</nome>\n<autore>$autore</au
 my $frammento2="";
 $i=0;
 foreach my $ingred(@ingrediente){
-            $frammento2=$frammento2."<ingrediente><nome>$ingred</nome><quantita>@quantita[$i]</quantita><unitadimisura>@unita[$i]</unitadimisura></ingrediente>";
+            $frammento2=$frammento2."<ingrediente>\n<nome>$ingred</nome>\n<quantita>@quantita[$i]</quantita>\n<unitadimisura>@unita[$i]</unitadimisura>\n</ingrediente>\n";
             $i++;
 }
 $frammento=$frammento.$frammento2."<procedimento>$proc</procedimento>\n</ricetta>";
