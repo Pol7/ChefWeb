@@ -3,7 +3,7 @@
 	<ricetta tipo="Antipasti">
 		<nome>Antipasto</nome>
 		<autore>autore1</autore>
-		<img src="56346" alt="Immagine descrittiva della ricetta"/>
+		<img src="default.jpg" alt="Immagine descrittiva della ricetta"/>
 		<ingrediente>	
 			<nome>farina</nome>
 			<quantita>1</quantita>
@@ -29,7 +29,7 @@
 	<ricetta tipo="Secondi">
 		<nome>Secondo</nome>
 		<autore>pol</autore>
-		<img src="56347" alt="Immagine descrittiva della ricetta"/>
+		<img src="default.jpg" alt="Immagine descrittiva della ricetta"/>
 		<ingrediente>
 			<nome>i1</nome>
 			<quantita>1</quantita>
