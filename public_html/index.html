@@ -18,7 +18,8 @@
 			</div>
 		</div>
 		<div id="sottoHeader">
-			<input class="search" type="submit" value="Cerca!" tabindex="3" action="./cgi-bin/creaPagina.pl"/>
+			<form name="search" action="./cgi-bin/creaPagina.pl" method="GET">
+			<input class="search" type="submit" value="Cerca!" tabindex="3"/></form>
 			<input class="search" type="text" name="cerca" value="" tabindex="2" placeholder="Ricerca ricetta" />
 			
 			<div id="path"> Ti trovi in: <span xml:lang="eng"> Home</span></div>
