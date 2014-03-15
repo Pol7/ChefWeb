@@ -11,7 +11,7 @@
 	</head>
 
 	<body>
-		<div id="header">	</div>
+		<div id="header"></div>
 		<div id="sottoHeader">
 			<form name="search" action="./cgi-bin/creaPagina.pl" method="GET">
 			<input class="search" type="submit" value="Cerca!" tabindex="3">
@@ -33,7 +33,7 @@
 		</div>
 		
 		<div id="maincol">
-			<form name="login" action="./cgi-bin/Inserimento.pl" method="GET">
+			<form name="insRicetta" action="./cgi-bin/Inserimento.pl" method="GET">
 			<div id="ricetta">
 				<h1>Inserisci Ricetta</h1>
 				<p id="campi">I campi con (<span class="asterisco">*</span>)</span> sono obbligatori</p>
@@ -48,7 +48,7 @@
 				<input type="radio" name="tipologia" value="Cocktail" tabindex="18"/>Cocktail
 				<fieldset id="insimg">
 					<legend>Inserisci Immagine:</legend>
-					<input type="file" name="immagine" tabindex="19"/>
+					<input type="file" name="immagine" tabindex="19" enctype="multipart/form-data"/>
 				</fieldset>
 				<h3 id="titoloingredienti">Ingredienti</h3>
 				<div id="insIng0">
@@ -84,7 +84,6 @@
 				<span class="obbligo">
 				(<span class="asterisco">*</span>)</span>
 				<span id="areaProcedimentoErr" class="error"></span>
-			
 				<input type="submit" class="bottone" value="Invia" name="action"  id="invia" onclick="return controllaDati();" tabindex="26"/>
 			</div>
 			</form>
