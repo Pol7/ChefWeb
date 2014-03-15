@@ -44,16 +44,16 @@ if ( !$img )
 {
 $img="default.jpg";
 }
-else{
-my $upload_filehandle = $pagina->upload("immagine");
-open ( UPLOADFILE, ">$upload_dir/$img" ) || die "no open upload";
-binmode UPLOADFILE;
-while ( <$upload_filehandle> )
-{
-print UPLOADFILE;
-}
-close UPLOADFILE;
-}
+#else{
+#my $upload_filehandle = $pagina->upload("immagine");
+#open ( UPLOADFILE, ">$upload_dir/$img" ) || die "no open upload";
+#binmode UPLOADFILE;
+#while ( <$upload_filehandle> )
+#{
+#print UPLOADFILE;
+#}
+#close UPLOADFILE;
+#}
 
 #creazione oggetto parser
 my $parser = XML::LibXML->new();
