@@ -2,7 +2,7 @@ body{
 background-color:#e8e7e3;
 }
 h1{
-   display:none;
+   owerflow:hidden;
 }
 #header{
 	background-image: url(../images/home.jpg);
