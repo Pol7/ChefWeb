@@ -41,6 +41,7 @@ print $pagina->start_html(
 						  -type => 'image/x-icon'})				
 		);
 print '		<div id="header">
+			<h1>Lo <span xml:lang="fr">Chef</span> del <span xml:lang="eng"> Web</span></h1>
 			</div>
 				
 		<div id="sottoHeader">
