@@ -14,6 +14,13 @@ html,head,body{
 #path{
 margin-bottom:30%;
 }
+
+.listMenu{
+display:inline-block;
+margin-right:5%;
+text-transform:uppercase;
+font-weight:bold;
+}
   
 #maincol{
  font-size:20pt;
