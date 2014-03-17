@@ -1,7 +1,7 @@
 html,head,body{ 
     margin: 0; padding: 0;
     font-family: "Times New Roman", Times, serif;
-    font-size:10pt;
+    font-size:15pt;
     background-color:#fff;
 }
   
@@ -24,7 +24,6 @@ font-weight:bold;
   
 #maincol{
 margin-top:0%;
-border-style:double;
 width:1300px;
 margin:auto;
 min-height:500px;
@@ -37,9 +36,6 @@ display:none;
 display:none;
 }
 
-.home_element{
-margin:10%;
-}
 #footer{
 display:none;
 }
@@ -48,8 +44,6 @@ display:none;
 margin:auto;
 width:80%;
 margin-top:1%;
-border-bottom-width: 1px;
-border-bottom-style: solid;
 }
 
 .immagine{
@@ -76,8 +70,8 @@ width:380px;
 
 .descr{
 display:inline-block;
-    margin-left: 1%;
-    vertical-align:34px;
+margin-left: 1%;
+vertical-align:34px;
 }
 
 
