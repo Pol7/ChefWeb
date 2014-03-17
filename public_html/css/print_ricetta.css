@@ -29,7 +29,7 @@ display:none;
 }
 
 #maincol{
-text-align:center;
+float:center;
 font-size:15pt;
 margin-top:0%;
 width:1300px;
