@@ -41,12 +41,12 @@ margin:10%;
 display:none;
 }
 
-.immagineVisualizzaRicetta{
-    width:150px;
-    
-    }
-.descr{
-    font-size:10pt;
+.lista{
+margin:auto;
+width:80%;
+margin-top:1%;
+border-bottom-width: 1px;
+border-bottom-style: solid;
 }
 
 .immagine{
@@ -55,7 +55,27 @@ display:inline-block;
 vertical-align:8px;
 }
 
+.immagineRicetta{
+width:150px;
+margin-top:2%;
+}
 
+.immagineVisualizzaRicetta{
+width:380px;
+}
+
+.pingredient{
+margin-left:70%;
+}
+.divImmagine{
+width:380px;
+}
+
+.descr{
+display:inline-block;
+    margin-left: 1%;
+    vertical-align:34px;
+}
 
 
 
