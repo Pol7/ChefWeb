@@ -36,9 +36,6 @@ display:none;
 display:none;
 }
 
-#clearBoth {
-clear:both;
- }
 
 #ricetta{
 float:left;
@@ -63,6 +60,20 @@ margin-left:3%;
 margin-top:3%;
 }
 
+#campi{
+font-size: 0.8em;
+margin-top: -2%;
+margin-left: 0.5%;
+}
+
 .pingredient{
 margin-left:70%;
+}
+
+#autore{
+display:inline;
+}
+
+#testoAutore{
+display:inline;
 }
