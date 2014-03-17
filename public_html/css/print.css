@@ -23,10 +23,13 @@ font-weight:bold;
 }
   
 #maincol{
- font-size:20pt;
- text-align:center;
-   
+margin-top:0%;
+border-style:double;
+width:1300px;
+margin:auto;
+min-height:500px;
 }
+
 #sottoHeader{
 display:none;
 }
