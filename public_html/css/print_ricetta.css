@@ -47,6 +47,14 @@ display:none;
 #clearBoth {
 clear:both;
  }
+ 
+ #autore{
+display:inline;
+}
+
+#testoAutore{
+display:inline;
+}
 
 
 #ricetta{
@@ -60,12 +68,14 @@ margin-top: 1%;
 }
 
 #procedimento{
+display:inline;
 float:left;
 width:44%;
 margin-left:3%;
 }
 
 #mostraprocedimento{
+display:inline;
 float:left;
 width:48%;
 margin-left:3%;
@@ -73,13 +83,7 @@ margin-top:3%;
 }
 
 
-/*#autore{
-display:inline;
-}
 
-#testoAutore{
-display:inline;
-}*/
 
 
 
