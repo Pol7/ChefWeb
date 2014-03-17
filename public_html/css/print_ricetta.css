@@ -1,0 +1,68 @@
+html,head,body{
+    margin: 0; padding: 0;
+    font-family: "Times New Roman", Times, serif;
+    background-color:#fff;
+}
+  
+ h1{
+ font-size:35pt;
+ text-align:center;
+ margin-top:10%;
+ margin-bottom:5%;
+ }
+ 
+ #path{
+font-size:20pt;
+margin-bottom:5%;
+}
+
+.listMenu{
+display:none;
+}
+
+#maincol{
+font-size:20pt;
+margin-top:0%;
+width:1300px;
+margin:auto;
+min-height:500px;
+}
+
+.search{
+display:none;
+}
+
+#footer{
+display:none;
+}
+
+#clearBoth {
+clear:both;
+ }
+
+#ricetta{
+float:left;
+margin-left:0.7%;
+margin-bottom:0.7%;
+}
+
+#insimg{
+margin-top: 1%;
+}
+
+#procedimento{
+float:left;
+width:44%;
+margin-left:3%;
+}
+
+#mostraprocedimento{
+float:left;
+width:48%;
+margin-left:3%;
+margin-top:3%;
+}
+
+.pingredient{
+margin-left:70%;
+}
