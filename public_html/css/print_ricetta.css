@@ -72,16 +72,11 @@ margin-left:3%;
 margin-top:3%;
 }
 
-#campi{
-font-size: 0.8em;
-margin-top: -2%;
-margin-left: 0.5%;
-}
 
-.pingredient{
+/*.pingredient{
     display:inline;
 margin-left:70%;
-}
+}*/
 
 #autore{
 display:inline;
@@ -91,9 +86,5 @@ display:inline;
 display:inline;
 }
 
-/*#ingredienti{
-text-align:center;
-vertical-align:text-top;
-}*/
 
 
