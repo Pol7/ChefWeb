@@ -68,12 +68,6 @@ margin-bottom:0.7%;
 margin-top: 1%;
 }
 
-/*#procedimento{
-display:inline;
-float:left;
-width:44%;
-margin-left:3%;
-}
 
 #mostraprocedimento{
 display:inline;
@@ -81,7 +75,25 @@ float:left;
 width:48%;
 margin-left:3%;
 margin-top:3%;
-}*/
+}
+
+
+#uling{
+padding:0%;
+}
+
+.pingredien{
+margin-left:7%;
+}
+
+#insRicetta{
+margin-bottom:1%;
+float: left;
+margin-left:3%;
+margin-top:1%;
+margin-right:5%;
+}
+
 
 
 
