@@ -34,10 +34,13 @@ margin:10%;
 display:none;
 }
 
-.immagine{
+.immagineVisualizzaRicetta{
     width:150px;
     
     }
+.descr{
+    font-size:10pt;
+}
 
 
 
