@@ -44,6 +44,10 @@ display:none;
 display:none;
 }
 
+#clearBoth {
+clear:both;
+ }
+
 
 #ricetta{
 float:left;
