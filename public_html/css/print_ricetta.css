@@ -58,8 +58,7 @@ display:inline;
 
 
 #ricetta{
-    display:inline;
-float:left;
+float:center;
 margin-left:0.7%;
 margin-bottom:0.7%;
 }
@@ -70,8 +69,7 @@ margin-top: 1%;
 
 
 #mostraprocedimento{
-display:inline;
-float:left;
+float:center;
 width:48%;
 margin-left:3%;
 margin-top:3%;
@@ -80,6 +78,7 @@ margin-top:3%;
 
 #uling{
 padding:0%;
+text-align:center;
 }
 
 .pingredien{
