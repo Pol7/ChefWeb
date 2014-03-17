@@ -36,7 +36,7 @@ print $pagina->start_html(
 						  { -media => 'handheld, screen and (max-width:690px), only screen and (max-device-width:690px)',
 							-src => '../css/page_styleSmall.css'}],
 						  { -media => 'print',
-						        -src"'../css/print.css'},
+						        -src => '../css/print.css'},
 				-lang=>'it',
 				-head=> $pagina->Link({ -rel=>'shortcut icon', 
 						  -href => '../images/chef.ico', 
