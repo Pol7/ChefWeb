@@ -16,6 +16,14 @@ font-size:20pt;
 margin-bottom:5%;
 }
 
+#insRicetta{
+margin-bottom:1%;
+float: left;
+margin-left:3%;
+margin-top:1%;
+margin-right:5%;
+}
+
 .listMenu{
 display:none;
 }
