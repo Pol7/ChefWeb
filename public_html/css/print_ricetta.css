@@ -21,7 +21,7 @@ display:none;
 }
 
 #maincol{
-font-size:20pt;
+font-size:15pt;
 margin-top:0%;
 width:1300px;
 margin:auto;
@@ -76,4 +76,18 @@ display:inline;
 
 #testoAutore{
 display:inline;
+}
+
+#ingredienti{
+text-align:center;
+vertical-align:text-top;
+}
+
+#titoloingredienti{
+margin-top: 2%;
+margin-bottom: 2%;
+}
+
+#uling{
+padding:0%;
 }
