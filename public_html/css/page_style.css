@@ -108,6 +108,12 @@ margin-left: 23%;
 width: 35%;
 }
 
+#registra{
+float: left;
+margin-bottom:3%;
+width: 41%;
+}
+
 #clearBoth { 
 clear:both;
  }
