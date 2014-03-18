@@ -32,6 +32,7 @@ print $pagina->end_html;
 sub getSession() {
 	my $session = CGI::Session->load() or die $!;
 	if ($session->is_expired || $session->is_empty ) {
+		print '<h1>fallito</h1>';
 		return undef; 
 	} else {
 		my $utente = $session->param('usernameL');
