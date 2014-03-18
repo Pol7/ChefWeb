@@ -35,6 +35,7 @@ sub getSession() {
 		return undef; 
 	} else {
 		my $utente = $session->param('usernameL');
+		print '<h1>metodo '.$utente.'</h1>';
 		return $utente; 
 	}
 }
