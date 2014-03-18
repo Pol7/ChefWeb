@@ -35,17 +35,17 @@
 		<div id="maincol">
       			<div id="login">
       			<form name="login" action="./cgi-bin/session.pl" method="POST" enctype="multipart/form-data">
-  					<h1>Login</h1>
-  					<p>Username: <input name="usernameL" id="usernameL" value=""  placeholder="Username"/><span id="UsernameErrLogin" class="error"></span></p>
-  					<p>Password: <input name="passwordL" id="passwordL" value="" placeholder="Password"/><span id="PasswordErrLogin" class="error"></span> </p>
+  					<h2>Login</h2>
+  					<p>Username: <input name="usernameL" type="text" id="usernameL" value=""  placeholder="Username"/><span id="UsernameErrLogin" class="error"></span></p>
+  					<p>Password: <input name="passwordL" type="password" id="passwordL" value="" placeholder="Password"/><span id="PasswordErrLogin" class="error"></span> </p>
+  					<input type="submit" class="bottone" value="Accedi" name="action"  id="invia" onclick="return controllaDati();" tabindex="90"/>
   				</form>
-  				<input type="submit" class="bottone" value="Accedi" name="action"  id="invia" onclick="return controllaDati();" tabindex="90"/>
   				
   			</div>
   		
   			<div id="registra">
   				<form name="registrazione" action="./cgi-bin/Registrazione.pl" method="GET" enctype="multipart/form-data">
-  				<h1>Registrazione</h1>
+  				<h2>Registrazione</h2>
   				<p>Username :<input name="username" id="username" value=""  placeholder="Username"/><span id="UsernameErr" class="error"></span></p>
   				<p>Password :<input type="password" name="password" id="password" value="" placeholder="Password"/> <span id="PasswordErr" class="error"></span></p>
   				<p>Nome     : <input type="text" name="nome" value="" placeholder="Nome"/><span id="NomeErr" class="error"></span></p>
