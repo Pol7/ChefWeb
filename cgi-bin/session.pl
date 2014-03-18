@@ -33,7 +33,6 @@ print $pagina->end_html;
 sub createSession() {
 	my $session = new CGI::Session();
 	$session->param('utente', $nome_utente);
-	print $session->header(-location=>"$base");
 }
 
 sub getSession() {
