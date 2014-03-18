@@ -105,13 +105,12 @@ padding:0.9em;
 #login{
 float: left;
 margin-left: 23%;
-width: 35%;
 }
 
 #registra{
 float: left;
 margin-bottom:3%;
-width: 41%;
+margin-left: 19%;
 }
 
 #clearBoth { 
@@ -222,7 +221,6 @@ margin-right:5%;
 #invia{
 	display:block
 	margin-top: 1%;
-	margin-left: 41%;
 	margin-bottom: 1%;
 }
 
