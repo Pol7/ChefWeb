@@ -26,15 +26,13 @@ print $pagina->start_html(
 						  { -media => 'handheld, screen and (max-width:1320px), only screen and (max-device-width:1320px)',
 							-src => '../css/page_styleMedium.css'},
 						  { -media => 'handheld, screen and (max-width:690px), only screen and (max-device-width:690px)',
-							-src => '../css/page_styleSmall.css'},
-						  { -media => 'print',
-						        -src => '../css/print_ricetta.css'}],
+							-src => '../css/page_styleSmall.css'}],	
 				-lang=>'it',
 				-head=> $pagina->Link({ -rel=>'shortcut icon', 
 						  -href => '../images/pinguino.ico', 
 						  -type => 'image/x-icon'})				
 		);
-print '		<div id="header"><div id="accedi"><a href="Registrazione.html" tabindex="1">Accedi o Registrati!</a></div>
+print '		<div id="header"><div id="accedi"><a href="Registrazione.html" tabindex="1">Accedi o Registrati!</a></div></div>
 			</div>
 				
 		<div id="sottoHeader">
@@ -61,18 +59,18 @@ print '		<div id="header"><div id="accedi"><a href="Registrazione.html" tabindex
         
         for my $node ($doc->findnodes("//ricetta[nome=\"$nome\"]")) {
         	print '     <div id="insRicetta">
-        			<h1>'.$node->find('./nome')->get_node(0).'</h1>
-        			<p id="testoAutore"><h3 id="autore">Autore:</h3> '.$node->find('./autore')->get_node(0).'</p>
+        			<h1>'.$node->find('./nome').'</h1>
+        			<p id="testoAutore"><h3 id="autore">Autore:</h3> '.$node->find('./autore').'</p>
         			<div class="divImmagine"><img src="../images/ricette/'.$node->find('./img/@src').'" class="immagineVisualizzaRicetta" alt="immagine rappresentativa della ricetta"/></div>
         			</div>
         			<div id="mostraprocedimento">
         			<ul id="uling"><h2>Ingredienti:</h3>';
-        			for my $ingredient ($doc->findnodes(".//ricetta[nome=\"$nome\"]/ingrediente")) {
-	        	  		print '<li class="pingredien">'."$ingredient".'</li>';
-        			}
+				foreach my $ingredient ($doc->findnodes("//ricetta[nome=\"$nome\"]/ingrediente")) {
+					print '<li class="pingredien">'.$ingredient->find('./nome').' '.$ingredient->find('./quantita').' '.$ingredient->find('./unitadimisura').'</li>';
+				}
         	print '  </ul> 
         		<h2>Procedimento :</h2>
-        		<p>'.$node->find('./procedimento')->get_node(0).'</p>
+        		<p>'.$node->find('./procedimento').'</p>
         	</div>';
 		}#for
 		
