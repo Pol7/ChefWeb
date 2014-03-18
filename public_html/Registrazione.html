@@ -34,11 +34,12 @@
 		</br>
 		<div id="maincol">
       			<div id="login">
-      				<form name="login" action="./cgi-bin/Login.pl" method="GET" enctype="multipart/form-data">
-  				<h1>Login</h1>
-  				<p>Username: <input name="usernameL" id="usernameL" value=""  placeholder="Username"/><span id="UsernameErrLogin" class="error"></span></p>
-  				<p>Password: <input name="passwordL" id="passwordL" value="" placeholder="Password"/><span id="PasswordErrLogin" class="error"></span> </p>
-  				</form><input type="submit" class="bottone" value="Accedi" name="action"  id="invia" onclick="return controllaDati();" tabindex="90"/>
+      			<form name="login" action="./cgi-bin/session.pl" method="POST" enctype="multipart/form-data">
+  					<h1>Login</h1>
+  					<p>Username: <input name="usernameL" id="usernameL" value=""  placeholder="Username"/><span id="UsernameErrLogin" class="error"></span></p>
+  					<p>Password: <input name="passwordL" id="passwordL" value="" placeholder="Password"/><span id="PasswordErrLogin" class="error"></span> </p>
+  				</form>
+  				<input type="submit" class="bottone" value="Accedi" name="action"  id="invia" onclick="return controllaDati();" tabindex="90"/>
   				
   			</div>
   		

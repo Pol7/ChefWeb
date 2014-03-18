@@ -45,7 +45,6 @@ print $pagina->start_html(
 print '		<div id="header">
 				<div id="h1">Lo <span xml:lang="fr">Chef</span> del <span xml:lang="eng"> Web</span></div>
 			</div>
-		<div id="registrazione"><a href="session.pl?utente=Paolo">Accedi</a></div>		
 		<div id="sottoHeader">
 			<form action="creaPagina.pl?" method="get" >
 				<input class="search" type="submit" value="Cerca!" tabindex="3"/>

@@ -13,7 +13,6 @@ my $pagina = new CGI;
 
 my $nome_utente = getSession();
 
-
 print $pagina->header('text/html');
 print $pagina->start_html(
 				-title=>'Sessioni',				
@@ -29,11 +28,6 @@ print '<h1>Buon giorno '.$nome_utente.'</h1>';
 
 
 print $pagina->end_html;
-
-sub createSession() {
-	my $session = new CGI::Session();
-	$session->param('utente', $nome_utente);
-}
 
 sub getSession() {
 	my $session = CGI::Session->load() or die $!;
