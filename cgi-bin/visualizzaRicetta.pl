@@ -34,7 +34,7 @@ print $pagina->start_html(
 						  -href => '../images/pinguino.ico', 
 						  -type => 'image/x-icon'})				
 		);
-print '		<div id="header">
+print '		<div id="header"><div id="accedi"><a href="Registrazione.html" tabindex="1">Accedi o Registrati!</a></div>
 			</div>
 				
 		<div id="sottoHeader">
