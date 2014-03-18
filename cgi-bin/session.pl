@@ -34,7 +34,7 @@ sub getSession() {
 	if ($session->is_expired || $session->is_empty ) {
 		return undef; 
 	} else {
-		my $utente = $session->param('utente');
+		my $utente = $session->param('usernameL');
 		return $utente; 
 	}
 }
