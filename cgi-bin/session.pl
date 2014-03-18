@@ -32,14 +32,15 @@ print $pagina->end_html;
 
 sub getSession() {
 	my $session = CGI::Session->load() or die $!;
+	if ($session->is_expired){
+		print '<h1>expired</h1>';
+		return undef; 
+	}
 	if ($session->is_empty) {
 		print '<h1>is empty</h1>';
 		return undef; 
 	} 
-	if ($session->is_expired){
-		print '<h1>expired</h1>';
-		return undef; 
-	}else {
+	else {
 		my $utente = $session->param('usernameL');
 		print '<h1>metodo '.$utente.'</h1>';
 		return $utente; 
