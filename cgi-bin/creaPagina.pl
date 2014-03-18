@@ -44,6 +44,9 @@ print $pagina->start_html(
 		);
 print '		<div id="header">
 				<div id="h1">Lo <span xml:lang="fr">Chef</span> del <span xml:lang="eng"> Web</span></div>
+				<div id="accedi">
+					<a href="Registrazione.html" tabindex="1">Accedi o Registrati!</a>
+				</div>
 			</div>
 		<div id="sottoHeader">
 			<form action="creaPagina.pl?" method="get" >
