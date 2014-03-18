@@ -11,7 +11,6 @@ use CGI::Session();
 #crea un oggetto CGI
 my $pagina = new CGI;
 
-my $nome_utente = getSession();
 
 print $pagina->header('text/html');
 print $pagina->start_html(
@@ -24,6 +23,8 @@ print $pagina->start_html(
 							-src => '../css/page_styleSmall.css'}],	
 				-lang=>'it'				
 );
+
+my $nome_utente = getSession();
 print '<h1>Buon giorno '.$nome_utente.'</h1>';
 
 
