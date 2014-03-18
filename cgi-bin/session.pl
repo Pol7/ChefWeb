@@ -9,9 +9,9 @@ use CGI::Session();
 
 
 #crea un oggetto CGI
-$pagina = new CGI;
+my $pagina = new CGI;
 
-$nome_utente = getSession();
+my $nome_utente = getSession();
 
 
 print $pagina->header('text/html');
@@ -31,13 +31,13 @@ print '<h1>Buon giorno '.$nome_utente.'</h1>';
 print $pagina->end_html;
 
 sub createSession() {
-	$session = new CGI::Session();
+	my $session = new CGI::Session();
 	$session->param('utente', $nome_utente);
 	print $session->header(-location=>"$base");
 }
 
 sub getSession() {
-	$session = CGI::Session->load() or die $!;
+	my $session = CGI::Session->load() or die $!;
 	if ($session->is_expired || $session->is_empty ) {
 		return undef; 
 	} else {
