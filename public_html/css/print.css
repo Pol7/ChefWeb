@@ -4,11 +4,14 @@ html,head,body{
     background-color:#fff;
 }
   
- #h1{  
+ #titolo{  
  font-size:35pt;
  text-align:center;
  margin-top:10%;
  margin-bottom:5%;
+ }
+ #accedi{
+     display:none;
  }
 #path{
 font-size:20pt;
