@@ -26,13 +26,17 @@ print $pagina->start_html(
 						  { -media => 'handheld, screen and (max-width:1320px), only screen and (max-device-width:1320px)',
 							-src => '../css/page_styleMedium.css'},
 						  { -media => 'handheld, screen and (max-width:690px), only screen and (max-device-width:690px)',
-							-src => '../css/page_styleSmall.css'}],	
+							-src => '../css/page_styleSmall.css'},
+						  { -media => 'print',
+							-src => '../css/print_ricetta.css'}],
 				-lang=>'it',
 				-head=> $pagina->Link({ -rel=>'shortcut icon', 
 						  -href => '../images/pinguino.ico', 
 						  -type => 'image/x-icon'})				
 		);
-print '		<div id="header"><div id="accedi"><a href="Registrazione.html" tabindex="1">Accedi o Registrati!</a></div></div>
+print '		<div id="header">
+				<div id="h1"><em>Lo <span xml:lang="fr">Chef</span> del <span xml:lang="eng"> Web</span></em></div>
+				<div id="accedi"><a href="Registrazione.html" tabindex="1">Accedi o Registrati!</a></div></div>
 			</div>
 				
 		<div id="sottoHeader">
