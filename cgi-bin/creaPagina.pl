@@ -43,7 +43,7 @@ print $pagina->start_html(
 						  -type => 'image/x-icon'})				
 		);
 print '		<div id="header">
-				<div id="Titolo">Lo <span xml:lang="fr">Chef</span> del <span xml:lang="eng"> Web</span></div>
+				<div id="Titolo"><em>Lo <span xml:lang="fr">Chef</span> del <span xml:lang="eng"> Web</span></em></div>
 				<div id="accedi">
 					<a href="Registrazione.html" tabindex="1">Accedi o Registrati!</a>
 				</div>
