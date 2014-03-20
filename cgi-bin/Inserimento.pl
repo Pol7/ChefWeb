@@ -62,7 +62,8 @@ my $doc = $parser->parse_file($file) || die("Operazioni di parsing fallita");
 #recupero l'elemento radice
 my $radice = $doc->getDocumentElement || die("Non accedo alla radice");
 
-
+#nome in Upper-Case
+$nome=uc($nome);
 my $frammento = "<ricetta tipo='$tipo'>\n<nome>$nome</nome>\n<autore>$autore</autore>\n<img src='$img' alt='Immagine descrittiva della ricetta'></img>\n";
 my $frammento2="";
 $i=0;
