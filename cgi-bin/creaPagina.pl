@@ -131,7 +131,10 @@ sub cerca(){
 			$trovato=1;
 		}
 		if(!$trovato){
-			print '<p>La ricerca non ha trovato risultati, torna alla <a href="../index.html">Home</a></p>';	
+			print '	<div id="testo">
+				<p id="testo1">La ricerca non ha trovato risultati</p>
+				<p class="testo2"> Torna alla <a href="../index.html" xml:lang="en"> Home</a></p>
+			</div>';
 		}
 }
 sub elencoRicette(){
