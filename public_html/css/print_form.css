@@ -16,6 +16,10 @@ display:none;
 font-size:20pt;
 margin-bottom:5%;
 }
+textarea{
+ width:100pt;	
+ font-size:15pt;
+}
 select{
  height:30pt;
  font-size:15pt;	
