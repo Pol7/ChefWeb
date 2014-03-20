@@ -118,7 +118,7 @@ print	'</div>
 print $pagina->end_html;
 
 sub pasti(){
-		for my $node ($doc->findnodes("//ricetta[\@tipo=\"$tipo\"]")){
+		for my $node ($doc->findnodes("//ricetta[\@tipo=\"lc($tipo)\"]")){
 				elencoRicette($node);
 		}
 }
