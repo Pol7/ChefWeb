@@ -13,11 +13,7 @@ html,head,body{
 font-size:20pt;
 margin-bottom:5%;
 }
-#nomeAutore{
- height:30pt;
- font-size:15pt;
-}
-#nomeRicetta{
+input{
  height:30pt;
  font-size:15pt;
 }
