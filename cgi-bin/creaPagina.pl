@@ -126,7 +126,7 @@ sub pasti(){
 sub cerca(){
 		my $cercaLow=uc($cerca);
 		for my $node ($doc->findnodes("//ricetta[nome[contains(.,\"$cercaLow\")]]")){
-			if($node==0){
+			if($node eq ""){
 				print '<p>La ricerca non ha trovato nulla, torna alla <a href="../index">Home</a></p>';
 			}else{
 				elencoRicette($node);
