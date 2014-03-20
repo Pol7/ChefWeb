@@ -128,7 +128,7 @@ sub cerca(){
 		for my $node ($doc->findnodes("//ricetta[nome[contains(.,\"$cercaLow\")]]")){
 			elencoRicette($node);
 		}
-		print '<p>A'.$node.'A</p>';
+		print '<p>AA</p>';
 }
 sub elencoRicette(){
 	print '<div class="lista">
