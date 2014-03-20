@@ -3,6 +3,9 @@ html,head,body{
     font-family: "Times New Roman", Times, serif;
     background-color:#fff;
 }
+#accedi{
+display:none;
+}
  #h1{
  font-size:40pt;
  text-align:center;
