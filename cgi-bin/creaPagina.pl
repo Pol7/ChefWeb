@@ -124,7 +124,8 @@ sub pasti(){
 }
 
 sub cerca(){
-		for my $node ($doc->findnodes("//ricetta[nome[contains(.,\"$cerca\")]]")){
+		my $cercaLow=lc($cerca);
+		for my $node ($doc->findnodes("//ricetta[nome[contains(.,\"$cercaLow\")]]")){
 				elencoRicette($node);
 		}
 }
