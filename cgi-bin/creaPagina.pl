@@ -118,14 +118,14 @@ print	'</div>
 print $pagina->end_html;
 
 sub pasti(){
-		for my $node ($doc->findnodes("//ricetta[\@tipo=\"lc($tipo)\"]")){
+		my tipoLow=lc($tipo);
+		for my $node ($doc->findnodes("//ricetta[\@tipo=\"$tipoLow\"]")){
 				elencoRicette($node);
 		}
 }
 
 sub cerca(){
 		for my $node ($doc->findnodes("//ricetta[nome[contains(.,\"$cerca\")]]")){
-				print '<p>ciao'.$cerca;
 				elencoRicette($node);
 		}
 }
