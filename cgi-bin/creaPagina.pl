@@ -124,11 +124,15 @@ sub pasti(){
 }
 
 sub cerca(){
+		my trovato=false;
 		my $cercaLow=uc($cerca);
 		for my $node ($doc->findnodes("//ricetta[nome[contains(.,\"$cercaLow\")]]")){
 			elencoRicette($node);
+			trovato=true;
 		}
-		print '<p>AA</p>';
+		if(!trovato){
+			print 'La ricerca non ha trovato risultati, torna alla <a href="../index.html">Home</a></p>';	
+		}
 }
 sub elencoRicette(){
 	print '<div class="lista">
