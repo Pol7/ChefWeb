@@ -27,7 +27,7 @@ display:none;
 }
 
 #maincol{
-font-size:18pt;
+font-size:25pt;
 margin-top:0%;
 width:1300px;
 margin:auto;
@@ -35,7 +35,7 @@ min-height:500px;
 }
 
 h1{
- font-size:25pt;
+ font-size:30pt;
 }
 
 #ulmenu{
@@ -71,6 +71,9 @@ margin-top: 1%;
 float:left;
 width:44%;
 margin-left:3%;
+}
+#areaprocedimento{
+ font-size:18pt;
 }
 
 #mostraprocedimento{
