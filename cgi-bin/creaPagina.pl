@@ -126,10 +126,9 @@ sub pasti(){
 sub cerca(){
 		my $cercaLow=uc($cerca);
 		for my $node ($doc->findnodes("//ricetta[nome[contains(.,\"$cercaLow\")]]")){
-			print '<p>A'.$node.'A</p>';
 			elencoRicette($node);
-			
 		}
+		print '<p>A'.$node.'A</p>';
 }
 sub elencoRicette(){
 	print '<div class="lista">
