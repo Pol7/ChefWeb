@@ -13,6 +13,10 @@ html,head,body{
 font-size:20pt;
 margin-bottom:5%;
 }
+.ingrediente{
+ height:30pt;
+ font-size:15pt;	
+}
 input{
  height:30pt;
  font-size:15pt;
