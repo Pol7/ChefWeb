@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <ricette>
 	<ricetta tipo="Antipasti">
-		<nome>antipasto</nome>
+		<nome>ANTIPASTO RICETTA</nome>
 		<autore>autore1</autore>
 		<img src="default.jpg" alt="Immagine descrittiva della ricetta"/>
 		<ingrediente>	
@@ -27,7 +27,7 @@
 		<procedimento>fare la cacca</procedimento>	
 	</ricetta>
 	<ricetta tipo="Secondi">
-		<nome>secondo</nome>
+		<nome>SECONDO RICETTA</nome>
 		<autore>pol</autore>
 		<img src="default.jpg" alt="Immagine descrittiva della ricetta"/>
 		<ingrediente>
@@ -53,7 +53,7 @@
 		<procedimento>vai in bagno e lavati i denti</procedimento>
 	</ricetta>
 	<ricetta tipo="Primi">
-		<nome>capra</nome>
+		<nome>CAPRA</nome>
 		<autore>pol</autore>
 		<img src="capra.jpg" alt="Immagine descrittiva della ricetta"/>
 		<ingrediente>
@@ -80,7 +80,7 @@
 	</ricetta>
 	
 	<ricetta tipo="Primi">
-		<nome>Pasta in bianco</nome>
+		<nome>PASTA IN BIANCO</nome>
 		<autore>pol</autore>
 		<img src="pastabianca.jpg" alt="Immagine descrittiva della ricetta"/>
 		<ingrediente>
@@ -106,7 +106,7 @@
 		<procedimento>cuoci tutto</procedimento>
 	</ricetta>
 		<ricetta tipo="Primi">
-		<nome>Pasta al pomodoro</nome>
+		<nome>PASTA AL POMODORO</nome>
 		<autore>pol</autore>
 		<img src="pasta.jpg" alt="Immagine descrittiva della ricetta"/>
 		<ingrediente>
@@ -117,7 +117,7 @@
 		<procedimento>de bojo</procedimento>
 	</ricetta>
 		<ricetta tipo="Primi">
-		<nome>Pasta al ragù</nome>
+		<nome>PASTA AL RAGU`</nome>
 		<autore>pol</autore>
 		<img src="pastaragu.jpg" alt="Immagine descrittiva della ricetta"/>
 		<ingrediente>
