@@ -134,7 +134,7 @@ print '     <div id="testo">
               <img src="../images/valid-xhtml10.png" alt="CSS Valid!"/></a>
             </div>
             <div id="footerText">
-            Gruppo beo
+            Statistic Chef
             </div>
             <div id="footerImg2">
               <a href="http://jigsaw.w3.org/css-validator/">
