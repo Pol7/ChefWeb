@@ -128,7 +128,7 @@ sub cerca(){
 		my $cercaLow=uc($cerca);
 		for my $node ($doc->findnodes("//ricetta[nome[contains(.,\"$cercaLow\")]]")){
 			elencoRicette($node);
-			trovato=true;
+			trovato=1;
 		}
 		if(!$trovato){
 			print '<p>La ricerca non ha trovato risultati, torna alla <a href="../index.html">Home</a></p>';	
