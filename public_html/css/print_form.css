@@ -13,6 +13,12 @@ html,head,body{
 font-size:20pt;
 margin-bottom:5%;
 }
+#nomeAutore{
+ height:10pt;	
+}
+#nomeRicetta{
+ height:10pt;	
+}
 #insimg{
 border:none;
 }
