@@ -123,7 +123,7 @@ print ' <div id="header"><div id="accedi"><a href="Registrazione.html" tabindex=
 <div id="maincol">';
 
 print '     <div id="testo"> 
-            <h1 id="testo1">Ricetta inserita correttamente</h1>';    
+            <p id="testo1">Ricetta inserita correttamente</p>';    
 print "$doc"; 
 print '     <p class="testo2"> Torna alla <a href="../index.html" xml:lang="en"> Home</a></p>
             <p class="testo2"> Inserisci una <a href="../formRicette.html">Nuova Ricetta</a></p> 
