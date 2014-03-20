@@ -14,10 +14,12 @@ font-size:20pt;
 margin-bottom:5%;
 }
 #nomeAutore{
- height:50px;	
+ height:30pt;
+ font-size:15pt;
 }
 #nomeRicetta{
- height:50pt;	
+ height:30pt;
+ font-size:15pt;
 }
 #insimg{
 border:none;
