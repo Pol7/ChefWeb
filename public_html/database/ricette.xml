@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <ricette>
-	<ricetta tipo="antipasti">
+	<ricetta tipo="Antipasti">
 		<nome>antipasto</nome>
 		<autore>autore1</autore>
 		<img src="default.jpg" alt="Immagine descrittiva della ricetta"/>
@@ -26,7 +26,7 @@
 		</ingrediente>
 		<procedimento>fare la cacca</procedimento>	
 	</ricetta>
-	<ricetta tipo="secondi">
+	<ricetta tipo="Secondi">
 		<nome>secondo</nome>
 		<autore>pol</autore>
 		<img src="default.jpg" alt="Immagine descrittiva della ricetta"/>
@@ -52,7 +52,7 @@
 		</ingrediente>
 		<procedimento>vai in bagno e lavati i denti</procedimento>
 	</ricetta>
-	<ricetta tipo="primi">
+	<ricetta tipo="Primi">
 		<nome>capra</nome>
 		<autore>pol</autore>
 		<img src="capra.jpg" alt="Immagine descrittiva della ricetta"/>
@@ -79,7 +79,7 @@
 		<procedimento>Prendere la capra e darle tante carezze. Dopo di che appendere il tosa capre e falle i fianchi come fosse la testa di Vidal. Appena finita falle un bel servizio fotografico e ti fai il calendario 2015, sono sempre bei ricordi. Ora è il momento di ammazzarla, sono sempre brutti momenti se ci si affeziona, infatti non volevo mai arrivare a questo momento, però ci tocca! Col il coltellaccio ammazzatela, ma cercate di rendere il momento più divertente: avete presente quando distruggete i castelli di sabbia in spiaggia? La foga, l'impeto irrefrenabile? Ecco!! Però attenti, il sangue è tanto. Ora che avete finito pulitela. Buon appetito!</procedimento>
 	</ricetta>
 	
-	<ricetta tipo="primi">
+	<ricetta tipo="Primi">
 		<nome>Pasta in bianco</nome>
 		<autore>pol</autore>
 		<img src="pastabianca.jpg" alt="Immagine descrittiva della ricetta"/>
@@ -105,7 +105,7 @@
 		</ingrediente>
 		<procedimento>cuoci tutto</procedimento>
 	</ricetta>
-		<ricetta tipo="primi">
+		<ricetta tipo="Primi">
 		<nome>Pasta al pomodoro</nome>
 		<autore>pol</autore>
 		<img src="pasta.jpg" alt="Immagine descrittiva della ricetta"/>
@@ -116,7 +116,7 @@
 		</ingrediente>
 		<procedimento>de bojo</procedimento>
 	</ricetta>
-		<ricetta tipo="primi">
+		<ricetta tipo="Primi">
 		<nome>Pasta al ragù</nome>
 		<autore>pol</autore>
 		<img src="pastaragu.jpg" alt="Immagine descrittiva della ricetta"/>
