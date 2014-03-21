@@ -130,14 +130,14 @@ print '     <div id="testo">
             </div>
             <div id="footer">
             <div id="footerImg1">
-              <a href="http://validator.w3.org/">
+              <a href="http://validator.w3.org/check?uri=referer">
               <img src="../images/valid-xhtml10.png" alt="CSS Valid!"/></a>
             </div>
             <div id="footerText">
             Statistic Chef
             </div>
             <div id="footerImg2">
-              <a href="http://jigsaw.w3.org/css-validator/">
+              <a href="http://jigsaw.w3.org/css-validator/check?uri=referer">
               <img src="../images/vcss-blue.gif" alt="XHTML 1.0 Valid!"/></a>
             </div>
       </div>
