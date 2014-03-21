@@ -14,14 +14,14 @@
       </xs:complexType>
 
     <xs:complexType name="Tutente">
-     <xs:sequence>
-     <xs:element name="Username" type="xs:string" minOccurs="1" maxOccurs="1"/>
-     <xs:element name="Password" type="xs:string" minOccurs="1" maxOccurs="1"/>
-     <xs:element name="Nome" type="xs:string" minOccurs="1" maxOccurs="1"/>
-     <xs:element name="Cognome" type="xs:string" minOccurs="1" maxOccurs="1"/>
-     <xs:element name="Sesso" type="Tsesso" minOccurs="1" maxOccurs="1"/>
-     <xs:element name="DataNascita" type="Tdata" minOccurs="1" maxOccurs="1"/>
-     </xs:sequence>
+     <xs:all>
+     <xs:element name="Username" type="xs:string"/>
+     <xs:element name="Password" type="xs:string"/>
+     <xs:element name="Nome" type="xs:string"/>
+     <xs:element name="Cognome" type="xs:string"/>
+     <xs:element name="Sesso" type="Tsesso"/>
+     <xs:element name="DataNascita" type="Tdata"/>
+     </xs:all>
     </xs:complexType>
    
      
