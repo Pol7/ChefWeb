@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ricette>
+	<ricetta tipo="Antipasti">
+		<nome>ANTIPASTO RICETTA</nome>
+		<autore>autore1</autore>
+		<img src="default.jpg" alt="Immagine descrittiva della ricetta"/>
+		<ingrediente>	
+			<nome>farina</nome>
+			<quantita>1</quantita>
+			<unitadimisura>g</unitadimisura>
+		</ingrediente>
+		<ingrediente>	
+			<nome>limone</nome>
+			<quantita>2</quantita>
+			<unitadimisura>g</unitadimisura>
+		</ingrediente>
+		<ingrediente>
+			<nome>pane</nome>
+			<quantita>3</quantita>
+			<unitadimisura>g</unitadimisura>
+		</ingrediente>
+		<ingrediente>
+			<nome>cioccolato</nome>
+			<quantita>4</quantita>
+			<unitadimisura>g</unitadimisura>	
+		</ingrediente>
+		<procedimento>fare la cacca</procedimento>	
+	</ricetta>
+	<ricetta tipo="Secondi">
+		<nome>SECONDO RICETTA</nome>
+		<autore>pol</autore>
+		<img src="default.jpg" alt="Immagine descrittiva della ricetta"/>
+		<ingrediente>
+			<nome>i1</nome>
+			<quantita>1</quantita>
+			<unitadimisura>g</unitadimisura>
+		</ingrediente>
+		<ingrediente>
+			<nome>i2</nome>
+			<quantita>2</quantita>
+			<unitadimisura>g</unitadimisura>
+		</ingrediente>
+		<ingrediente>	
+			<nome>i3</nome>
+			<quantita>3</quantita>
+			<unitadimisura>g</unitadimisura>
+		</ingrediente>
+		<ingrediente>	
+			<nome>i4</nome>
+			<quantita>4</quantita>
+			<unitadimisura>g</unitadimisura> 
+		</ingrediente>
+		<procedimento>vai in bagno e lavati i denti</procedimento>
+	</ricetta>
+	<ricetta tipo="Primi">
+		<nome>CAPRA</nome>
+		<autore>pol</autore>
+		<img src="capra.jpg" alt="Immagine descrittiva della ricetta"/>
+		<ingrediente>
+			<nome>pelo</nome>
+			<quantita>1</quantita>
+			<unitadimisura>g</unitadimisura>
+		</ingrediente>
+		<ingrediente>
+			<nome>carne</nome>
+			<quantita>2</quantita>
+			<unitadimisura>g</unitadimisura>
+		</ingrediente>
+		<ingrediente>	
+			<nome>patate</nome>
+			<quantita>3</quantita>
+			<unitadimisura>g</unitadimisura>
+		</ingrediente>
+		<ingrediente>	
+			<nome>fuoco</nome>
+			<quantita>4</quantita>
+			<unitadimisura>g</unitadimisura> 
+		</ingrediente>
+		<procedimento>Prendere la capra e darle tante carezze. Dopo di che appendere il tosa capre e falle i fianchi come fosse la testa di Vidal. Appena finita falle un bel servizio fotografico e ti fai il calendario 2015, sono sempre bei ricordi. Ora è il momento di ammazzarla, sono sempre brutti momenti se ci si affeziona, infatti non volevo mai arrivare a questo momento, però ci tocca! Col il coltellaccio ammazzatela, ma cercate di rendere il momento più divertente: avete presente quando distruggete i castelli di sabbia in spiaggia? La foga, l'impeto irrefrenabile? Ecco!! Però attenti, il sangue è tanto. Ora che avete finito pulitela. Buon appetito!</procedimento>
+	</ricetta>
+	
+	<ricetta tipo="Primi">
+		<nome>PASTA IN BIANCO</nome>
+		<autore>pol</autore>
+		<img src="pastabianca.jpg" alt="Immagine descrittiva della ricetta"/>
+		<ingrediente>
+			<nome>i1</nome>
+			<quantita>1</quantita>
+			<unitadimisura>g</unitadimisura>
+		</ingrediente>
+		<ingrediente>
+			<nome>i2</nome>
+			<quantita>2</quantita>
+			<unitadimisura>g</unitadimisura>
+		</ingrediente>
+		<ingrediente>	
+			<nome>i3</nome>
+			<quantita>3</quantita>
+			<unitadimisura>g</unitadimisura>
+		</ingrediente>
+		<ingrediente>	
+			<nome>i4</nome>
+			<quantita>4</quantita>
+			<unitadimisura>g</unitadimisura> 
+		</ingrediente>
+		<procedimento>cuoci tutto</procedimento>
+	</ricetta>
+		<ricetta tipo="Primi">
+		<nome>PASTA AL POMODORO</nome>
+		<autore>pol</autore>
+		<img src="pasta.jpg" alt="Immagine descrittiva della ricetta"/>
+		<ingrediente>
+			<nome>i1</nome>
+			<quantita>1</quantita>
+			<unitadimisura>g</unitadimisura>
+		</ingrediente>
+		<procedimento>de bojo</procedimento>
+	</ricetta>
+		<ricetta tipo="Primi">
+		<nome>PASTA AL RAGU`</nome>
+		<autore>pol</autore>
+		<img src="pastaragu.jpg" alt="Immagine descrittiva della ricetta"/>
+		<ingrediente>
+			<nome>i1</nome>
+			<quantita>1</quantita>
+			<unitadimisura>g</unitadimisura>
+		</ingrediente>
+		<procedimento>cuoci tutto</procedimento>
+	</ricetta>
+	<ricetta tipo="Antipasti">
+		<nome>NUOVA</nome>
+		<autore>nuova</autore>
+		<img src="default.jpg" alt="Immagine descrittiva della ricetta"/>
+		<ingrediente>
+			<nome>ingrediente</nome>
+			<quantita>33</quantita>
+			<unitadimisura>kg</unitadimisura>
+		</ingrediente>
+		<procedimento>sfdsa asdgs fdg </procedimento>
+	</ricetta>
+	<ricetta tipo="Antipasti">
+			<nome>CVZXCV</nome>
+			<autore>xvzxxcv</autore>
+			<img src="Bankoboev.Ru_zelenyi_piton.jpg" alt="Immagine descrittiva della ricetta"/>
+			<ingrediente>
+			<nome>cbxcvb</nome>
+			<quantita>34</quantita>
+			<unitadimisura>hg</unitadimisura>
+		</ingrediente>
+		<procedimento>ffgcvxbcx</procedimento>
+	</ricetta>
+	<ricetta tipo="Secondi">
+		<nome>GUANCE ARROSTE ALLA CREMA DI ZENZERO</nome>
+		<autore>pol</autore>
+		<img src="guancezenzero.jpg" alt="Immagine descrittiva della ricetta"/>
+		<ingrediente>
+			<nome>zenzero in polvere</nome>
+			<quantita>1</quantita>
+			<unitadimisura>Non specificata</unitadimisura>
+		</ingrediente>
+		<procedimento>Fare il brodo vegetale con carate,sedano e cipolla...rosolare dell'aglio in olio extra vergine d'oliva aggiungendo dell'erba cipollina...sistemare le guance di maiale,e cuocere sfumando con del vino bianco e il brodo vegetale, salare e pepare quanto basta....una volta cotte, tagliare e preparare la crema di zenzero: zenzero in polvere diluito in salsa restante dalla cottura delle guance, rassodata con l'aggiunta di farina bianca e latte intero</procedimento>
+	</ricetta>
+	<ricetta tipo="Primi">
+		<nome>RICETTA</nome>
+		<autore>pol</autore>
+		<img src="default.jpg" alt="Immagine descrittiva della ricetta"/>
+		<ingrediente>
+			<nome>aq</nome>
+			<quantita/>
+			<unitadimisura>Non specificata</unitadimisura>
+		</ingrediente>
+		<procedimento>sda</procedimento>
+	</ricetta>
+		<ricetta tipo="Primi">
+		<nome>DSA</nome>
+		<autore>das</autore>
+		<img src="default.jpg" alt="Immagine descrittiva della ricetta"/>
+		<ingrediente>
+			<nome>dsa</nome>
+			<quantita/>
+			<unitadimisura>Non specificata</unitadimisura>
+		</ingrediente>
+		<procedimento>dsa</procedimento>
+	</ricetta>
+	<ricetta tipo="Primi">
+		<nome>1</nome>
+		<autore>das</autore>
+		<img src="default.jpg" alt="Immagine descrittiva della ricetta"/>
+		<ingrediente>
+			<nome>dsa</nome>
+			<quantita>23</quantita>
+			<unitadimisura>Non specificata</unitadimisura>
+		</ingrediente>
+		<procedimento>dsa</procedimento>
+	</ricetta>
+	<ricetta tipo="Primi">
+		<nome>2</nome>
+		<autore>dsa</autore>
+		<img src="default.jpg" alt="Immagine descrittiva della ricetta"/>
+		<ingrediente>
+			<nome>das</nome>
+			<quantita>3</quantita>
+			<unitadimisura>Non specificata</unitadimisura>
+		</ingrediente>
+		<procedimento>dsa</procedimento>
+	</ricetta>
+	<ricetta tipo="Primi">
+		<nome>3</nome>
+		<autore>dsa</autore>
+		<img src="default.jpg" alt="Immagine descrittiva della ricetta"/>
+		<ingrediente>
+			<nome>das</nome>
+			<quantita>3</quantita>
+			<unitadimisura>Non specificata</unitadimisura>
+		</ingrediente>
+		<procedimento>sad</procedimento>
+	</ricetta>
+	<ricetta tipo="Primi">
+		<nome>4</nome>
+		<autore>dsa</autore>
+		<img src="default.jpg" alt="Immagine descrittiva della ricetta"/>
+		<ingrediente>
+			<nome>asd</nome>
+			<quantita>3</quantita>
+			<unitadimisura>Non specificata</unitadimisura>
+		</ingrediente>
+		<procedimento>dsa</procedimento>
+	</ricetta>
+	<ricetta tipo="Primi">
+		<nome>5</nome>
+		<autore>erw</autore>
+		<img src="default.jpg" alt="Immagine descrittiva della ricetta"/>
+		<ingrediente>
+			<nome>3erwrwe</nome>
+			<quantita>3</quantita>
+			<unitadimisura>Non specificata</unitadimisura>
+		</ingrediente>
+		<procedimento>32rw</procedimento>
+	</ricetta>
+	<ricetta tipo="Cocktail">
+		<nome>LIONEJUVENTUS</nome>
+		<autore>Conte</autore>
+		<img src="Tulips.jpg" alt="Immagine descrittiva della ricetta"/>
+		<ingrediente>
+			<nome>Vidal</nome>
+			<quantita>1</quantita>
+			<unitadimisura>Tazzina</unitadimisura>
+		</ingrediente>
+		<procedimento>fnthng</procedimento>
+	</ricetta>
+	<ricetta tipo="Primi">
+		<nome>RISOTTO</nome>
+		<autore>el mejo</autore>
+		<img src="risotto.jpg" alt="Immagine descrittiva della ricetta"/>
+		<ingrediente>
+			<nome>riso</nome>
+			<quantita>250</quantita>
+			<unitadimisura>g</unitadimisura>
+		</ingrediente>
+		<ingrediente>
+			<nome>burro</nome>
+			<quantita>60</quantita>
+			<unitadimisura>g</unitadimisura>
+		</ingrediente>
+		<ingrediente>
+			<nome>cipolla</nome>
+			<quantita>1</quantita>
+			<unitadimisura>Non specificata</unitadimisura>
+		</ingrediente>
+		<ingrediente>
+			<nome>vino bianco</nome>
+			<quantita>1</quantita>
+			<unitadimisura>Cucchiaio</unitadimisura>
+		</ingrediente>
+		<ingrediente>
+			<nome>parmigiano</nome>
+			<quantita>100</quantita>
+			<unitadimisura>g</unitadimisura>
+		</ingrediente>
+		<ingrediente>
+			<nome>sale</nome>
+			<quantita>1</quantita>
+			<unitadimisura>Cucchiaino</unitadimisura>
+		</ingrediente>
+		<ingrediente>
+			<nome>pepe</nome>
+			<quantita>1</quantita>
+			<unitadimisura>Cucchiaino</unitadimisura>
+		</ingrediente>
+		<procedimento>I passaggi principali per preparare un buon risotto sono pochi e sempre gli stessi.  
+Tutte le ricette che riguardano la preparazione di un risotto sono una variante di questa ricetta base.
+ 
+Per 4 persone gli ingredienti base per un ottimo risotto sono:
+
+250 gr. di riso, 60 gr. di burro, una cipolla piccola, brodo di carne, vino bianco, 100 gr. di parmigiano reggiano grattugiato, sale, pepe.
+
+Munitevi di una casseruola con coperchio e iniziate la preparazione:
+
+1°) Fate soffriggere dolcemente la cipolla, tritata fine, nel burro.     
+Aggiungete il riso e lasciatelo tostare per un paio di minuti mescolando 
+dolcemente.
+
+2°) Aggiungete un bicchiere di vino bianco. Dopo alcuni secondi sarà tutto evaporato 
+e il riso avrà assorbito l'aroma.
+  
+3°) Aggiungete un mestolo di brodo bollente e fate bollire lentamente finché si  
+assorbe completamente, aggiungendo ancora brodo, se necessario.
+Dopo circa 20/25 minuti, a seconda della varietà di riso usato (leggete le istruzioni  
+sulla confezione), il risotto sarà cotto.
+
+4°)Aggiungete una noce di burro o del parmigiano grattugiato per migliorare la  
+mantecatura.
+
+Partendo da questa ricetta base, si possono preparare i più svariati tipi di risotto, per esempio: ai funghi, allo zafferano, ai piselli, alla salsiccia, ai frutti di mare, al pomodoro ecc.. E' importante che per queste preparazioni il riso deve essere aggiunto nel preparato da cui il risotto prende il nome e in questo deve insaporirsi per qualche minuto, quindi continuare seguendo il procedimento di base.</procedimento>
+	</ricetta>
+		<ricetta tipo="Dessert">
+		<nome>ÈÈ</nome>
+		<autore>èè</autore>
+		<img src="default.jpg" alt="Immagine descrittiva della ricetta"/>
+		<ingrediente>
+			<nome>èèèè</nome>
+			<quantita>6</quantita>
+			<unitadimisura>Non specificata</unitadimisura>
+		</ingrediente>
+		<procedimento>èèèè</procedimento>
+	</ricetta>
+	<ricetta tipo="Dessert">
+		<nome>ÙÙÙÙÙÙÙÙÙ</nome>
+		<autore>ùùùùùùùùù</autore>
+		<img src="default.jpg" alt="Immagine descrittiva della ricetta"/>
+		<ingrediente>
+			<nome>ùùùùùùù</nome>
+			<quantita>3</quantita>
+			<unitadimisura>ml</unitadimisura>
+		</ingrediente>
+		<procedimento>ùùùùùùùùù</procedimento>
+	</ricetta>
+	<ricetta tipo="Antipasti">
+		<nome>POZZATO</nome>
+		<autore>MARVEL</autore>
+		<img src="default.jpg" alt="Immagine descrittiva della ricetta"/>
+		<ingrediente>
+			<nome>ssssds</nome>
+			<quantita>34</quantita>
+			<unitadimisura>Non specificata</unitadimisura>
+		</ingrediente>
+		<procedimento>ciccione</procedimento>
+	</ricetta>
+	
+</ricette>
