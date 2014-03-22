@@ -139,6 +139,7 @@ sub pasti(){
  	         elencoRicette($node);
         }
 	}
+
     if($i>9){
         $pag++;
     	print '<a id="pagSuc" href="creaPagina.pl?tipo='.$tipo.'&pag='.$pag.'">pagina successiva ></a>'; 
