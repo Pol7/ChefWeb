@@ -1,118 +1,118 @@
 html,head,body{
-    margin: 0; padding: 0;
-    font-family: "Times New Roman", Times, serif;
-    background-color:#fff;
+    	margin: 0; padding: 0;
+    	font-family: "Times New Roman", Times, serif;
+    	background-color:#fff;
 }
 #accedi{
-display:none;
+	display:none;
 }
- #titolo{
- font-size:40pt;
- text-align:center;
- margin-top:10%;
- margin-bottom:5%;
- }
+#titolo{
+ 	font-size:40pt;
+ 	text-align:center;
+ 	margin-top:10%;
+ 	margin-bottom:5%;
+}
 #path{
-font-size:20pt;
-margin-bottom:5%;
+	font-size:20pt;
+	margin-bottom:5%;
 }
 textarea{
- width:700pt;	
- height:300pt;
- font-size:15pt;
+ 	width:700pt;	
+ 	height:300pt;
+ 	font-size:15pt;
 }
 select{
- height:30pt;
- font-size:15pt;	
+ 	height:30pt;
+ 	font-size:15pt;	
 }
 input{
- height:30pt;
- font-size:15pt;
+ 	height:30pt;
+ 	font-size:15pt;
 }
 #insimg{
-border:none;
+	border:none;
 }
 
 .listMenu{
-display:none;
+	display:none;
 }
 
 .search{
-display:none;
+	display:none;
 }
 
 #footer{
-display:none;
+	display:none;
 }
 
 #maincol{
-font-size:25pt;
-margin-top:0%;
-width:1300px;
-margin:auto;
-min-height:500px;
+	font-size:25pt;
+	margin-top:0%;
+	width:1300px;
+	margin:auto;
+	min-height:500px;
 }
 
 h1{
- font-size:30pt;
+ 	font-size:30pt;
 }
 
 #ulmenu{
-padding:0.9em;
+	padding:0.9em;
 }
 
 
 #login{
-display:none;
+	display:none;
 }
 
 #registra{
-float: left;
-margin-bottom:3%;
-margin-left: 19%;
+	float: left;
+	margin-bottom:3%;
+	margin-left: 19%;
 }
 
 #clearBoth { 
-clear:both;
+	clear:both;
  }
 
 #ricetta{
-float:left;
-margin-left:0.7%;
-margin-bottom:0.7%;
+	float:left;
+	margin-left:0.7%;
+	margin-bottom:0.7%;
 }
 
 #insimg{
-margin-top: 1%;
+	margin-top: 1%;
 }
 
 #procedimento{
-float:left;
-width:44%;
-margin-left:3%;
+	float:left;
+	width:44%;
+	margin-left:3%;
 }
 #areaprocedimento{
- font-size:18pt;
+ 	font-size:18pt;
 }
 
 #mostraprocedimento{
-float:left;
-width:48%;
-margin-left:3%;
-margin-top:3%;
+	float:left;
+	width:48%;
+	margin-left:3%;
+	margin-top:3%;
 }
 
 .error {
-color: red;
-margin-left: 1%;
+	color: red;
+	margin-left: 1%;
 }
 #linkPercorso{
-color:white;
+	color:white;
 }
 
 .titolo{
-text-decoration:none;
-font-weight: bold;
+	text-decoration:none;
+	font-weight: bold;
 }
 
 #anno{
@@ -143,27 +143,27 @@ font-weight: bold;
 }
 
 #insRicetta{
-margin-bottom:1%;
-float: left;
-margin-left:3%;
-margin-top:1%;
-margin-right:5%;
+	margin-bottom:1%;
+	float: left;
+	margin-left:3%;
+	margin-top:1%;
+	margin-right:5%;
 }
 
 #testo{
- text-align:center;
- margin-top:10%;
+	text-align:center;
+	margin-top:10%;
 }
 
 #testo1{
- text-align:center;
- font-size:35px;
+	text-align:center;
+	font-size:35px;
 }
 
 .testo2{
- text-align:center;
- font-size:25px;
- margin-top:3%;
+ 	text-align:center;
+ 	font-size:25px;
+ 	margin-top:3%;
 }
 
 #ingredienti{
@@ -195,11 +195,11 @@ margin-right:5%;
 }
 
 .lista{
-margin:auto;
-width:80%;
-margin-top:1%;
-border-bottom-width: 1px;
-border-bottom-style: solid;
+	margin:auto;
+	width:80%;
+	margin-top:1%;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
 }
 
 .immagine{
@@ -226,6 +226,6 @@ border-bottom-style: solid;
 
 .descr{
 	display:inline-block;
-    margin-left: 1%;
-    vertical-align:34px;
+    	margin-left: 1%;
+    	vertical-align:34px;
 }
