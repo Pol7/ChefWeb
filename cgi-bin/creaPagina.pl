@@ -163,7 +163,7 @@ sub cerca(){
 		}
 }
 
-#funzione che stampa di una singola ricetta
+#funzione che stampa una singola ricetta
 sub elencoRicette(){
 	print '<div class="lista">
 				<div class="immagine">
