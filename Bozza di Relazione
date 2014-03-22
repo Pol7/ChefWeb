@@ -36,7 +36,7 @@ Strumenti utilizzati:
 
 Per  il progetto sono stati utilizzati i seguenti strumenti:
 ● Editor:Notepad ++;
-● Browser: Internet Explorer 10, Firefox , Chrome.
+● Browser: Internet Explorer 10, Firefox 28 , Chrome 33, Safari 7.
 ● Programmi grafici: Photoshop, Gimp, Paint
 ● Mobile: Iphone 5s, Nexus 5
 
@@ -92,5 +92,5 @@ Prendendo i dati dal form dell’inserimento di una nuova ricetta con il metodo 
 
 Testing cross browser:
 
-L'intero progetto è stato testato attraverso i browser Internet Explorer 7, Firefox 3.0 e Chrome ed ha
-mantenuto lo stesso comportamento.
+L'intero progetto è stato testato attraverso i browser Internet Explorer 10, Firefox 28 , Chrome e Safari 7 per Mac ed ha mantenuto lo stesso comportamento. Inoltre abbiamo provato l’intero sito su alcuni mobile tra ciu Iphone 5s e Nexus 5.
+
