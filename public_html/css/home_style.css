@@ -18,7 +18,7 @@ background-color:#e8e7e3;
 	margin-bottom:0.5%;
 }
 #titolo{
-display:none;  
+	display:none;  
 }
 #maincol{
 	padding:0%;	
@@ -35,8 +35,8 @@ display:none;
 
 #primi{	
 	display:inline-block;
-  width:30%;
-  height:200px;
+  	width:25%;
+  	height:200px;
 	background-image: url(../images/primi.jpg);
 	text-indent: -999em;
 	background-position: top;
@@ -50,8 +50,8 @@ display:none;
 }
 #secondi{
 	display:inline-block;
-  width:30%;
-  height:200px;
+  	width:25%;
+  	height:200px;
 	background-image: url(../images/secondi.jpg);
 	text-indent: -999em;
 	background-position: top;
@@ -65,13 +65,13 @@ display:none;
 }
 #antipasti{
 	display:inline-block;
-  width:30%;
-  height:200px;
+  	width:25%;
+  	height:200px;
 	background-image: url(../images/antipasti.jpg);
 	text-indent: -999em;
 	background-position: top;
 	background-repeat:no-repeat;
-	margin-left:2%;
+	margin-left:9%;
 }
 #antipasti:hover{
 	background-position: bottom;
@@ -81,9 +81,9 @@ display:none;
 }
 #contorni{
 	display:inline-block;
-  width:30%;
-  height:200px;
-	margin-left:2%;	
+  	width:25%;
+  	height:200px;
+	margin-left:9%;	
 	background-image: url(../images/contorni.jpg);
 	text-indent: -999em;
 	background-position: top;
@@ -97,8 +97,8 @@ display:none;
 }
 #dessert{
 	display:inline-block;
-  width:30%;
-  height:200px;
+  	width:25%;
+  	height:200px;
 	background-image: url(../images/dessert.jpg);
 	text-indent: -999em;
 	background-position: top;
@@ -169,28 +169,28 @@ display:none;
 }
 
 #path{
-line-height: 22pt;
-display:inline;
-float:left;
-margin-left:1%;
+	line-height: 22pt;
+	display:inline;
+	float:left;
+	margin-left:1%;
 }
 
 .search{
-    float:right;
+    	float:right;
 	margin-top:0.4em;
 	margin-right:0.3em;
 }  
 #insRicetta{
-  float:right;
-  line-height:22pt;
-margin-right:2%;
-text-transform:uppercase;
-font-weight:bold;
-color:white;
+	float:right;
+	line-height:22pt;
+	margin-right:2%;
+	text-transform:uppercase;
+	font-weight:bold;
+	color:white;
 }
 #insRicetta:link{
-color:white;
+	color:white;
 }
 #insRicetta:visited{
-color:grey;
+	color:grey;
 }
