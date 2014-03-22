@@ -1,9 +1,9 @@
 var tabindex = 19;
 
 function aggiungiIng(){
-		var fI;
+
 		var i=0;
-		while(fI = document.getElementById("insIng"+i)){
+		while(document.getElementById("insIng"+i)){
 				i++;
 		}
 		i--;
@@ -60,7 +60,7 @@ function controllaDati() {
 		}
 		elem = document.getElementById("ingrediente0");
 		if( elem.value.length==0 ) {
-				document.getElementById("ingrediente0Err").innerHTML= "Inserisci almeno il primo ingrediente";
+				document.getElementById("ingrediente0Err").innerHTML= "<p>Inserisci almeno il primo ingrediente</p>";
 				err=true;
 				check=false;
 		} else {
@@ -68,11 +68,11 @@ function controllaDati() {
 		}
 		elem = document.getElementById("quantita0");
 		if( isNaN(elem.value) || parseInt(elem.value)<0 || parseInt(elem.value) > 9999) {
-				document.getElementById("ingrediente0Err").innerHTML= "La quantità deve essere numerica";
+				document.getElementById("quantitaN0Err").innerHTML= "La quantità deve essere numerica";
 				err=true;
 				check=false;
 		} else {
-				document.getElementById("ingrediente0Err").innerHTML= "";
+				document.getElementById("quantitaN0Err").innerHTML= "";
 		}
 		if (check==false) {
 			return !err;

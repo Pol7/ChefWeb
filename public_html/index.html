@@ -11,23 +11,19 @@
 	</head>
 	<body>
 		<div id="sfondoHeader">
-			<div id="h1"><em>Lo <span xml:lang="fr">Chef</span> del <span xml:lang="eng"> Web</span></em></div>
+			<div id="titolo"><em>Lo <span xml:lang="fr">Chef</span> del <span xml:lang="eng"> Web</span></em></div>
 			<div id="header">
-				<div id="insRicetta">
-					<a href="formRicette.html" tabindex="1">Inserisci la tua Ricetta!</a>
-				</div>
-				<div id="accedi">
-					<a href="Registrazione.html" tabindex="1">Accedi o Registrati!</a>
-				</div>
+				
 			</div>
 		</div>
 		<div id="sottoHeader">
-			<form name="search" action="./cgi-bin/creaPagina.pl" method="GET">
+			<form action="./cgi-bin/creaPagina.pl" method="get" >
 				<input class="search" type="submit" value="Cerca!" tabindex="3"/>
-				<input class="search" type="text" name="cerca" value="" tabindex="2" placeholder="Ricerca ricetta" />
+				<input class="search" type="text" name="cerca" value="" placeholder="Ricerca ricetta" tabindex="2"/>
 			</form>
-			
 			<div id="path"> Ti trovi in: <span xml:lang="eng"> Home</span></div>
+			<a href="formRicette.html" id="insRicetta" tabindex="1">Inserisci la tua Ricetta!</a>
+			<div id="clearBoth"></div>
 		</div>
 		<div id="maincol">
 			<div class="row">
