@@ -46,8 +46,8 @@ print '		<div id="header">
 			<form action="creaPagina.pl?" method="get" >
 				<input class="search" type="submit" value="Cerca!" tabindex="3"/>
 				<input class="search" type="text" name="cerca" value="" placeholder="Ricerca ricetta" tabindex="2"/>
-			</form>'
-			'<div id="path"> Ti trovi in: <a id="linkPercorso" href="../index.html" xml:lang="en" tabindex="1">Home</a> > <a id="linkPercorso" href="creaPagina.pl?tipo='.$tipo.'">'.$tipo.'</a> > '.$nome.'</div>
+			</form>
+			<div id="path"> Ti trovi in: <a id="linkPercorso" href="../index.html" xml:lang="en" tabindex="1">Home</a> > <a id="linkPercorso" href="creaPagina.pl?tipo='.$tipo.'">'.$tipo.'</a> > '.$nome.'</div>
 	</div>
 		<div id="menu">
 			<ul id="ulmenu">
