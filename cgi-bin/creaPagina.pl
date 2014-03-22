@@ -133,6 +133,7 @@ print $pagina->end_html;
 sub pasti(){
     my $i=0;		#variabile che indicare quanti cicli fa il for, serve per limitare il numero di ricette per pagina
 	for my $node ($doc->findnodes("//ricetta[\@tipo=\"$tipo\"]")){
+        $i++;
         #esce dal ciclo quando raggiunge il limite
         if($i==(10*($pag+1))){
           last;
@@ -141,16 +142,13 @@ sub pasti(){
         if($i> (10*($pag))){
  	         elencoRicette($node);
         }
-        $i++;
 	}
     if($i==10*($pag+1)){
     	print '<a id="pagSuc" href="creaPagina.pl?tipo='.$tipo.'&pag='.($pag+1).'">pagina successiva</a>'; 
     }
     print $pag; 
     if($pag>0){
-            #$pag=$pag-2;
-            print $pag;
-            print '<a id="pagPre" href="creaPagina.pl?tipo='.$tipo.'&pag='.$pag.'">pagina precedente</a>';  
+            print '<a id="pagPre" href="creaPagina.pl?tipo='.$tipo.'&pag='.($pag-2).'">pagina precedente</a>';  
     }
 }
 
@@ -174,11 +172,7 @@ sub cerca(){
 sub elencoRicette(){
 	print '<div class="lista">
 				<div class="immagine">
-<<<<<<< HEAD
-					<a href="visualizzaRicetta.pl?nome='.$_[0]->find('./nome').'&tipo='.$_[0]->find('../tipo').'"><img src="../images/ricette/'.$_[0]->find('./img/@src').'" class="immagineRicetta"  alt="immagine rappresentativa della ricetta"/></a>
-=======
 					<a href="visualizzaRicetta.pl?nome='.$_[0]->find('./nome').'&tipo='.$_[0]->find('./tipologia').'"><img src="../images/ricette/'.$_[0]->find('./img/@src').'" class="immagineRicetta"  alt="immagine rappresentativa della ricetta"/></a>
->>>>>>> 55e325d5e143463fa0600f2e1de49d44a19d2199
 				</div>
 				<div class="descr">
 					<p>Nome: <a class="titolo" href="visualizzaRicetta.pl?nome='.$_[0]->find('./nome').'&tipo='.$tipo.'" class="nomeRicetta">'.$_[0]->find('./nome').'</a></p>
