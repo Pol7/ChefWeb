@@ -1,5 +1,5 @@
 body{
-background-color:#e8e7e3;
+	background-color:#e8e7e3;
 }
 #header{
 	background-image: url(../images/home.jpg);
@@ -113,7 +113,7 @@ background-color:#e8e7e3;
 }
 #cocktail{
 	display:inline-block;
-	width:30%;
+	width:25%;
   	height:200px;
 	background-image: url(../images/cocktail.jpg);
 	text-indent: -999em;
