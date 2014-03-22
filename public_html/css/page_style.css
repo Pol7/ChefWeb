@@ -1,5 +1,5 @@
 body{
-background-color:#e8e7e3;
+	background-color:#e8e7e3;
 }
 #titolo{
 	display:none;
@@ -31,19 +31,19 @@ background-color:#e8e7e3;
 	}
 
 #footer{
-clear:both;
-background-color:#5f3714;
-color:white;
-margin:auto;
-margin-top:0.5%;
-width:1300px; 
-height:40px;
+	clear:both;
+	background-color:#5f3714;
+	color:white;
+	margin:auto;
+	margin-top:0.5%;
+	width:1300px; 
+	height:40px;
 }
 
 #footerImg1{
-float:left;
-margin-top:0.4%;
-margin-left:0.4%;
+	float:left;
+	margin-top:0.4%;
+	margin-left:0.4%;
 }
 
 #footerText{
@@ -55,104 +55,104 @@ margin-left:0.4%;
 }
 	
 #footerImg2{
-float:right;
-margin-top:0.4%;
+	float:right;
+	margin-top:0.4%;
 }
 
 #path{
-line-height: 22pt;
-display:inline;
-margin-left:1%;
+	line-height: 22pt;
+	display:inline;
+	margin-left:1%;
 }
 
 #menu{
-background-color:#5f3714;
-margin:auto;
-margin-top:-16px;
-width:1300px;
+	background-color:#5f3714;
+	margin:auto;
+	margin-top:-16px;
+	width:1300px;
 }
 
 .listMenu{
-color:white;
-display:inline-block;
-margin-right:5%;
-text-transform:uppercase;
-font-weight:bold;
+	color:white;
+	display:inline-block;
+	margin-right:5%;
+	text-transform:uppercase;
+	font-weight:bold;
 }
 
 .listMenu2:link{
-color:white;
-text-decoration:none;
+	color:white;
+	text-decoration:none;
 }
 .listMenu2:visited {
-color:grey;
-text-decoration:none;
+	color:grey;
+	text-decoration:none;
 }
 
 .listMenu2:hover {
-background-color:#990000;
+	background-color:#990000;
 }
 
 
 #ulmenu{
-padding:0.9em;
+	padding:0.9em;
 }
 
 .search{
-    float:right;
+    	float:right;
 	margin-top:0.4em;
 	margin-right:0.3em;
 } 
 
 #login{
-float: left;
-margin-left: 19%;
+	float: left;
+	margin-left: 19%;
 }
 
 #registra{
-float: left;
-margin-bottom:3%;
-margin-left: 19%;
+	float: left;
+	margin-bottom:3%;
+	margin-left: 19%;
 }
 
 #clearBoth { 
-clear:both;
+	clear:both;
  }
 
 #ricetta{
-float:left;
-margin-left:0.7%;
-margin-bottom:0.7%;
+	float:left;
+	margin-left:0.7%;
+	margin-bottom:0.7%;
 }
 
 #insimg{
-margin-top: 1%;
+	margin-top: 1%;
 }
 
 #procedimento{
-float:left;
-width:44%;
-margin-left:3%;
+	float:left;
+	width:44%;
+	margin-left:3%;
 }
 
 #mostraprocedimento{
-float:left;
-width:48%;
-margin-left:3%;
-margin-top:3%;
+	float:left;
+	width:48%;
+	margin-left:3%;
+	margin-top:3%;
 }
 
 .error {
-color: red;
-margin-left: 1%;
+	color: red;
+	margin-left: 1%;
 }
 #linkPercorso{
-color:white;
+	color:white;
 }
 
 .titolo{
-text-decoration:none;
-font-weight: bold;
+	text-decoration:none;
+	font-weight: bold;
 }
 
 #anno{
@@ -183,27 +183,27 @@ font-weight: bold;
 }
 
 #insRicetta{
-margin-bottom:1%;
-float: left;
-margin-left:3%;
-margin-top:1%;
-margin-right:5%;
+	margin-bottom:1%;
+	float: left;
+	margin-left:3%;
+	margin-top:1%;
+	margin-right:5%;
 }
 
 #testo{
- text-align:center;
- margin-top:10%;
+	text-align:center;
+	margin-top:10%;
 }
 
 #testo1{
- text-align:center;
- font-size:35px;
+	text-align:center;
+	font-size:35px;
 }
 
 .testo2{
- text-align:center;
- font-size:25px;
- margin-top:3%;
+ 	text-align:center;
+ 	font-size:25px;
+ 	margin-top:3%;
 }
 
 #ingredienti{
@@ -225,8 +225,8 @@ margin-right:5%;
 	margin-top: 1%;
 	font-size:20px;
 	margin-bottom: 1%;
-	 width: 200px;
-    height: 50px;
+	width: 200px;
+    	height: 50px;
 }
 
 .asterisco{
@@ -238,11 +238,11 @@ margin-right:5%;
 }
 
 .lista{
-margin:auto;
-width:80%;
-margin-top:1%;
-border-bottom-width: 1px;
-border-bottom-style: solid;
+	margin:auto;
+	width:80%;
+	margin-top:1%;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
 }
 
 .immagine{
@@ -269,17 +269,17 @@ border-bottom-style: solid;
 
 .descr{
 	display:inline-block;
-    margin-left: 1%;
-    vertical-align:34px;
+    	margin-left: 1%;
+    	vertical-align:34px;
 }
 #pagSuc{
-  float:right;
-  margin-right: 1%;
-  margin-bottom: 1%;
-  margin-top: 1%;
+  	float:right;
+  	margin-right: 1%;
+  	margin-bottom: 1%;
+  	margin-top: 1%;
 }
 #pagPre{
-  float:left;
-  margin-left: 1%;
-  margin-top: 2%;
+  	float:left;
+  	margin-left: 1%;
+  	margin-top: 2%;
 }
