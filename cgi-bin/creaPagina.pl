@@ -176,7 +176,7 @@ sub cerca(){
 sub elencoRicette(){
 	print '<div class="lista">
 				<div class="immagine">
-					<a href="visualizzaRicetta.pl?nome='.$_[0]->find('./nome').'&tipo='.$pagina->param('tipo').'"><img src="../images/ricette/'.$_[0]->find('./img/@src').'" class="immagineRicetta"  alt="immagine rappresentativa della ricetta"/></a>
+					<a href="visualizzaRicetta.pl?nome='.$_[0]->find('./nome').'&tipo='.$_[0]->find('../tipo').'"><img src="../images/ricette/'.$_[0]->find('./img/@src').'" class="immagineRicetta"  alt="immagine rappresentativa della ricetta"/></a>
 				</div>
 				<div class="descr">
 					<p>Nome: <a class="titolo" href="visualizzaRicetta.pl?nome='.$_[0]->find('./nome').'&tipo='.$titolo.'" class="nomeRicetta">'.$_[0]->find('./nome').'</a></p>
