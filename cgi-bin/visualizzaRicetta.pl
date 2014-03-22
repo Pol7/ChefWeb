@@ -46,9 +46,12 @@ print '		<div id="header">
 			<form action="creaPagina.pl?" method="get" >
 				<input class="search" type="submit" value="Cerca!" tabindex="3"/>
 				<input class="search" type="text" name="cerca" value="" placeholder="Ricerca ricetta" tabindex="2"/>
-			</form>
-			<div id="path"> Ti trovi in: <a id="linkPercorso" href="../index.html" xml:lang="en" tabindex="1">Home</a> > <a id="linkPercorso" href="creaPagina.pl?tipo='.$tipo.'">'.$tipo.'</a> > '.$nome.'</div>
-		</div>
+			</form>'
+			if($tipo eq "Risultato Ricerca"){
+			print '<div id="path"> Ti trovi in: <a id="linkPercorso" href="../index.html" xml:lang="en" tabindex="1">Home</a> > '.$tipo.'</a> > '.$nome.'</div>'
+			}else{
+			print '<div id="path"> Ti trovi in: <a id="linkPercorso" href="../index.html" xml:lang="en" tabindex="1">Home</a> > <a id="linkPercorso" href="creaPagina.pl?tipo='.$tipo.'">'.$tipo.'</a> > '.$nome.'</div>'
+	print'</div>
 		<div id="menu">
 			<ul id="ulmenu">
 				<li class="listMenu"><a class="listMenu2" href="../index.html" tabindex="4">Home</a></li>
