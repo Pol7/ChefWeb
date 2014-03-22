@@ -22,7 +22,7 @@ use XML::LibXML;
 
 	$CGI::DISABLE_UPLOADS = 0; #1 disables uploads, 0 enables uploads
 	my $safe_filename_characters = "a-zA-Z0-9_.-";
-	my $upload_dir = "/home/0/2013/apozzato/tecweb/public_html/images/ricette";
+	my $upload_dir = "../images/ricette";
 	my $pagina = new CGI;
 	my $filename = $pagina->param("immagine");
 
