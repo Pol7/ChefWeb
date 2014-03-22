@@ -175,13 +175,13 @@ sub cerca(){
 sub elencoRicette(){
 	print '<div class="lista">
 				<div class="immagine">
-					<a href="visualizzaRicetta.pl?nome='.$_[0]->find('./nome').'&tipo='.$titolo.'"><img src="../images/ricette/'.$_[0]->find('./img/@src').'" class="immagineRicetta"  alt="immagine rappresentativa della ricetta"/></a>
+					<a href="visualizzaRicetta.pl?nome='.$_[0]->find('./nome').'&tipo='.$tipo.'"><img src="../images/ricette/'.$_[0]->find('./img/@src').'" class="immagineRicetta"  alt="immagine rappresentativa della ricetta"/></a>
 				</div>
 				<div class="descr">
-					<p>Nome: <a class="titolo" href="visualizzaRicetta.pl?nome='.$_[0]->find('./nome').'&tipo='.$titolo.'" class="nomeRicetta">'.$_[0]->find('./nome').'</a></p>
+					<p>Nome: <a class="titolo" href="visualizzaRicetta.pl?nome='.$_[0]->find('./nome').'&tipo='.$tipo.'" class="nomeRicetta">'.$_[0]->find('./nome').'</a></p>
 					<p class="autore">Autore: '.$_[0]->find('./autore').'</p>';
 					my $procedimento=substr($_[0]->find('./procedimento'),0,60);
-					print '<div><p class="procedimento">Procedimento: '.$procedimento.'... <a href="visualizzaRicetta.pl?nome='.$_[0]->find('./nome').'&tipo='.$titolo.'">Leggi tutto</a></p></div>
+					print '<div><p class="procedimento">Procedimento: '.$procedimento.'... <a href="visualizzaRicetta.pl?nome='.$_[0]->find('./nome').'&tipo='.$tipo.'">Leggi tutto</a></p></div>
 				</div>
 			 </div>';
 }
