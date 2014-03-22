@@ -1,8 +1,10 @@
 var tabindex = 19;
 
+//funzione che mi aggiunge un ingrediente
 function aggiungiIng(){
 
 		var i=0;
+		//ciclo che mi aumenta la varaibile per cambaire i nomi degli ingredienti
 		while(document.getElementById("insIng"+i)){
 				i++;
 		}
@@ -31,6 +33,7 @@ function aggiungiIng(){
 		return false;
 }
 
+//funzione che controlla i dati del form
 function controllaDati() {
 		var err=false;
 		var check=true;
