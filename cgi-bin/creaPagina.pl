@@ -6,23 +6,26 @@ use XML::LibXML;
 use strict;
 use warnings;
 
+#creo file per la lettura delle ricette
 my $file = '../data/ricette.xml';
 #creazione oggetto parser
 my $parser = XML::LibXML->new();
 #apertura file e lettura input
 my $doc = $parser->parse_file($file) || die("Operazioni di parsing fallita");
 
+#variabile su cui costruirò la pagina html
 my $pagina = new CGI;
 
 #per prendere parametri 
 my $tipo = $pagina->param('tipo') || undef;
 my $cerca = $pagina->param('cerca') || undef;
+
+#codifica utf per evitare problemi lettere accentate
 utf8::encode($cerca);
 utf8::decode($cerca);
-my $pag = $pagina->param('pag') || 0;
-my $titolo;
+my $pag = $pagina->param('pag') || 0;		#variabile per identificare in che pagina siam in caso di sfoglio ricette
 
-      
+my $titolo;     							#imposto titolo in base alla pagina in cui sono
 if($tipo){
 	$titolo="$tipo";
 }else{
@@ -36,7 +39,7 @@ utf8::encode($cerca);
 # uso encode per trasformare i caratteri in utf8
 utf8::decode($cerca); 
     
-                         
+#comincio a costruire la pagina html            
 print $pagina->header('text/html');
 print $pagina->start_html(
 				-title=>"$titolo",				
@@ -53,9 +56,9 @@ print $pagina->start_html(
 						  -href => '../images/chef.ico', 
 						  -type => 'image/x-icon'})				
 		);
-print '		<div id="header">
-				<div id="titolo"><em>Lo <span xml:lang="fr">Chef</span> del <span xml:lang="eng"> Web</span></em></div>
-			</div>
+print '	<div id="header">
+			<div id="titolo"><em>Lo <span xml:lang="fr">Chef</span> del <span xml:lang="eng"> Web</span></em></div>
+		</div>
 		<div id="sottoHeader">
 			<form action="creaPagina.pl" method="get" >
 				<input class="search" type="submit" value="Cerca!" tabindex="3"/>
@@ -66,49 +69,50 @@ print '		<div id="header">
 		<div id="menu">
 			<ul id="ulmenu">
 				<li class="listMenu"><a class="listMenu2" href="../index.html">Home</a></li>';
-		if($tipo eq 'Antipasti'){
-			print '<li class="listMenu">Antipasti</li>';
-		}else{
-			print '<li class="listMenu"><a class="listMenu2" href="creaPagina.pl?tipo=Antipasti">Antipasti</a></li>';
-		}
-		if($tipo eq 'Primi'){
-			print '<li class="listMenu">Primi</li>';
-		}else{
-			print '<li class="listMenu"><a class="listMenu2" href="creaPagina.pl?tipo=Primi">Primi</a></li>';
-		}
-		if($tipo eq 'Secondi'){
-			print '<li class="listMenu">Secondi</li>';
-		}else{
-			print '<li class="listMenu"><a class="listMenu2" href="creaPagina.pl?tipo=Secondi">Secondi</a></li>';
-		}
-		if($tipo eq 'Contorni'){
-			print '<li class="listMenu">Contorni</li>';
-		}else{
-			print '<li class="listMenu"><a class="listMenu2" href="creaPagina.pl?tipo=Contorni">Contorni</a></li>';
-		}
-		if($tipo eq 'Dessert'){
-			print '<li class="listMenu">Dessert</li>';
-		}else{
-			print '<li class="listMenu"><a class="listMenu2" href="creaPagina.pl?tipo=Dessert">Dessert</a></li>';
-		 }
-		if($tipo eq 'Cocktail'){
-			print '<li class="listMenu">Cocktail</li>';
-		}else{
-			print '<li class="listMenu"><a class="listMenu2" href="creaPagina.pl?tipo=Cocktail">Cocktail</a></li>';
-		}
-		print '<li class="listMenu"><a class="listMenu2" href="../formRicette.html">Inserisci Ricetta</a></li>
-			</ul>
+				if($tipo eq 'Antipasti'){
+					print '<li class="listMenu">Antipasti</li>';
+				}else{
+					print '<li class="listMenu"><a class="listMenu2" href="creaPagina.pl?tipo=Antipasti">Antipasti</a></li>';
+				}
+				if($tipo eq 'Primi'){
+					print '<li class="listMenu">Primi</li>';
+				}else{
+					print '<li class="listMenu"><a class="listMenu2" href="creaPagina.pl?tipo=Primi">Primi</a></li>';
+				}
+				if($tipo eq 'Secondi'){
+					print '<li class="listMenu">Secondi</li>';
+				}else{
+					print '<li class="listMenu"><a class="listMenu2" href="creaPagina.pl?tipo=Secondi">Secondi</a></li>';
+				}
+				if($tipo eq 'Contorni'){
+					print '<li class="listMenu">Contorni</li>';
+				}else{
+					print '<li class="listMenu"><a class="listMenu2" href="creaPagina.pl?tipo=Contorni">Contorni</a></li>';
+				}
+				if($tipo eq 'Dessert'){
+					print '<li class="listMenu">Dessert</li>';
+				}else{
+					print '<li class="listMenu"><a class="listMenu2" href="creaPagina.pl?tipo=Dessert">Dessert</a></li>';
+				}
+				if($tipo eq 'Cocktail'){
+					print '<li class="listMenu">Cocktail</li>';
+				}else{
+					print '<li class="listMenu"><a class="listMenu2" href="creaPagina.pl?tipo=Cocktail">Cocktail</a></li>';
+				}
+print '		<li class="listMenu"><a class="listMenu2" href="../formRicette.html">Inserisci Ricetta</a></li>
+		</ul>
 			<div id="clearBoth"></div>
 		</div>
 		<div id="maincol">';
-		if($cerca){
-			&cerca();
-		}
-		else{
-			&pasti();
-		}
+			#riempio il corpo in base alla richiesta
+			if($cerca){
+				&cerca();
+			}
+			else{
+				&pasti();
+			}
 print	'<div id="clearBoth"></div>
-    </div>
+    	</div>
 		<div id="footer">
 			<div id="footerImg1">
 				<a href="http://validator.w3.org/check?uri=referer">
@@ -122,16 +126,19 @@ print	'<div id="clearBoth"></div>
 				<img src="../images/vcss-blue.gif" alt="XHTML 1.0 Valid!"/></a>
 			</div>
 		</div>';
-
+#chiudo pagina html
 print $pagina->end_html;
 
+#funzione che mi crea l'elenco delle ricette
 sub pasti(){
-    my $i=0;
+    my $i=0;		#variabile che indicare quanti cicli fa il for, serve per limitare il numero di ricette per pagina
 		for my $node ($doc->findnodes("//ricetta[\@tipo=\"$tipo\"]")){
         $i++;
+        #esce dal ciclo quando raggiunge il limite
         if($i==(10*($pag+1))){
           last;
         }
+        #if per evitare di stampare le ricette già stampate le pagine precedenti
         if($i> (10*($pag))     ){
  	         elencoRicette($node);
         }
@@ -147,6 +154,7 @@ sub pasti(){
     }
 }
 
+#funzione di ricerca
 sub cerca(){
 		my $trovato=0;
 		my $cercaLow=uc($cerca);
@@ -161,6 +169,8 @@ sub cerca(){
 			</div>';
 		}
 }
+
+#funzione che crea la singola ricetta in elenco
 sub elencoRicette(){
 	print '<div class="lista">
 				<div class="immagine">
