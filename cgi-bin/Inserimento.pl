@@ -192,5 +192,5 @@ use XML::LibXML;
 					  <img src="../images/vcss-blue.gif" alt="XHTML 1.0 Valid!"/></a>
 					</div>
 				</div>
-			</body>
-		</html>';
+			</body>';
+print $pagina->end_html;
