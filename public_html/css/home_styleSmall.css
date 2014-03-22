@@ -14,27 +14,36 @@
 
 #primi{
   	height:180px;
+  	width:30%;
 }
 #cocktail{
   	height:180px;
+  	width:30%;
 }
 
 #dessert{
   	height:180px;
+  	width:30%;
 }
 #contorni{
+	margin-left:1%;
   	height:180px;
+  	width:30%;
 }
 #secondi{
   	height:180px;
+  	width:30%;
 }
 #antipasti{
+	margin-left:1%;
   	height:180px;
+  	width:30%;
 }
 
 
 .home_element{
 	width:100%;
+	margin:2.5%;
 }
 
 #footer{
