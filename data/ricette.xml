@@ -237,17 +237,6 @@
 		</ingrediente>
 		<procedimento>32rw</procedimento>
 	</ricetta>
-	<ricetta tipo="Cocktail">
-		<nome>LIONEJUVENTUS</nome>
-		<autore>Conte</autore>
-		<img src="Tulips.jpg" alt="Immagine descrittiva della ricetta"/>
-		<ingrediente>
-			<nome>Vidal</nome>
-			<quantita>1</quantita>
-			<unitadimisura>Tazzina</unitadimisura>
-		</ingrediente>
-		<procedimento>fnthng</procedimento>
-	</ricetta>
 	<ricetta tipo="Primi">
 		<nome>RISOTTO</nome>
 		<autore>el mejo</autore>
@@ -312,39 +301,6 @@ sulla confezione), il risotto sarà cotto.
 mantecatura.
 
 Partendo da questa ricetta base, si possono preparare i più svariati tipi di risotto, per esempio: ai funghi, allo zafferano, ai piselli, alla salsiccia, ai frutti di mare, al pomodoro ecc.. E' importante che per queste preparazioni il riso deve essere aggiunto nel preparato da cui il risotto prende il nome e in questo deve insaporirsi per qualche minuto, quindi continuare seguendo il procedimento di base.</procedimento>
-	</ricetta>
-		<ricetta tipo="Dessert">
-		<nome>ÈÈ</nome>
-		<autore>èè</autore>
-		<img src="default.jpg" alt="Immagine descrittiva della ricetta"/>
-		<ingrediente>
-			<nome>èèèè</nome>
-			<quantita>6</quantita>
-			<unitadimisura> </unitadimisura>
-		</ingrediente>
-		<procedimento>èèèè</procedimento>
-	</ricetta>
-	<ricetta tipo="Dessert">
-		<nome>ÙÙÙÙÙÙÙÙÙ</nome>
-		<autore>ùùùùùùùùù</autore>
-		<img src="default.jpg" alt="Immagine descrittiva della ricetta"/>
-		<ingrediente>
-			<nome>ùùùùùùù</nome>
-			<quantita>3</quantita>
-			<unitadimisura>ml</unitadimisura>
-		</ingrediente>
-		<procedimento>ùùùùùùùùù</procedimento>
-	</ricetta>
-	<ricetta tipo="Antipasti">
-		<nome>POZZATO</nome>
-		<autore>MARVEL</autore>
-		<img src="default.jpg" alt="Immagine descrittiva della ricetta"/>
-		<ingrediente>
-			<nome>ssssds</nome>
-			<quantita>34</quantita>
-			<unitadimisura> </unitadimisura>
-		</ingrediente>
-		<procedimento>ciccione</procedimento>
 	</ricetta>
 	
 </ricette>
