@@ -6,36 +6,26 @@ use XML::LibXML;
 use strict;
 use warnings;
 
-#creo file per la lettura ricette
-my $file = '../data/ricette.xml';
+my $file = '../public_html/database/ricette.xml';
 #creazione oggetto parser
 my $parser = XML::LibXML->new();
 #apertura file e lettura input
 my $doc = $parser->parse_file($file) || die("Operazioni di parsing fallita");
 
-#cgi su cui costruisco l'html
 my $pagina = new CGI;
 
 #per prendere parametri 
 my $tipo = $pagina->param('tipo') || undef;
 my $cerca = $pagina->param('cerca') || undef;
-my $pag = $pagina->param('pag') || 0;
 my $titolo;
 
-#imposto il titolo in base alla pagina
 if($tipo){
 	$titolo="$tipo";
 }else{
-	utf8::decode($cerca);
-	# uso decode per trasformare i caratteri, letti in utf8, in un carattere leggibile per perl
-	$titolo=" Risultati ricerca";
-   
+	$titolo="$cerca";
 }
-utf8::encode($cerca);
-# uso encode per trasformare i caratteri in utf8
-utf8::decode($cerca); 
 
-#inizio creazione html                     
+
 print $pagina->header('text/html');
 print $pagina->start_html(
 				-title=>"$titolo",				
@@ -52,11 +42,14 @@ print $pagina->start_html(
 						  -href => '../images/chef.ico', 
 						  -type => 'image/x-icon'})				
 		);
-print '	<div id="header">
-			<div id="titolo"><em>Lo <span xml:lang="fr">Chef</span> del <span xml:lang="eng"> Web</span></em></div>
-		</div>
+print '		<div id="header">
+				<div id="h1"><em>Lo <span xml:lang="fr">Chef</span> del <span xml:lang="eng"> Web</span></em></div>
+				<div id="accedi">
+					<a href="Registrazione.html" tabindex="1">Accedi o Registrati!</a>
+				</div>
+			</div>
 		<div id="sottoHeader">
-			<form action="creaPagina.pl" method="get" >
+			<form action="creaPagina.pl?" method="get" >
 				<input class="search" type="submit" value="Cerca!" tabindex="3"/>
 				<input class="search" type="text" name="cerca" value="" placeholder="Ricerca ricetta" tabindex="2"/>
 			</form>
@@ -65,92 +58,71 @@ print '	<div id="header">
 		<div id="menu">
 			<ul id="ulmenu">
 				<li class="listMenu"><a class="listMenu2" href="../index.html">Home</a></li>';
-				if($tipo eq 'Antipasti'){
-					print '<li class="listMenu">Antipasti</li>';
-				}else{
-					print '<li class="listMenu"><a class="listMenu2" href="creaPagina.pl?tipo=Antipasti">Antipasti</a></li>';
-				}
-				if($tipo eq 'Primi'){
-					print '<li class="listMenu">Primi</li>';
-				}else{
-					print '<li class="listMenu"><a class="listMenu2" href="creaPagina.pl?tipo=Primi">Primi</a></li>';
-				}
-				if($tipo eq 'Secondi'){
-					print '<li class="listMenu">Secondi</li>';
-				}else{
-					print '<li class="listMenu"><a class="listMenu2" href="creaPagina.pl?tipo=Secondi">Secondi</a></li>';
-				}
-				if($tipo eq 'Contorni'){
-					print '<li class="listMenu">Contorni</li>';
-				}else{
-					print '<li class="listMenu"><a class="listMenu2" href="creaPagina.pl?tipo=Contorni">Contorni</a></li>';
-				}
-				if($tipo eq 'Dessert'){
-					print '<li class="listMenu">Dessert</li>';
-				}else{
-					print '<li class="listMenu"><a class="listMenu2" href="creaPagina.pl?tipo=Dessert">Dessert</a></li>';
-				 }
-				if($tipo eq 'Cocktail'){
-					print '<li class="listMenu">Cocktail</li>';
-				}else{
-					print '<li class="listMenu"><a class="listMenu2" href="creaPagina.pl?tipo=Cocktail">Cocktail</a></li>';
-				}
-				print '<li class="listMenu"><a class="listMenu2" href="../formRicette.html">Inserisci Ricetta</a></li>
+		if($tipo eq 'Antipasti'){
+			print '<li class="listMenu">Antipasti</li>';
+		}else{
+			print '<li class="listMenu"><a class="listMenu2" href="creaPagina.pl?tipo=Antipasti">Antipasti</a></li>';
+		}
+		if($tipo eq 'Primi'){
+			print '<li class="listMenu">Primi</li>';
+		}else{
+			print '<li class="listMenu"><a class="listMenu2" href="creaPagina.pl?tipo=Primi">Primi</a></li>';
+		}
+		if($tipo eq 'Secondi'){
+			print '<li class="listMenu">Secondi</li>';
+		}else{
+			print '<li class="listMenu"><a class="listMenu2" href="creaPagina.pl?tipo=Secondi">Secondi</a></li>';
+		}
+		if($tipo eq 'Contorni'){
+			print '<li class="listMenu">Contorni</li>';
+		}else{
+			print '<li class="listMenu"><a class="listMenu2" href="creaPagina.pl?tipo=Contorni">Contorni</a></li>';
+		}
+		if($tipo eq 'Dessert'){
+			print '<li class="listMenu">Dessert</li>';
+		}else{
+			print '<li class="listMenu"><a class="listMenu2" href="creaPagina.pl?tipo=Dessert">Dessert</a></li>';
+		 }
+		if($tipo eq 'Cocktail'){
+			print '<li class="listMenu">Cocktail</li>';
+		}else{
+			print '<li class="listMenu"><a class="listMenu2" href="creaPagina.pl?tipo=Cocktail">Cocktail</a></li>';
+		}
+		print '<li class="listMenu"><a class="listMenu2" href="../formRicette.html">Inserisci Ricetta</a></li>
 			</ul>
 			<div id="clearBoth"></div>
 		</div>
 		<div id="maincol">';
-				if($cerca){
-					&cerca();
-				}
-				else{
-					&pasti();
-				}
-print	'<div id="clearBoth"></div>
-   		</div>
+		if($cerca){
+			&cerca();
+		}
+		else{
+			&pasti();
+		}
+print	'</div>
 		<div id="footer">
 			<div id="footerImg1">
 				<a href="http://validator.w3.org/check?uri=referer">
 					<img src="../images/valid-xhtml10.png" alt="CSS Valid!"/></a>
 			</div>
 			<div id="footerText">
-		  	Statistic Chef
+			Statistic Chef
 			</div>
 			<div id="footerImg2">
 				<a href="http://jigsaw.w3.org/css-validator/check?uri=referer">
 				<img src="../images/vcss-blue.gif" alt="XHTML 1.0 Valid!"/></a>
 			</div>
-		</div>';
-#chiusura html
+		</div>
+';
+
 print $pagina->end_html;
 
-#funzione per elenco ricette
 sub pasti(){
-    #i è il contatore di cicli, mi serve per il numero di ricette per pagina
-    my $i=0;
-	for my $node ($doc->findnodes("//ricetta[\@tipo=\"$tipo\"]")){
-        $i++;
-        #if per interrompere il ciclo quando ho raggiunto il limite di ricette per pagina 
-        if($i==(10*($pag+1))){
-          last;
-        }
-        #if per evitare di stampare ricette già stampate la pagina successiva
-        if($i> (10*($pag))){
- 	         elencoRicette($node);
-        }
-	}
-
-    if($i>9){
-        $pag++;
-    	print '<a id="pagSuc" href="creaPagina.pl?tipo='.$tipo.'&pag='.$pag.'">pagina successiva ></a>'; 
-    } 
-    if($pag>1){
-        $pag=$pag-2;
-        print '<a id="pagPre" href="creaPagina.pl?tipo='.$tipo.'&pag='.$pag.'">< pagina precedente</a>';  
-    }
+		for my $node ($doc->findnodes("//ricetta[\@tipo=\"$tipo\"]")){
+				elencoRicette($node);
+		}
 }
 
-#funzione cerca
 sub cerca(){
 		my $trovato=0;
 		my $cercaLow=uc($cerca);
@@ -165,8 +137,6 @@ sub cerca(){
 			</div>';
 		}
 }
-
-#funzione che stampa una singola ricetta
 sub elencoRicette(){
 	print '<div class="lista">
 				<div class="immagine">
@@ -175,7 +145,7 @@ sub elencoRicette(){
 				<div class="descr">
 					<p>Nome: <a class="titolo" href="visualizzaRicetta.pl?nome='.$_[0]->find('./nome').'" class="nomeRicetta">'.$_[0]->find('./nome').'</a></p>
 					<p class="autore">Autore: '.$_[0]->find('./autore').'</p>';
-					my $procedimento=substr($_[0]->find('./procedimento'),0,60);
+					my $procedimento=substr($_[0]->find('./procedimento'),0,80);
 					print '<div><p class="procedimento">Procedimento: '.$procedimento.'... <a href="visualizzaRicetta.pl?nome='.$_[0]->find('./nome').'">Leggi tutto</a></p></div>
 				</div>
 			 </div>';

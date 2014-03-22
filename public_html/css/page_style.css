@@ -1,13 +1,11 @@
 body{
 background-color:#e8e7e3;
 }
-#titolo{
-	display:none;
-}
+#h1{display:none;}
 #header{
 	background-image: url(../images/home.jpg);
 	width:1300px; 
-	height:245px;
+	height:300px;
 	margin:auto;
 	background-repeat: no-repeat;
 }
@@ -27,7 +25,7 @@ background-color:#e8e7e3;
 	margin:auto;
 	box-shadow:0px 10px 20px 10px #d3d3d3;
 	background-color:#dad7d2;
-	min-height:462px;
+	min-height:500px;
 	}
 
 #footer{
@@ -85,7 +83,7 @@ color:white;
 text-decoration:none;
 }
 .listMenu2:visited {
-color:grey;
+color:white;
 text-decoration:none;
 }
 
@@ -221,12 +219,9 @@ margin-right:5%;
 }
 
 #invia{
-	display:block;
+	display:block
 	margin-top: 1%;
-	font-size:20px;
 	margin-bottom: 1%;
-	 width: 200px;
-    height: 50px;
 }
 
 .asterisco{
@@ -271,10 +266,4 @@ border-bottom-style: solid;
 	display:inline-block;
     margin-left: 1%;
     vertical-align:34px;
-}
-#pagSuc{
-  float:right;
-}
-#pagPre{
-  float:left;
 }

@@ -13,7 +13,10 @@
 
 	<body>
 		<div id="header">
-			<div id="titolo"><em>Lo <span xml:lang="fr">Chef</span> del <span xml:lang="eng"> Web</span></em></div>
+			<div id="h1"><em>Lo <span xml:lang="fr">Chef</span> del <span xml:lang="eng"> Web</span></em></div>
+			<div id="accedi">
+				<a href="Registrazione.html" tabindex="1">Accedi o Registrati!</a>
+			</div>
 		</div>
 		
 		<div id="sottoHeader">
@@ -62,7 +65,7 @@
 					<input type="text" name="quantita0" id="quantita0" size="5" tabindex="21"/>
 					<label for="unita0">Unità di misura:</label>
 					<select name="unita0" id="unita0" tabindex="22">
-						<option value=" ">Non specificata</option>
+						<option value="Non specificata">Non specificata</option>
 						<option value="g">g</option>
 						<option value="hg">hg</option>
 						<option value="kg">kg</option>
@@ -74,7 +77,8 @@
 						<option value="Tazzina">Tazzina</option>                            
 					</select>
 					<span class="obbligo">
-					(<span class="asterisco">*</span>)</span><span id="ingrediente0Err" class="error"></span><span id="quantitaN0Err" class="error"></span>
+					(<span class="asterisco">*</span>)</span>
+					<span id="ingrediente0Err" class="error"></span>
 				</div>
                         <div id="insIng1"></div>
                         	<input type="submit" class="bottone" value="Aggiungi" name="action"  id="aggiungi" onclick="return aggiungiIng();" tabindex="23"/>
@@ -87,7 +91,7 @@
 				<span class="obbligo">
 				(<span class="asterisco">*</span>)</span>
 				<span id="areaProcedimentoErr" class="error"></span>
-				<input type="submit" value="Invia" name="action"  id="invia" onclick="return controllaDati();" tabindex="26"/>
+				<input type="submit" class="bottone" value="Invia" name="action"  id="invia" onclick="return controllaDati();" tabindex="26"/>
 			</div>
 			</form>
 			<div id="clearBoth"></div>

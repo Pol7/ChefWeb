@@ -1,10 +1,13 @@
 body{
 background-color:#e8e7e3;
 }
+#h1{
+   display:none;
+}
 #header{
 	background-image: url(../images/home.jpg);
 	width:1300px;
-	height:245px;
+	height:300px;
 	margin:auto;
 	background-repeat: no-repeat;
 }
@@ -17,9 +20,11 @@ background-color:#e8e7e3;
 	margin:auto;
 	margin-bottom:0.5%;
 }
-#titolo{
-display:none;  
+
+#insRicetta{
+	float:right;
 }
+
 #maincol{
 	padding:0%;	
 	border-style:double;
@@ -29,16 +34,12 @@ display:none;
 	background-color:#dad7d2;
 }
 
-#register{
-	float:right;
-}
-
 #primi{	
 	display:inline-block;
-  width:30%;
-  height:240px;
+	width:30%;
+	height:270px;
 	background-image: url(../images/primi.jpg);
-	text-indent: -999em;
+	font-size:0px;
 	background-position: top;
 	background-repeat:no-repeat;
 }
@@ -50,10 +51,11 @@ display:none;
 }
 #secondi{
 	display:inline-block;
-  width:30%;
-  height:240px;
+	width:30%;
+	
+	height:270px;
 	background-image: url(../images/secondi.jpg);
-	text-indent: -999em;
+	font-size:0px;
 	background-position: top;
 	background-repeat:no-repeat;
 }
@@ -65,10 +67,10 @@ display:none;
 }
 #antipasti{
 	display:inline-block;
-  width:30%;
-  height:240px;
+	width:30%;
+	height:270px;
 	background-image: url(../images/antipasti.jpg);
-	text-indent: -999em;
+	font-size:0px;
 	background-position: top;
 	background-repeat:no-repeat;
 	margin-left:2%;
@@ -81,11 +83,11 @@ display:none;
 }
 #contorni{
 	display:inline-block;
-  width:30%;
-  height:240px;
-	margin-left:2%;	
+	width:30%;
+	margin-left:2%;
+	height:270px;
 	background-image: url(../images/contorni.jpg);
-	text-indent: -999em;
+	font-size:0px;
 	background-position: top;
 	background-repeat:no-repeat;
 }
@@ -97,10 +99,10 @@ display:none;
 }
 #dessert{
 	display:inline-block;
-  width:30%;
-  height:240px;
+	width:30%;
+	height:270px;
 	background-image: url(../images/dessert.jpg);
-	text-indent: -999em;
+	font-size:0px;
 	background-position: top;
 	background-repeat:no-repeat;
 
@@ -114,9 +116,9 @@ display:none;
 #cocktail{
 	display:inline-block;
 	width:30%;
-  height:240px;
+	height:270px;
 	background-image: url(../images/cocktail.jpg);
-	text-indent: -999em;
+	font-size:0px;
 	background-position: top;
 	background-repeat:no-repeat;
 }
@@ -128,6 +130,8 @@ display:none;
 }
 
 .home_element{
+	width:270px;
+	height:270px;
 	margin:1%;
 }
 
@@ -164,14 +168,14 @@ margin-top:0.4%;
  }
 
 .row{
-	margin-top:1%;
-	margin-bottom:1%;
+	margin-top:2%;
+	margin-bottom:2%;
 }
 
 #path{
 line-height: 22pt;
 display:inline;
-float:left;
+margin-left:1%;
 }
 
 .search{
@@ -179,14 +183,3 @@ float:left;
 	margin-top:0.4em;
 	margin-right:0.3em;
 }  
-#insRicetta{
-  float:right;
-  line-height:22pt;
-margin-right:2%;
-text-transform:uppercase;
-font-weight:bold;
-color:white;
-}
-#insRicetta:link{
-color:white;
-}
