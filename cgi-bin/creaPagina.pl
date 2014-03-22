@@ -144,7 +144,7 @@ sub pasti(){
         }
 	 }
    print 'Indice '.$i.' pagina '.$pag.' i<'.(10*($pag+1)).'?';
-   if($i>9 and $i>9){
+   if($i==10*($pag+1)){
           $pag++;
           print '<a id="pagSuc" href="creaPagina.pl?tipo='.$tipo.'&pag='.$pag.'">pagina successiva</a>'; 
     } 
