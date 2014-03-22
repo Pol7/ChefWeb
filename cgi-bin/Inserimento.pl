@@ -65,7 +65,7 @@ use XML::LibXML;
 	$nome=uc($nome);
 
 	my $trovato=0;
-	for my $node ($documento->findnodes("//ricetta[nome[.=\"$nome\")]]")){
+	if($documento->findnodes("//ricetta[nome=\"$nome\"]")){
 		$trovato=1;
 	}
 	
