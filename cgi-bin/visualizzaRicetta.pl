@@ -21,6 +21,7 @@ my $nome = $pagina->param('nome') || undef;
 utf8::encode($nome);
 my $cerca = $pagina->param('cerca') || undef;
 utf8::encode($cerca);
+my $tipo = $pagina->param('tipo') || undef;
 
 utf8::decode($nome);
 utf8::decode($cerca);
