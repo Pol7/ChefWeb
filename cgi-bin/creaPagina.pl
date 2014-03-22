@@ -133,7 +133,7 @@ print $pagina->end_html;
 sub pasti(){
     my $i=0;		#variabile che indicare quanti cicli fa il for, serve per limitare il numero di ricette per pagina
 	for my $node ($doc->findnodes("//ricetta[\@tipo=\"$tipo\"]")){
-        $i++;
+        
         #esce dal ciclo quando raggiunge il limite
         if($i==(10*($pag+1))){
           last;
@@ -142,13 +142,13 @@ sub pasti(){
         if($i> (10*($pag))){
  	         elencoRicette($node);
         }
+        $i++;
 	}
     if($i==10*($pag+1)){
     	print '<a id="pagSuc" href="creaPagina.pl?tipo='.$tipo.'&pag='.($pag+1).'">pagina successiva</a>'; 
     }
-    print $pag; 
     if($pag>0){
-            print '<a id="pagPre" href="creaPagina.pl?tipo='.$tipo.'&pag='.($pag-1).'">pagina precedente</a>';  
+        print '<a id="pagPre" href="creaPagina.pl?tipo='.$tipo.'&pag='.($pag-1).'">pagina precedente</a>';  
     }
 }
 
