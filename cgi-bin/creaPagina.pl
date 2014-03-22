@@ -144,7 +144,7 @@ sub pasti(){
         }
 	}
     if($i==10*($pag+1)){
-          #$pag++;
+        $pag++;
         print $pag;
     	print '<a id="pagSuc" href="creaPagina.pl?tipo='.$tipo.'&pag='.$pag.'">pagina successiva</a>'; 
     } 
