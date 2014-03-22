@@ -156,7 +156,7 @@
 		<ingrediente>
 			<nome>zenzero in polvere</nome>
 			<quantita>1</quantita>
-			<unitadimisura>Non specificata</unitadimisura>
+			<unitadimisura> </unitadimisura>
 		</ingrediente>
 		<procedimento>Fare il brodo vegetale con carate,sedano e cipolla...rosolare dell'aglio in olio extra vergine d'oliva aggiungendo dell'erba cipollina...sistemare le guance di maiale,e cuocere sfumando con del vino bianco e il brodo vegetale, salare e pepare quanto basta....una volta cotte, tagliare e preparare la crema di zenzero: zenzero in polvere diluito in salsa restante dalla cottura delle guance, rassodata con l'aggiunta di farina bianca e latte intero</procedimento>
 	</ricetta>
@@ -167,7 +167,7 @@
 		<ingrediente>
 			<nome>aq</nome>
 			<quantita/>
-			<unitadimisura>Non specificata</unitadimisura>
+			<unitadimisura> </unitadimisura>
 		</ingrediente>
 		<procedimento>sda</procedimento>
 	</ricetta>
@@ -178,7 +178,7 @@
 		<ingrediente>
 			<nome>dsa</nome>
 			<quantita/>
-			<unitadimisura>Non specificata</unitadimisura>
+			<unitadimisura> </unitadimisura>
 		</ingrediente>
 		<procedimento>dsa</procedimento>
 	</ricetta>
@@ -189,7 +189,7 @@
 		<ingrediente>
 			<nome>dsa</nome>
 			<quantita>23</quantita>
-			<unitadimisura>Non specificata</unitadimisura>
+			<unitadimisura> </unitadimisura>
 		</ingrediente>
 		<procedimento>dsa</procedimento>
 	</ricetta>
@@ -200,7 +200,7 @@
 		<ingrediente>
 			<nome>das</nome>
 			<quantita>3</quantita>
-			<unitadimisura>Non specificata</unitadimisura>
+			<unitadimisura> </unitadimisura>
 		</ingrediente>
 		<procedimento>dsa</procedimento>
 	</ricetta>
@@ -211,7 +211,7 @@
 		<ingrediente>
 			<nome>das</nome>
 			<quantita>3</quantita>
-			<unitadimisura>Non specificata</unitadimisura>
+			<unitadimisura> </unitadimisura>
 		</ingrediente>
 		<procedimento>sad</procedimento>
 	</ricetta>
@@ -222,7 +222,7 @@
 		<ingrediente>
 			<nome>asd</nome>
 			<quantita>3</quantita>
-			<unitadimisura>Non specificata</unitadimisura>
+			<unitadimisura> </unitadimisura>
 		</ingrediente>
 		<procedimento>dsa</procedimento>
 	</ricetta>
@@ -233,7 +233,7 @@
 		<ingrediente>
 			<nome>3erwrwe</nome>
 			<quantita>3</quantita>
-			<unitadimisura>Non specificata</unitadimisura>
+			<unitadimisura> </unitadimisura>
 		</ingrediente>
 		<procedimento>32rw</procedimento>
 	</ricetta>
@@ -265,7 +265,7 @@
 		<ingrediente>
 			<nome>cipolla</nome>
 			<quantita>1</quantita>
-			<unitadimisura>Non specificata</unitadimisura>
+			<unitadimisura> </unitadimisura>
 		</ingrediente>
 		<ingrediente>
 			<nome>vino bianco</nome>
@@ -320,7 +320,7 @@ Partendo da questa ricetta base, si possono preparare i più svariati tipi di ri
 		<ingrediente>
 			<nome>èèèè</nome>
 			<quantita>6</quantita>
-			<unitadimisura>Non specificata</unitadimisura>
+			<unitadimisura> </unitadimisura>
 		</ingrediente>
 		<procedimento>èèèè</procedimento>
 	</ricetta>
@@ -342,7 +342,7 @@ Partendo da questa ricetta base, si possono preparare i più svariati tipi di ri
 		<ingrediente>
 			<nome>ssssds</nome>
 			<quantita>34</quantita>
-			<unitadimisura>Non specificata</unitadimisura>
+			<unitadimisura> </unitadimisura>
 		</ingrediente>
 		<procedimento>ciccione</procedimento>
 	</ricetta>
