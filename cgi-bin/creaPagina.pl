@@ -144,12 +144,10 @@ sub pasti(){
         $i++;
 	}
     if($i==10*($pag+1)){
-        $pag++;
-        print $pag;
-    	print '<a id="pagSuc" href="creaPagina.pl?tipo='.$tipo.'&pag='.$pag.'">pagina successiva</a>'; 
+    	print '<a id="pagSuc" href="creaPagina.pl?tipo='.$tipo.'&pag='.($pag+1).'">pagina successiva</a>'; 
     }
     print $pag; 
-    if($pag>1){
+    if($pag){
             #$pag=$pag-2;
             print $pag;
             print '<a id="pagPre" href="creaPagina.pl?tipo='.$tipo.'&pag='.$pag.'">pagina precedente</a>';  
