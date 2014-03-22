@@ -4,73 +4,73 @@ html,head,body{
     background-color:#fff;
 }
   
- #titolo{  
- font-size:40pt;
- text-align:center;
- margin-top:10%;
- margin-bottom:5%;
- }
- #accedi{
-     display:none;
- }
+#titolo{  
+    font-size:40pt;
+    text-align:center;
+    margin-top:10%;
+    margin-bottom:5%;
+}
+#accedi{
+    display:none;
+}
 #path{
-font-size:20pt;
-margin-bottom:5%;
+    font-size:20pt;
+    margin-bottom:5%;
 }
 
 .listMenu{
-display:none;
+    display:none;
 }
   
 #maincol{
-font-size:20pt;
-margin-top:0%;
-width:1300px;
-margin:auto;
-min-height:500px;
+    font-size:20pt;
+    margin-top:0%;
+    width:1300px;
+    margin:auto;
+    min-height:500px;
 }
 
 
 .search{
-display:none;
+    display:none;
 }
 
 #footer{
-display:none;
+    display:none;
 }
 
 .lista{
-margin:auto;
-width:80%;
-margin-top:1%;
+    margin:auto;
+    width:80%;
+    margin-top:1%;
 }
 
 .immagine{
-width:150px;
-display:inline-block;
-vertical-align:8px;
+    width:150px;
+    display:inline-block;
+    vertical-align:8px;
 }
 
 .immagineRicetta{
-width:150px;
-margin-top:2%;
+    width:150px;
+    margin-top:2%;
 }
 
 .immagineVisualizzaRicetta{
-width:380px;
+    width:380px;
 }
 
 .pingredient{
-margin-left:70%;
+    margin-left:70%;
 }
 .divImmagine{
-width:380px;
+    width:380px;
 }
 
 .descr{
-display:inline-block;
-margin-left: 1%;
-vertical-align:34px;
+    display:inline-block;
+    margin-left: 1%;
+    vertical-align:34px;
 }
 
 
