@@ -275,7 +275,8 @@ border-bottom-style: solid;
 #pagSuc{
   float:right;
   margin-right: 1%;
-  
+  margin-bottom: 1%;
+  margin-top: 1%;
 }
 #pagPre{
   float:left;
