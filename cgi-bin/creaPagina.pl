@@ -19,8 +19,6 @@ my $pagina = new CGI;
 #per prendere parametri 
 my $tipo = $pagina->param('tipo') || undef;
 my $cerca = $pagina->param('cerca') || undef;
-utf8::encode($cerca);
-utf8::decode($cerca);
 my $pag = $pagina->param('pag') || 0;
 my $titolo;
 
@@ -28,10 +26,15 @@ my $titolo;
 if($tipo){
 	$titolo="$tipo";
 }else{
-	$titolo="$cerca";
+	utf8::decode($cerca);
+	# uso decode per trasformare i caratteri, letti in utf8, in un carattere leggibile per perl
+	$titolo=" Risultati ricerca";
    
 }
-    
+utf8::encode($cerca);
+# uso encode per trasformare i caratteri in utf8
+utf8::decode($cerca); 
+
 #inizio creazione html                     
 print $pagina->header('text/html');
 print $pagina->start_html(
