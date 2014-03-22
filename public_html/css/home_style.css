@@ -3,8 +3,8 @@ body{
 }
 #header{
 	background-image: url(../images/home.jpg);
-	width:1300px;
-	height:245px;
+	width:935px;
+	height:220px;
 	margin:auto;
 	background-repeat: no-repeat;
 }
@@ -13,7 +13,7 @@ body{
 	background-color:#5f3714;
 	color:white;
 	height:25pt;
-	width:1300px;
+	width:935px;
 	margin:auto;
 	margin-bottom:0.5%;
 }
@@ -23,7 +23,7 @@ body{
 #maincol{
 	padding:0%;	
 	border-style:double;
-	width:1300px;
+	width:935;
 	margin:auto;
 	box-shadow:0px 10px 20px 10px #d3d3d3;
 	background-color:#dad7d2;
@@ -137,7 +137,7 @@ body{
 	color:white;
 	margin:auto;
 	margin-top:0.5%;
-	width:1300px;
+	width:935px;
 	height:40px;
 }
 #footerImg1{
