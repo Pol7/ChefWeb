@@ -47,7 +47,7 @@ print '		<div id="header">
 				<input class="search" type="submit" value="Cerca!" tabindex="3"/>
 				<input class="search" type="text" name="cerca" value="" placeholder="Ricerca ricetta" tabindex="2"/>
 			</form>
-			<div id="path"> Ti trovi in: <a id="linkPercorso" href="../index.html" xml:lang="en" tabindex="1">Home</a> > '<id="linkPercorso" href="creaPagina.pl?tipo='.$tipo.'" > '.$nome.'</div>
+			<div id="path"> Ti trovi in: <a id="linkPercorso" href="../index.html" xml:lang="en" tabindex="1">Home</a> > '.$tipo.' > '.$nome.'</div>
 		</div>
 		<div id="menu">
 			<ul id="ulmenu">
