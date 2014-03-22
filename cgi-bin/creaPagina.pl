@@ -27,8 +27,14 @@ if($tipo){
 	$titolo="$tipo";
 }else{
 	$titolo="$cerca";
-   
+    utf8::decode($cerca);
+	# uso decode per trasformare i caratteri, letti in utf8, in un carattere leggibile per perl
+	$titolo=" Risultati ricerca";
 }
+
+utf8::encode($cerca);
+# uso encode per trasformare i caratteri in utf8
+utf8::decode($cerca); 
     
                          
 print $pagina->header('text/html');
