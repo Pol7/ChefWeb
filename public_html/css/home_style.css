@@ -51,7 +51,7 @@ display:none;
 #secondi{
 	display:inline-block;
   width:30%;
-  height:240px;
+  height:200px;
 	background-image: url(../images/secondi.jpg);
 	text-indent: -999em;
 	background-position: top;
@@ -66,7 +66,7 @@ display:none;
 #antipasti{
 	display:inline-block;
   width:30%;
-  height:240px;
+  height:200px;
 	background-image: url(../images/antipasti.jpg);
 	text-indent: -999em;
 	background-position: top;
@@ -82,7 +82,7 @@ display:none;
 #contorni{
 	display:inline-block;
   width:30%;
-  height:240px;
+  height:200px;
 	margin-left:2%;	
 	background-image: url(../images/contorni.jpg);
 	text-indent: -999em;
@@ -98,7 +98,7 @@ display:none;
 #dessert{
 	display:inline-block;
   width:30%;
-  height:240px;
+  height:200px;
 	background-image: url(../images/dessert.jpg);
 	text-indent: -999em;
 	background-position: top;
@@ -114,7 +114,7 @@ display:none;
 #cocktail{
 	display:inline-block;
 	width:30%;
-  height:240px;
+  	height:200px;
 	background-image: url(../images/cocktail.jpg);
 	text-indent: -999em;
 	background-position: top;
@@ -132,18 +132,18 @@ display:none;
 }
 
 #footer{
-clear:both;
-background-color:#5f3714;
-color:white;
-margin:auto;
-margin-top:0.5%;
-width:1300px;
-height:40px;
+	clear:both;
+	background-color:#5f3714;
+	color:white;
+	margin:auto;
+	margin-top:0.5%;
+	width:1300px;
+	height:40px;
 }
 #footerImg1{
-float:left;
-margin-top:0.4%;
-margin-left:0.4%;
+	float:left;
+	margin-top:0.4%;
+	margin-left:0.4%;
 
 }
 #footerText{
@@ -155,12 +155,12 @@ margin-left:0.4%;
 	}
 	
 #footerImg2{
-float:right;
-margin-top:0.4%;
+	float:right;
+	margin-top:0.4%;
 }
 
 #clearBoth {
- clear:both; 
+	 clear:both; 
  }
 
 .row{

@@ -139,7 +139,7 @@ sub pasti(){
           last;
         }
         #if per evitare di stampare le ricette già stampate le pagine precedenti
-        if($i> (10*($pag))){
+        if($i> (10*($pag)-1)){
  	         elencoRicette($node);
         }
         $i++;
