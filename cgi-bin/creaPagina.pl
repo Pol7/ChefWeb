@@ -176,11 +176,7 @@ sub cerca(){
 sub elencoRicette(){
 	print '<div class="lista">
 				<div class="immagine">
-<<<<<<< HEAD
 					<a href="visualizzaRicetta.pl?nome='.$_[0]->find('./nome').'&tipo='.$_[0]->find('../tipo').'"><img src="../images/ricette/'.$_[0]->find('./img/@src').'" class="immagineRicetta"  alt="immagine rappresentativa della ricetta"/></a>
-=======
-					<a href="visualizzaRicetta.pl?nome='.$_[0]->find('./nome').'&tipo='.$_[0]->find('./tipologia').'"><img src="../images/ricette/'.$_[0]->find('./img/@src').'" class="immagineRicetta"  alt="immagine rappresentativa della ricetta"/></a>
->>>>>>> 475d6265351f3d02641431b1cbba1757f7e04791
 				</div>
 				<div class="descr">
 					<p>Nome: <a class="titolo" href="visualizzaRicetta.pl?nome='.$_[0]->find('./nome').'&tipo='.$tipo.'" class="nomeRicetta">'.$_[0]->find('./nome').'</a></p>
