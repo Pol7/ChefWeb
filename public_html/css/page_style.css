@@ -274,7 +274,11 @@ border-bottom-style: solid;
 }
 #pagSuc{
   float:right;
+  margin-right: 1%;
+  
 }
 #pagPre{
   float:left;
+  margin-left: 1%;
+  margin-top: 100%;
 }
