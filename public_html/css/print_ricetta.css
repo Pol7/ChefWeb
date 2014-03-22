@@ -1,0 +1,132 @@
+html,head,body{
+    margin: 0; padding: 0;
+    font-family: "Times New Roman", Times, serif;
+    background-color:#fff;
+}
+ #titolo{
+ font-size:40pt;
+ text-align:center;
+ margin-top:10%;
+ margin-bottom:5%;
+ }
+ 
+ #accedi{
+     display:none;
+ }
+#path{
+font-size:20pt;
+margin-bottom:5%;
+}
+
+.listMenu{
+display:none;
+}
+
+.search{
+display:none;
+}
+
+#footer{
+display:none;
+}
+
+
+#maincol{
+font-size:20pt;
+margin-top:0%;
+width:1300px;
+margin:auto;
+min-height:500px;
+}
+
+
+
+
+#ulmenu{
+padding:0.9em;
+}
+
+
+
+#clearBoth {
+clear:both;
+ }
+
+#ricetta{
+float:left;
+margin-left:0.7%;
+margin-bottom:0.7%;
+}
+
+#insimg{
+margin-top: 1%;
+}
+
+#procedimento{
+float:left;
+width:44%;
+margin-left:3%;
+}
+
+#mostraprocedimento{
+float:left;
+width:48%;
+margin-left:3%;
+margin-top:3%;
+}
+
+
+.pingredien{
+margin-left:7%;
+}
+
+#autore{
+display:inline;
+}
+
+#testoAutore{
+display:inline;
+}
+
+#uling{
+padding:0%;
+}
+
+#insRicetta{
+margin-bottom:1%;
+float: left;
+margin-left:3%;
+margin-top:1%;
+margin-right:5%;
+}
+
+
+.immagine{
+width:150px;
+display:inline-block;
+vertical-align:8px;
+}
+
+.immagineVisualizzaRicetta{
+width:380px;
+}
+
+.pingredient{
+margin-left:70%;
+}
+.divImmagine{
+width:380px;
+}
+
+.descr{
+display:inline-block;
+    margin-left: 1%;
+    vertical-align:34px;
+}
+
+
+
+
+
+
+

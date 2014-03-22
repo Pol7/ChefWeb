@@ -1,0 +1,192 @@
+body{
+background-color:#e8e7e3;
+}
+#header{
+	background-image: url(../images/home.jpg);
+	width:1300px;
+	height:245px;
+	margin:auto;
+	background-repeat: no-repeat;
+}
+
+#sottoHeader{
+	background-color:#5f3714;
+	color:white;
+	height:25pt;
+	width:1300px;
+	margin:auto;
+	margin-bottom:0.5%;
+}
+#titolo{
+display:none;  
+}
+#maincol{
+	padding:0%;	
+	border-style:double;
+	width:1300px;
+	margin:auto;
+	box-shadow:0px 10px 20px 10px #d3d3d3;
+	background-color:#dad7d2;
+}
+
+#register{
+	float:right;
+}
+
+#primi{	
+	display:inline-block;
+  width:30%;
+  height:240px;
+	background-image: url(../images/primi.jpg);
+	text-indent: -999em;
+	background-position: top;
+	background-repeat:no-repeat;
+}
+#primi:hover{
+	background-position: bottom;
+}	
+#primi:active{
+	background-position: center;
+}
+#secondi{
+	display:inline-block;
+  width:30%;
+  height:240px;
+	background-image: url(../images/secondi.jpg);
+	text-indent: -999em;
+	background-position: top;
+	background-repeat:no-repeat;
+}
+#secondi:hover{
+	background-position: bottom;
+}
+#secondi:active{
+	background-position: center;
+}
+#antipasti{
+	display:inline-block;
+  width:30%;
+  height:240px;
+	background-image: url(../images/antipasti.jpg);
+	text-indent: -999em;
+	background-position: top;
+	background-repeat:no-repeat;
+	margin-left:2%;
+}
+#antipasti:hover{
+	background-position: bottom;
+}
+#antipasti:active{
+	background-position: center;
+}
+#contorni{
+	display:inline-block;
+  width:30%;
+  height:240px;
+	margin-left:2%;	
+	background-image: url(../images/contorni.jpg);
+	text-indent: -999em;
+	background-position: top;
+	background-repeat:no-repeat;
+}
+#contorni:hover{
+	background-position: bottom;
+}
+#contorni:active{
+	background-position: center;
+}
+#dessert{
+	display:inline-block;
+  width:30%;
+  height:240px;
+	background-image: url(../images/dessert.jpg);
+	text-indent: -999em;
+	background-position: top;
+	background-repeat:no-repeat;
+
+}
+#dessert:hover{
+	background-position: bottom;
+}
+#dessert:active{
+	background-position: center;
+}
+#cocktail{
+	display:inline-block;
+	width:30%;
+  height:240px;
+	background-image: url(../images/cocktail.jpg);
+	text-indent: -999em;
+	background-position: top;
+	background-repeat:no-repeat;
+}
+#cocktail:hover{
+	background-position: bottom;
+}
+#cocktail:active{
+	background-position: center;
+}
+
+.home_element{
+	margin:1%;
+}
+
+#footer{
+clear:both;
+background-color:#5f3714;
+color:white;
+margin:auto;
+margin-top:0.5%;
+width:1300px;
+height:40px;
+}
+#footerImg1{
+float:left;
+margin-top:0.4%;
+margin-left:0.4%;
+
+}
+#footerText{
+	text-align:right;
+	float:left;
+	height:36px;
+	margin-top:0.8%;
+	width:45%;
+	}
+	
+#footerImg2{
+float:right;
+margin-top:0.4%;
+}
+
+#clearBoth {
+ clear:both; 
+ }
+
+.row{
+	margin-top:1%;
+	margin-bottom:1%;
+}
+
+#path{
+line-height: 22pt;
+display:inline;
+float:left;
+}
+
+.search{
+    float:right;
+	margin-top:0.4em;
+	margin-right:0.3em;
+}  
+#insRicetta{
+  float:right;
+  line-height:22pt;
+margin-right:2%;
+text-transform:uppercase;
+font-weight:bold;
+color:white;
+}
+#insRicetta:link{
+color:white;
+}

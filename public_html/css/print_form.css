@@ -1,0 +1,231 @@
+html,head,body{
+    margin: 0; padding: 0;
+    font-family: "Times New Roman", Times, serif;
+    background-color:#fff;
+}
+#accedi{
+display:none;
+}
+ #titolo{
+ font-size:40pt;
+ text-align:center;
+ margin-top:10%;
+ margin-bottom:5%;
+ }
+#path{
+font-size:20pt;
+margin-bottom:5%;
+}
+textarea{
+ width:700pt;	
+ height:300pt;
+ font-size:15pt;
+}
+select{
+ height:30pt;
+ font-size:15pt;	
+}
+input{
+ height:30pt;
+ font-size:15pt;
+}
+#insimg{
+border:none;
+}
+
+.listMenu{
+display:none;
+}
+
+.search{
+display:none;
+}
+
+#footer{
+display:none;
+}
+
+#maincol{
+font-size:25pt;
+margin-top:0%;
+width:1300px;
+margin:auto;
+min-height:500px;
+}
+
+h1{
+ font-size:30pt;
+}
+
+#ulmenu{
+padding:0.9em;
+}
+
+
+#login{
+display:none;
+}
+
+#registra{
+float: left;
+margin-bottom:3%;
+margin-left: 19%;
+}
+
+#clearBoth { 
+clear:both;
+ }
+
+#ricetta{
+float:left;
+margin-left:0.7%;
+margin-bottom:0.7%;
+}
+
+#insimg{
+margin-top: 1%;
+}
+
+#procedimento{
+float:left;
+width:44%;
+margin-left:3%;
+}
+#areaprocedimento{
+ font-size:18pt;
+}
+
+#mostraprocedimento{
+float:left;
+width:48%;
+margin-left:3%;
+margin-top:3%;
+}
+
+.error {
+color: red;
+margin-left: 1%;
+}
+#linkPercorso{
+color:white;
+}
+
+.titolo{
+text-decoration:none;
+font-weight: bold;
+}
+
+#anno{
+	width:40px;
+}
+
+
+#campi{
+	font-size: 0.8em;
+	margin-top: -2%;
+	margin-left: 0.5%;
+}
+
+.pingredien{
+	margin-left:7%;
+}
+
+#autore{
+	display:inline;
+}
+
+#testoAutore{
+	display:inline;
+}
+
+#uling{
+	padding:0%;
+}
+
+#insRicetta{
+margin-bottom:1%;
+float: left;
+margin-left:3%;
+margin-top:1%;
+margin-right:5%;
+}
+
+#testo{
+ text-align:center;
+ margin-top:10%;
+}
+
+#testo1{
+ text-align:center;
+ font-size:35px;
+}
+
+.testo2{
+ text-align:center;
+ font-size:25px;
+ margin-top:3%;
+}
+
+#ingredienti{
+	text-align:center;
+	vertical-align:text-top;
+}
+
+#titoloingredienti{
+	margin-top: 2%;
+	margin-bottom: 2%;
+}
+
+.bottone{
+	margin-top: 1%;
+}
+
+#invia{
+	display:block
+	margin-top: 1%;
+	margin-bottom: 1%;
+}
+
+.asterisco{
+	color:red;
+}
+
+.obbligo{
+	font-size:1em;
+}
+
+.lista{
+margin:auto;
+width:80%;
+margin-top:1%;
+border-bottom-width: 1px;
+border-bottom-style: solid;
+}
+
+.immagine{
+	width:150px;
+	display:inline-block;
+	vertical-align:8px;
+}
+
+.immagineRicetta{
+	width:150px;
+	margin-top:2%;
+}
+
+.immagineVisualizzaRicetta{
+	width:380px;
+}
+
+.pingredient{
+	margin-left:70%;
+}
+.divImmagine{
+	width:380px;
+}
+
+.descr{
+	display:inline-block;
+    margin-left: 1%;
+    vertical-align:34px;
+}

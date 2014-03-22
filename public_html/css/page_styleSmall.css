@@ -1,0 +1,52 @@
+#header{
+  width:100%;
+  height:183px;
+  background-image: url(../images/homeSmall.jpg);
+}
+
+#sottoHeader{
+	width:100%;
+}
+
+#maincol{
+width:100%;
+}
+
+#footer{
+width:100%;
+}
+
+#path{
+width:100%;
+}
+ 
+
+#menu{
+width:100%;
+}
+#ulmenu{
+width:100%;
+}
+
+#ricetta{
+width: 98%;
+}
+
+#procedimento{
+margin-bottom: 2%;
+margin-left: 0.7%;
+margin-top: 5%;
+}
+
+#login{
+width:60%;
+margin-left: 2%;
+}
+
+#registra{
+width:99%;
+margin-left: 2%;
+margin-top: 2%;
+margin-bottom: 3%;
+}
+
