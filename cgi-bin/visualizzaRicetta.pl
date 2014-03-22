@@ -5,8 +5,10 @@ use CGI::Carp qw(fatalsToBrowser);
 use XML::LibXML;
 use strict;
 use warnings;
+use utf8;
 
-my $file = '../public_html/database/ricette.xml';
+my $i=0;
+my $file = '../data/ricette.xml';
 #creazione oggetto parser
 my $parser = XML::LibXML->new();
 #apertura file e lettura input
@@ -16,8 +18,12 @@ my $pagina = new CGI;
 
 #per prendere parametri 
 my $nome = $pagina->param('nome') || undef;
+utf8::encode($nome);
 my $cerca = $pagina->param('cerca') || undef;
+utf8::encode($cerca);
 
+utf8::decode($nome);
+utf8::decode($cerca);
 print $pagina->header('text/html');
 print $pagina->start_html(
 				-title=>"$nome",				
@@ -26,17 +32,13 @@ print $pagina->start_html(
 						  { -media => 'handheld, screen and (max-width:1320px), only screen and (max-device-width:1320px)',
 							-src => '../css/page_styleMedium.css'},
 						  { -media => 'handheld, screen and (max-width:690px), only screen and (max-device-width:690px)',
-							-src => '../css/page_styleSmall.css'},
-						  { -media => 'print',
-							-src => '../css/print_ricetta.css'}],
+							-src => '../css/page_styleSmall.css'}],	
 				-lang=>'it',
 				-head=> $pagina->Link({ -rel=>'shortcut icon', 
-						  -href => '../images/pinguino.ico', 
+						  -href => '../images/chef.ico', 
 						  -type => 'image/x-icon'})				
 		);
 print '		<div id="header">
-				<div id="h1"><em>Lo <span xml:lang="fr">Chef</span> del <span xml:lang="eng"> Web</span></em></div>
-				<div id="accedi"><a href="Registrazione.html" tabindex="1">Accedi o Registrati!</a></div></div>
 			</div>
 				
 		<div id="sottoHeader">
@@ -60,16 +62,17 @@ print '		<div id="header">
 			<div id="clearBoth"></div>
 		</div>
 		<div id="maincol">';
-        
         for my $node ($doc->findnodes("//ricetta[nome=\"$nome\"]")) {
         	print '     <div id="insRicetta">
-        			<h1>'.$node->find('./nome').'</h1>
+        			<h1>'.$node->find('./nome').'</h1> 
         			<p id="testoAutore"><h3 id="autore">Autore:</h3> '.$node->find('./autore').'</p>
         			<div class="divImmagine"><img src="../images/ricette/'.$node->find('./img/@src').'" class="immagineVisualizzaRicetta" alt="immagine rappresentativa della ricetta"/></div>
         			</div>
         			<div id="mostraprocedimento">
         			<ul id="uling"><h2>Ingredienti:</h3>';
 				foreach my $ingredient ($doc->findnodes("//ricetta[nome=\"$nome\"]/ingrediente")) {
+					my $nomeing = $ingredient->find('./nome');
+					my $nomeutf = utf8::decode($nomeing);
 					print '<li class="pingredien">'.$ingredient->find('./nome').' '.$ingredient->find('./quantita').' '.$ingredient->find('./unitadimisura').'</li>';
 				}
         	print '  </ul> 
@@ -86,7 +89,7 @@ print	'	<div id="clearBoth"></div>
 					<img src="../images/valid-xhtml10.png" alt="CSS Valid!"/></a>
 			</div>
 			<div id="footerText">
-			Statistic Chef
+			Gruppo beo
 			</div>
 			<div id="footerImg2">
 				<a href="http://jigsaw.w3.org/css-validator/check?uri=referer" tabindex="13">
