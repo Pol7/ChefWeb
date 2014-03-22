@@ -1,0 +1,96 @@
+LO CHEF DEL WEB
+Progetto tecnologie Web
+Gruppo:Satistic Chef
+Componenti: ● Andrea Pozzato, 
+● Antonhy Signori,
+● Emanuele Zorzi,
+● Luca Favaretto,
+● Paolo Stefani
+
+
+Premessa:
+Il progetto consiste nella creazione di un sito attraverso vari linguaggi: XHTML, JavaScript
+Perl, XML e CSS. Ogni pagina prodotta e ogni foglio stile fatto, è stato validato tramite gli strumenti messi a disposizione del consorzio W3C???????????; precisamente le pagine XHTML rispettano lo standard XHTML 1.0?????????????? Strict, mentre il foglio di stile rispetta lo standard CSS 2.1.????????
+
+ Il nostro è un sito di cucina, permette la consultazione e l’inserimento di ricette. Le ricette sono divise in sei categorie Antipasti, Primi, Secondi, Contorni, Dessert, Cocktail.
+I visitatori del sito potranno consultare le ricette andando su ogni categoria per vedere tutte le ricette presenti, l’utente potrò anche ricercare una ricetta e visualizzarla. Ogni visitatore può inserire una ricetta riempendo un modulo per metterla a disposizione di tutti. 
+Le tipologie di utenti che possono consultare il sito sono molteplici in quanto chiunque può consultare un ricettario. Per questo motivo si è deciso di utilizzare una struttura semplice e di immediato utilizzo, nonché di utilizzare la codifica Unicode UTF8 per la rappresentazione del testo.
+I contenuti del sito potranno crescere grazie appunto all'inserimento di nuove ricette. 
+
+Divisione dei ruoli
+
+Di seguito è riportata la ripartizione dei ruoli all'interno del gruppo per la realizzazione del
+progetto:
+● Paolo Stefani: Responsabile,  XHTML, CSS, Perl;
+● Andrea Pozzato: XHTML, CSS, Perl;
+● Luca Favaretto:XHTML, JavaScript, XML; XML Schema, CSS;
+● Antonhy Signori: CSS, XML, XML Schema, parte grafica;
+● Emanuele Zorzi: XHTML, JavaScript,Perl;
+
+Per le pagine Perl:
+ Stefani Paolo: lettura da XML e creazione pagina;
+Andrea Pozzato: Scrittura XML;
+Emanuele Zorzi: creazione pagina;
+
+Strumenti utilizzati:
+
+Per  il progetto sono stati utilizzati i seguenti strumenti:
+● Editor:Notepad ++;
+● Browser: Internet Explorer 10, Firefox , Chrome.
+● Programmi grafici: Photoshop, Gimp, Paint
+● Mobile: Iphone 5s, Nexus 5
+
+Suddivisione delle directory:
+
+Le nostre cartelle sono suddivise cosi: 
+Cgi-bin: Questa cartella contiene tutte le pagine in Perl
+Data:  contiene l’xml e il nostro xmlschema
+Public-html: Contiene le nostre pagine html e a sua volta tre cartelle: images che contiene le immagini una con i fogli stile e una per il java script
+ 
+XML, XMLSchema e XSLT:
+
+Il nostro database scritto in  XML, e il suo relativo  XMLSchema sono contenuti all'interno della directory data.
+Il file XML denominato ricette.xml contiene tute le ricette del nostro database con le relative informazioni. E` stato associato, ai fini della validazione, lo XMLSchema denominato ricette.xsd.
+Per ogni ricetta si ha il nome, l’autore, la tipologia, l’immagine relativa, inoltre ci sono gli ingredienti (composti dal nome, dalla quantità e dall’unità di misura che si vuole utilizzare) e naturalmente il procedimento della preparazione della ricetta.
+Il file XMLschema è stato realizzato tramite il modello “tende alla veneziana” per i pregi che sono stati illustrati durante le lezioni di Tecnologie Web e abbiamo preferito usare l’XMLSchema invece che la DTD per la facilità di gestione dell’immagine della ricetta.
+
+Cascading Style Sheets:
+
+Abbiamo utilizzato 2 fogli di stile uno per la Home e una per le altre pagine del sito che sono strutturate con la stessa modalità.
+
+Per il layout del sito si è optato per un layout fisso, non vedevamo l’utilità di complicarci la vita con un layout fluido quando non ce n’era bisogno. 
+
+Nella nostra home l’utente si trova di fronte alle 6 tipologie che sono facili da individuare grazie alle immagine evocative e alle scritte all’interno di esse. L’utente inoltre visualizza una barra di navigazione che dice dove ti trovi, individua facilmente la possibilità di effettuare una ricerca grazie alla presenza del bottone cerca e anche la possibilità di inserire una nuova ricetta. Con il CSS abbiamo cercato di individuare dei buoni punti di rottura facendo si che la pagina non venga stravolta e che venga visualizzata in maniera ottimale in ogni tipo di monitor.
+
+L’utente cliccando su una di queste opzioni si trova in una pagina dove abbiamo un banner che contiene un menù. Nella barra possiamo spostarci con pochi click dove vogliamo all’interno del sito, possiamo cambiare tipologia di cibo possiamo tornare alla home inserire una ricetta o effettuare una ricerca. Abbiamo lasciato comunque la barra che indica dove ti trovi così l’utente sa sempre dov’è.
+
+
+Javascript:
+
+Abbiamo utilizzato JavaScript principalmente per i controlli nella pagina di inserimento delle ricette. Abbiamo deciso di effettuare i controlli in java e non in perl per alleggerire le pagine in perl facendo i controlli che si potevano fare con un script.
+I controlli che andiamo a fare sono su i dati che andiamo ad inviare al server per la creazione di una ricetta. Nel nostro form abbiamo dei campi obbligatori e con una semplice funzione andiamo a controllare se i campi sono stati compilati o sono stato compilati correttamente, in caso contrario avvisiamo l’utente con un messaggio dove diciamo che cosa ha sbagliato.
+Inoltre abbiamo una funzione che ci permette di aggiungere nuovi ingredienti 
+
+Script Perl:
+
+Per la generazione di contenuti dinamici e per le funzionalità di inserimento e ricerca di
+contenuti si sono utilizzati degli script Perl.
+
+Le pagine in perl sono contenute nella cartella cgi-bin. Le nostre pagine Perl sono 3:
+CreaPagina, VisualizzaRicetta e Inserimento.
+In ogni pagina abbiamo un menù dinamico.
+
+Crea Pagina
+L’utente schiacciando una delle 6 tipologie visualizza tutte le ricette che quella tipologia ha. In questa pagina Perl siamo andati a leggere il nostro database facendo visualizzare solo le ricette che appartengono alla tipologia richiesta, se l’elenco delle ricette è troppo lungo abbiamo preferito non lasciarle sulla stessa pagina facendo “scrollare” l’utente troppo a lungo ma creando una elenco su più pagine. All’interno di questa pagina abbiamo anche sviluppato una funzione di ricerca che ci fa apparire una pagina dove ci saranno tutte le ricette che contengono nel nome la stringa che l’utente è andato a cercare.
+MANCA UNA FUNZIONE DA SPIEGARE
+
+Visulizza Ricetta
+L’utente dopo aver visualizzato l’elenco decide di schiacciare una ricetta in particolare, questa pagina  prendendo il nome della ricetta appena selezionata va a cercare nel database delle ricette e stampa tutte le informazioni riguardanti la ricetta.
+
+Inserimento
+Prendendo i dati dal form dell’inserimento di una nuova ricetta con il metodo POST  va scrivere nel nostro xml la nuova ricetta, inoltre in questa pagina facciamo un controllo se il nome della ricetta è già inserito se così è informo l’utente che l’inserimento della ricetta non è andato a buon fine.
+
+Testing cross browser:
+
+L'intero progetto è stato testato attraverso i browser Internet Explorer 7, Firefox 3.0 e Chrome ed ha
+mantenuto lo stesso comportamento.
