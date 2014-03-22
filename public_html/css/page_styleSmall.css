@@ -2,6 +2,7 @@
   	width:100%;
   	height:183px;
   	background-image: url(../images/homeSmall.jpg);
+  	background-position:center;
 }
 
 #sottoHeader{
