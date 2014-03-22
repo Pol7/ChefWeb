@@ -150,7 +150,6 @@ sub pasti(){
 #funzione cerca
 sub cerca(){
 		my $trovato=0;
-		
 		my $cercaLow=uc($cerca);
 		for my $node ($doc->findnodes("//ricetta[nome[contains(.,\"$cercaLow\")]]")){
 			elencoRicette($node);
