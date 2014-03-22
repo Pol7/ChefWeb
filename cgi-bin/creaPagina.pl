@@ -135,7 +135,7 @@ sub pasti(){
 	for my $node ($doc->findnodes("//ricetta[\@tipo=\"$tipo\"]")){
         
         #esce dal ciclo quando raggiunge il limite
-        if($i==(10*($pag+1))){
+        if($i==   (10*($pag+1)+1)      ){
           last;
         }
         #if per evitare di stampare le ricette già stampate le pagine precedenti
