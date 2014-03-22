@@ -71,7 +71,7 @@ body{
 	text-indent: -999em;
 	background-position: top;
 	background-repeat:no-repeat;
-	margin-left:9%;
+	margin-left:4%;
 }
 #antipasti:hover{
 	background-position: bottom;
@@ -83,7 +83,7 @@ body{
 	display:inline-block;
   	width:25%;
   	height:200px;
-	margin-left:9%;	
+	margin-left:4%;	
 	background-image: url(../images/contorni.jpg);
 	text-indent: -999em;
 	background-position: top;
@@ -128,7 +128,7 @@ body{
 }
 
 .home_element{
-	margin:1%;
+	margin:2.5%;
 }
 
 #footer{
