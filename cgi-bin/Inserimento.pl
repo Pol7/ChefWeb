@@ -17,7 +17,7 @@ use XML::LibXML;
 	#recupero l'elemento radice
 	my $root = $documento->getDocumentElement || die("Non accedo alla radice");
 
-	# set the maximum limit for file uploads  
+	# limite massimo per upload file  
 	$CGI::POST_MAX = 1024 * 5000; 
 
 	$CGI::DISABLE_UPLOADS = 0; #1 disables uploads, 0 enables uploads
@@ -28,6 +28,7 @@ use XML::LibXML;
 
 	my $nome = $pagina->param('nomeRicetta');
 	utf8::decode($nome);
+	# uso decode per trasformare i caratteri, letti in utf8, in un carattere leggibile per perl
 	my $tipo = $pagina->param('tipologia');
 	my $autore = $pagina->param('nomeAutore');
 	utf8::decode($autore);

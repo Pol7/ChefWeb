@@ -13,7 +13,7 @@ my $file = '../data/ricette.xml';
 my $parser = XML::LibXML->new();
 #apertura file e lettura input
 my $doc = $parser->parse_file($file) || die("Operazioni di parsing fallita");
-
+#recupero l'elemento radice
 my $pagina = new CGI;
 
 #per prendere parametri 
@@ -46,7 +46,7 @@ print '		<div id="header">
 				<input class="search" type="submit" value="Cerca!" tabindex="3"/>
 				<input class="search" type="text" name="cerca" value="" placeholder="Ricerca ricetta" tabindex="2"/>
 			</form>
-			<div id="path"> Ti trovi in: <a id="linkPercorso" href="../index.html" xml:lang="en" tabindex="1">Home</a> >'.$nome.' </div>
+			<div id="path"> Ti trovi in: <a id="linkPercorso" href="../index.html" xml:lang="en" tabindex="1">Home</a> > '.$tipo.' > '.$nome.' </div>
 		</div>
 		<div id="menu">
 			<ul id="ulmenu">
@@ -71,8 +71,6 @@ print '		<div id="header">
         			<div id="mostraprocedimento">
         			<ul id="uling"><h2>Ingredienti:</h3>';
 				foreach my $ingredient ($doc->findnodes("//ricetta[nome=\"$nome\"]/ingrediente")) {
-					my $nomeing = $ingredient->find('./nome');
-					my $nomeutf = utf8::decode($nomeing);
 					print '<li class="pingredien">'.$ingredient->find('./nome').' '.$ingredient->find('./quantita').' '.$ingredient->find('./unitadimisura').'</li>';
 				}
         	print '  </ul> 
