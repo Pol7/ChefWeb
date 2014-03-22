@@ -6,7 +6,7 @@ use XML::LibXML;
 use strict;
 use warnings;
 
-my $file = '../data/ricette.xml';
+my $file = '../public_html/database/ricette.xml';
 #creazione oggetto parser
 my $parser = XML::LibXML->new();
 #apertura file e lettura input
@@ -17,20 +17,15 @@ my $pagina = new CGI;
 #per prendere parametri 
 my $tipo = $pagina->param('tipo') || undef;
 my $cerca = $pagina->param('cerca') || undef;
-utf8::encode($cerca);
-utf8::decode($cerca);
-my $pag = $pagina->param('pag') || 0;
 my $titolo;
 
-      
 if($tipo){
 	$titolo="$tipo";
 }else{
 	$titolo="$cerca";
-   
 }
-    
-                         
+
+
 print $pagina->header('text/html');
 print $pagina->start_html(
 				-title=>"$titolo",				
@@ -48,10 +43,13 @@ print $pagina->start_html(
 						  -type => 'image/x-icon'})				
 		);
 print '		<div id="header">
-				<div id="titolo"><em>Lo <span xml:lang="fr">Chef</span> del <span xml:lang="eng"> Web</span></em></div>
+				<div id="h1"><em>Lo <span xml:lang="fr">Chef</span> del <span xml:lang="eng"> Web</span></em></div>
+				<div id="accedi">
+					<a href="Registrazione.html" tabindex="1">Accedi o Registrati!</a>
+				</div>
 			</div>
 		<div id="sottoHeader">
-			<form action="creaPagina.pl" method="get" >
+			<form action="creaPagina.pl?" method="get" >
 				<input class="search" type="submit" value="Cerca!" tabindex="3"/>
 				<input class="search" type="text" name="cerca" value="" placeholder="Ricerca ricetta" tabindex="2"/>
 			</form>
@@ -101,44 +99,28 @@ print '		<div id="header">
 		else{
 			&pasti();
 		}
-print	'<div id="clearBoth"></div>
-    </div>
+print	'</div>
 		<div id="footer">
 			<div id="footerImg1">
 				<a href="http://validator.w3.org/check?uri=referer">
 					<img src="../images/valid-xhtml10.png" alt="CSS Valid!"/></a>
 			</div>
 			<div id="footerText">
-		  	Statistic Chef
+			Statistic Chef
 			</div>
 			<div id="footerImg2">
 				<a href="http://jigsaw.w3.org/css-validator/check?uri=referer">
 				<img src="../images/vcss-blue.gif" alt="XHTML 1.0 Valid!"/></a>
 			</div>
-		</div>';
+		</div>
+';
 
 print $pagina->end_html;
 
 sub pasti(){
-    my $i=0;
 		for my $node ($doc->findnodes("//ricetta[\@tipo=\"$tipo\"]")){
-        $i++;
-        if($i==(10*($pag+1))){
-          last;
-        }
-        if($i> (10*($pag))     ){
- 	         elencoRicette($node);
-        }
-	 }
-   
-   if($i>9){
-          $pag++;
-          print '<a id="pagSuc" href="creaPagina.pl?tipo='.$tipo.'&pag='.$pag.'">pagina successiva</a>'; 
-    } 
-    if($pag>1){
-            $pag=$pag-2;
-            print '<a id="pagPre" href="creaPagina.pl?tipo='.$tipo.'&pag='.$pag.'">pagina precedente</a>';  
-    }
+				elencoRicette($node);
+		}
 }
 
 sub cerca(){
@@ -163,7 +145,7 @@ sub elencoRicette(){
 				<div class="descr">
 					<p>Nome: <a class="titolo" href="visualizzaRicetta.pl?nome='.$_[0]->find('./nome').'" class="nomeRicetta">'.$_[0]->find('./nome').'</a></p>
 					<p class="autore">Autore: '.$_[0]->find('./autore').'</p>';
-					my $procedimento=substr($_[0]->find('./procedimento'),0,60);
+					my $procedimento=substr($_[0]->find('./procedimento'),0,80);
 					print '<div><p class="procedimento">Procedimento: '.$procedimento.'... <a href="visualizzaRicetta.pl?nome='.$_[0]->find('./nome').'">Leggi tutto</a></p></div>
 				</div>
 			 </div>';
