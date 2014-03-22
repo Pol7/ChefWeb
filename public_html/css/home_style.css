@@ -3,7 +3,7 @@ body{
 }
 #header{
 	background-image: url(../images/home.jpg);
-	width:935px;
+	width:1087px;
 	height:220px;
 	margin:auto;
 	background-repeat: no-repeat;
@@ -13,7 +13,7 @@ body{
 	background-color:#5f3714;
 	color:white;
 	height:25pt;
-	width:935px;
+	width:1087px;
 	margin:auto;
 	margin-bottom:0.5%;
 }
@@ -137,7 +137,7 @@ body{
 	color:white;
 	margin:auto;
 	margin-top:0.5%;
-	width:935px;
+	width:1087px;
 	height:40px;
 }
 #footerImg1{
