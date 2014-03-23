@@ -42,21 +42,21 @@ utf8::decode($cerca);
 #comincio a costruire la pagina html            
 print $pagina->header('text/html');
 print $pagina->start_html(
-				-title=>"$titolo",				
-				-style=>[{ -media => 'screen',
-							-src => '../css/page_style.css'},
-						  { -media => 'handheld, screen and (max-width:1320px), only screen and (max-device-width:1320px)',
-							-src => '../css/page_styleMedium.css'},
-						  { -media => 'handheld, screen and (max-width:690px), only screen and (max-device-width:690px)',
-							-src => '../css/page_styleSmall.css'},
-						  { -media => 'print',
-						        -src => '../css/print.css'}],
-				-meta=>{'keywords'=>'chef web',
-			                'author'=>'Paolo Stefani, Andrea Pozzato, Luca Favaretto, Emanuele Zorzi, Anthony Signori'},
-			        -lang=>'it',
-				-head=> $pagina->Link({ -rel=>'shortcut icon', 
-						  -href => '../images/chef.ico', 
-						  -type => 'image/x-icon'})				
+	-title=>"$titolo",				
+	-style=>[{ -media => 'screen',
+			-src => '../css/page_style.css'},
+	  	{ -media => 'handheld, screen and (max-width:1320px), only screen and (max-device-width:1320px)',
+			-src => '../css/page_styleMedium.css'},
+	  	{ -media => 'handheld, screen and (max-width:690px), only screen and (max-device-width:690px)',
+			-src => '../css/page_styleSmall.css'},
+	  	{ -media => 'print',
+	        	-src => '../css/print.css'}],
+	-meta=>{'keywords'=>'Chef Web, Ricette, Ricetta',
+                'author'=>'Paolo Stefani, Andrea Pozzato, Luca Favaretto, Emanuele Zorzi, Anthony Signori'},
+        -lang=>'it',
+	-head=> $pagina->Link({ -rel=>'shortcut icon', 
+  				-href => '../images/chef.ico', 
+  				-type => 'image/x-icon'})				
 		);
 print '	<div id="header">
 			<div id="titolo"><em>Lo <span xml:lang="fr">Chef</span> del <span xml:lang="eng"> Web</span></em></div>
