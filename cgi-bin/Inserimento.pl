@@ -141,6 +141,8 @@ use XML::LibXML;
 	-src => '../css/page_styleSmall.css'},	
 	{-media => "print",
 	-src => '../css/print_boh.css'}],
+	-keywords=>'Chef Web, Ricetta, Ricette',
+	-author=>'Paolo Stefani, Andrea Pozzato, Luca Favaretto, Emanuele Zorzi, Anthony Signori',
 	-lang=>'it',
 	-head=> $pagina->Link({ -rel=>'shortcut icon', 
 					-href => '../images/chef.ico', 
