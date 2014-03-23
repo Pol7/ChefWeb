@@ -95,7 +95,7 @@ print	'	<div id="clearBoth"></div>
 					<img src="../images/valid-xhtml10.png" alt="CSS Valid!"/></a>
 			</div>
 			<div id="footerText">
-			Statistic Chef
+			<span xml:lang="en">Statistic</span> <span xml:lang="fr">Chef</span>
 			</div>
 			<div id="footerImg2">
 				<a href="http://jigsaw.w3.org/css-validator/check?uri=referer" tabindex="13">
