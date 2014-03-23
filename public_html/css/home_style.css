@@ -194,3 +194,8 @@ body{
 #insRicetta:visited{
 	color:grey;
 }
+#salta {
+    	position: absolute;
+    	left: -999px;
+    	width: 990px;
+}
