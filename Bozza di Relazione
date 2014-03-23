@@ -67,8 +67,9 @@ L’utente cliccando su una di queste opzioni si trova in una pagina dove abbiam
 
 Javascript:
 
-Abbiamo utilizzato JavaScript principalmente per i controlli nella pagina di inserimento delle ricette. Abbiamo deciso di effettuare i controlli in java e non in perl per alleggerire le pagine in perl facendo i controlli che si potevano fare con un script.
-I controlli che andiamo a fare sono su i dati che andiamo ad inviare al server per la creazione di una ricetta. Nel nostro form abbiamo dei campi obbligatori e con una semplice funzione andiamo a controllare se i campi sono stati compilati o sono stato compilati correttamente, in caso contrario avvisiamo l’utente con un messaggio dove diciamo che cosa ha sbagliato.
+Abbiamo utilizzato JavaScript principalmente per i controlli nella pagina di inserimento delle ricette. Abbiamo deciso di effettuare i controlli in java e non in perl per rendere minimo il traffico verso il server visto anche il fatto che non abbiamo grossi problemi di sicurezza.
+I controlli che andiamo a fare sono su i dati prima di inviarli al server per la creazione di una ricetta. Nel nostro form abbiamo dei campi obbligatori e con una semplice funzione andiamo a controllare se i campi sono stati compilati o sono stato compilati correttamente, in caso contrario avvisiamo l’utente con un messaggio dove diciamo che cosa ha sbagliato.
+Questo aiuta l'utente a capire dove ha sbagliato e fa si che trovi con facilità come correggere la compilazione.
 Inoltre abbiamo una funzione che ci permette di aggiungere nuovi ingredienti 
 
 Script Perl:
@@ -79,6 +80,9 @@ contenuti si sono utilizzati degli script Perl.
 Le pagine in perl sono contenute nella cartella cgi-bin. Le nostre pagine Perl sono 3:
 CreaPagina, VisualizzaRicetta e Inserimento.
 In ogni pagina abbiamo un menù dinamico.
+
+Abbiamo anche effettuato il controllo al compilamento del form per l'inserimento del nome della ricetta in perl perchè è l'unico campo in cui non doveva esserci un controllo sul database per non avere nomi duplicati.
+La decisione di non avere nomi duplicati la usiamo solo per semplicità nel formare la nostra visualizzazione di una singola ricetta visto che usiamo come chiave il nome; si potrebbe ovviare al problema semplicemente assegnando ad ogni ricetta un id. 
 
 Crea Pagina
 L’utente schiacciando una delle 6 tipologie visualizza tutte le ricette che quella tipologia ha. In questa pagina Perl siamo andati a leggere il nostro database facendo visualizzare solo le ricette che appartengono alla tipologia richiesta, se l’elenco delle ricette è troppo lungo abbiamo preferito non lasciarle sulla stessa pagina facendo “scrollare” l’utente troppo a lungo ma creando una elenco su più pagine. All’interno di questa pagina abbiamo anche sviluppato una funzione di ricerca che ci fa apparire una pagina dove ci saranno tutte le ricette che contengono nel nome la stringa che l’utente è andato a cercare.
