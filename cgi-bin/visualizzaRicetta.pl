@@ -34,6 +34,8 @@ print $pagina->start_html(
 							-src => '../css/page_styleMedium.css'},
 						  { -media => 'handheld, screen and (max-width:690px), only screen and (max-device-width:690px)',
 							-src => '../css/page_styleSmall.css'}],	
+				-keywords=>'Chef Web, Ricetta, Ricette',
+			        -author=>'Paolo Stefani, Andrea Pozzato, Luca Favaretto, Emanuele Zorzi, Anthony Signori',
 				-lang=>'it',
 				-head=> $pagina->Link({ -rel=>'shortcut icon', 
 						  -href => '../images/chef.ico', 
