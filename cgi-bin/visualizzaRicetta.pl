@@ -36,7 +36,7 @@ print $pagina->start_html(
 							-src => '../css/page_styleSmall.css'},
 						  { -media => 'print',
 						  	-src => '../css/print_ricetta.css'}],	
-				-meta=>{'keywords'=>'chef web',
+				-meta=>{'keywords'=>'Chef Web, Ricetta, Ricette',
 			                'author'=>'Paolo Stefani, Andrea Pozzato, Luca Favaretto, Emanuele Zorzi, Anthony Signori'},
 				-lang=>'it',
 				-head=> $pagina->Link({ -rel=>'shortcut icon', 
