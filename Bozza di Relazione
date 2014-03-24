@@ -9,8 +9,8 @@ Componenti: ● Andrea Pozzato,
 
 
 Premessa:
-Il progetto consiste nella creazione di un sito attraverso vari linguaggi: XHTML, JavaScript
-Perl, XML e CSS. Ogni pagina prodotta e ogni foglio stile fatto, è stato validato tramite gli strumenti messi a disposizione del consorzio W3C???????????; precisamente le pagine XHTML rispettano lo standard XHTML 1.0?????????????? Strict, mentre il foglio di stile rispetta lo standard CSS 2.1.????????
+Il progetto consiste nella creazione di un sito attraverso vari linguaggi: XHTML, JavaScript Perl, XML e CSS. 
+Ogni pagina prodotta e ogni foglio stile fatto, è stato validato tramite gli strumenti messi a disposizione del consorzio W3C???????????; precisamente le pagine XHTML rispettano lo standard XHTML 1.0?????????????? Strict, mentre il foglio di stile rispetta lo standard CSS 2.1.????????
 
  Il nostro è un sito di cucina, permette la consultazione e l’inserimento di ricette. Le ricette sono divise in sei categorie Antipasti, Primi, Secondi, Contorni, Dessert, Cocktail.
 I visitatori del sito potranno consultare le ricette andando su ogni categoria per vedere tutte le ricette presenti, l’utente potrà anche ricercare una ricetta e visualizzarla. Ogni visitatore può inserire una ricetta riempendo un modulo per metterla a disposizione di tutti. 
@@ -57,12 +57,13 @@ Il file XMLschema è stato realizzato tramite il modello “tende alla veneziana
 Cascading Style Sheets:
 
 Abbiamo utilizzato 2 fogli di stile uno per la Home e una per le altre pagine del sito che sono strutturate con la stessa modalità.
-
 Per il layout del sito si è optato per un layout fisso, non vedevamo l’utilità di complicarci la vita con un layout fluido quando non ce n’era bisogno. 
-
-Nella nostra home l’utente si trova di fronte alle 6 tipologie che sono facili da individuare grazie alle immagine evocative e alle scritte all’interno di esse. L’utente inoltre visualizza una barra di navigazione che dice dove si trova, individua facilmente la possibilità di effettuare una ricerca grazie alla presenza del bottone cerca e anche la possibilità di inserire una nuova ricetta. Con il CSS abbiamo cercato di individuare dei buoni punti di rottura facendo si che la pagina non venga stravolta e che venga visualizzata in maniera ottimale in ogni tipo di monitor.
-
-L’utente cliccando su una di queste opzioni si trova in una pagina dove abbiamo un banner che contiene un menù. Nella barra possiamo spostarci con pochi click dove vogliamo all’interno del sito, possiamo cambiare tipologia di cibo possiamo tornare alla home inserire una ricetta o effettuare una ricerca. Abbiamo lasciato comunque la barra che indica dove ci si trovi così l’utente sa sempre dov’è.
+Nella nostra home l’utente si trova di fronte alle 6 tipologie che sono facili da individuare grazie alle immagine evocative e alle scritte all’interno di esse. 
+L’utente inoltre visualizza una barra di navigazione che dice dove si trova, individua facilmente la possibilità di effettuare una ricerca grazie alla presenza del bottone cerca e anche la possibilità di inserire una nuova ricetta. 
+Con il CSS abbiamo cercato di individuare dei buoni punti di rottura facendo si che la pagina non venga stravolta e che venga visualizzata in maniera ottimale in ogni tipo di monitor.
+L’utente cliccando su una di queste opzioni si trova in una pagina dove abbiamo un banner che contiene un menù. Nella barra possiamo spostarci con pochi click dove vogliamo all’interno del sito, possiamo cambiare tipologia di cibo possiamo tornare alla home inserire una ricetta o effettuare una ricerca. 
+Abbiamo lasciato comunque la barra che indica dove ci si trova così l’utente sa sempre dov’è.
+Abbiamo deciso inoltre di creare la versione stampabile per tutte le pagine tranne che per la Home. Questa decisione è stata presa perchè la nostra Home sostanzialmente è solo una pagina di presentazione e manca di contenuto.
 
 
 Javascript:
@@ -96,5 +97,6 @@ Prendendo i dati dal form dell’inserimento di una nuova ricetta con il metodo 
 
 Testing cross browser:
 
-L'intero progetto è stato testato attraverso i browser Internet Explorer 10, Firefox 28 , Chrome e Safari 7 per Mac ed ha mantenuto lo stesso comportamento. Inoltre abbiamo provato l’intero sito sui nostri mobile ovvero Iphone 5s, Nexus 5 e Galaxy s4.
+L'intero progetto è stato testato attraverso i browser Internet Explorer 10, Firefox 28 , Chrome e Safari 7 per Mac ed ha mantenuto lo stesso comportamento. 
+Inoltre abbiamo provato l’intero sito sui nostri mobile ovvero Iphone 5s, Nexus 5 e Galaxy s4.
 
